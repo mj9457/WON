@@ -9,12 +9,12 @@ section {
     padding: 16px;
     width: 75%;
     max-width: 1080px;
-    height: 800px;
     margin: auto;
+    height: 1000px;
 }
 
 .section__content--row {
-    margin: 50px 0;
+    margin: 20px 0;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -120,4 +120,10 @@ section {
 
 .mail {
     color: #ffffff;
+}
+
+/* sub-page */
+
+.sub__section__content {
+
 }
