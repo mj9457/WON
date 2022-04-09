@@ -10,7 +10,7 @@ main {
     position: absolute;
     z-index: 0;
     text-align: center;
-    top: 36%;
+    top: 260px;
     left: 50%;
     transform: translate(-50%,-50%);    
     color: white;    
@@ -39,7 +39,7 @@ main {
 }
 
 .sub__section {
-    top: 25%;
+    top: 170px;
     text-shadow: 3px 3px 3px #808080c9;
 }
 
