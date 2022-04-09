@@ -36,6 +36,12 @@
     padding-right: 20px;
 }
 
+.menubar__content--list, .menubar__content--logo {
+    height: 60px;
+    display: flex;
+    align-items: center
+}
+
 .menubar__weather {
     display: flex;
     align-items: center;
@@ -50,6 +56,57 @@
     margin-right: 20px;
 }
 
+/* sub-menubar */
+
+.sub-menubar {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(161, 21, 48);
+    z-index: 90;
+    padding-left: 62.5px;
+    margin-top: 40px;
+    padding-top: 40px;
+    box-shadow: 0 3px 5px -1px #0003, 0 6px 10px #00000024, 0 1px 18px #0000001f;
+}
+
+.sub-menubar__list-box {
+    width: 113px;
+    display: flex;
+    justify-content: space-around;
+    font-family: "NotoSansKR";
+    color: white;
+}
+
+.sub-menubar__list-box--one {
+    
+}
+
+.sub-menubar__list-box--two {
+    padding-left: 99.5px;
+    display: none;
+}
+
+.sub-menubar__list-box--three {
+    padding-left: 198.5px;
+    display: none;
+}
+
+.sub-menubar__list-box--four {
+    padding-left:  305.5px;
+    display: none;
+}
+
+.sub-menubar__list-box--five {
+    padding-left:  411.5px;
+    display: none;
+}
+
+.sub-menubar__list-box--six {
+    padding-left:  516.5px;
+    display: none;
+}
 
 /* animations */
 

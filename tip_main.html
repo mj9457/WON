@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <title>WON</title>
-    
+
 </head>
 
 <body>
@@ -15,23 +15,33 @@
     <!-- Header-->
     <header class="menubar">
         <div class="menubar__content">
-            <div class="menubar__content--logo">
-                <a href="#"><i class="fa-solid fa-house"></i></a>
+            <div class="menubar__content--logo ani">
+                <a href="index.html"><i class="fa-solid fa-house"></i></a>
             </div>
-            <div class="menubar__content--list1 ani"><a href="#">학점계산기</a></div>
-            <div class="menubar__content--list2 ani"><a href="#">비교과</a></div>
-            <div class="menubar__content--list3 ani"><a href="#">SEN-TEST</a></div>
-            <div class="menubar__content--list4 ani"><a href="#">자가진단</a></div>
-            <div class="menubar__content--list5 ani"><a href="#">학교생활팁</a></div>
-            <div class="menubar__content--list6 ani"><a href="#">학사공지</a></div>
+            <div class="menubar__content--list menubar__content__list--one ani"><a href="credit.html">학점계산기</a></div>
+            <div class="menubar__content--list menubar__content__list--two ani"><a href="activities.html">비교과</a></div>
+            <div class="menubar__content--list menubar__content__list--three ani"><a href="sen.html">SEN-TEST</a></div>
+            <div class="menubar__content--list menubar__content__list--four ani"><a href="#">자가진단</a></div>
+            <div class="menubar__content--list menubar__content__list--five ani"><a href="tip_main.html">학교생활팁</a></div>
+            <div class="menubar__content--list menubar__content__list--six ani"><a href="notice.html">학사공지</a></div>
         </div>
 
         <div class="menubar__weather">
-                <div class="menubar__weather--loacation">학교 날씨 :</div>
-                <div class="menubar__weather--icon"></div>
-                <div class="menubar__weather--temp"></div>
+            <div class="menubar__weather--loacation">학교 날씨 :</div>
+            <div class="menubar__weather--icon"></div>
+            <div class="menubar__weather--temp"></div>
         </div>
     </header>
+
+    <!-- Sub Header -->
+    <div class="sub-menubar">
+        <a href="credit.html"><div class="sub-menubar__list-box sub-menubar__list-box--one">학점계산기</div></a>
+        <a href="activites.html"><div class="sub-menubar__list-box sub-menubar__list-box--two">비교과</div></a>
+        <a href="sen.html"><div class="sub-menubar__list-box sub-menubar__list-box--three">SEN-TEST</div></a>
+        <a href="#"><div class="sub-menubar__list-box sub-menubar__list-box--four">자가진단</div></a>
+        <a href="tip_main.html"><div class="sub-menubar__list-box sub-menubar__list-box--five">시설위치</div></a>
+        <a href="notice.html"><div class="sub-menubar__list-box sub-menubar__list-box--six">장학</div></a>
+    </div>
 
     <!-- Main -->
     <main class="sub__main">
@@ -74,11 +84,11 @@
                     </a>
                 </div>
             </div>
-            </div>
+        </div>
         </div>
         <!-- Aside__menubar -->
         <div class="aside__menubar">
-            <div class="aside__menubar-box--btn">
+            <!-- <div class="aside__menubar-box--btn">
                 <a href="" class="aside__menubar--frs">
                     <div class="aside__menubar--title">시설위치</div>
                 </a>
@@ -88,11 +98,12 @@
                 <a href="" class="aside__menubar--thr">
                     <div class="aside__menubar--title">장학안내</div>
                 </a>
-            </div>
+            </div> -->
             <div class="aside__menubar-box--inquiry">
-                <a class="kakao-box" href="https://open.kakao.com/o/smLQd66d" target="_blank"><i class="fa-solid fa-comment kakao"></i></a>
+                <a class="kakao-box" href="https://open.kakao.com/o/smLQd66d" target="_blank"><i
+                        class="fa-solid fa-comment kakao"></i></a>
                 <a class="mail-box" href="mailto:mj9457@naver.com"><i class="fa-solid fa-envelope mail"></i></a>
-            </div>            
+            </div>
         </div>
         <div style="clear: both;"></div>
     </section>
@@ -101,13 +112,103 @@
     <footer>
         <div class="footer__title">Copyright © 2022 WON</div>
         <a href="https://haksa.jwu.ac.kr/com/index.html">
-            <img class="footer__logo--image"src="/assets/image/jwu_logo1.png" alt="">
-        </a>        
+            <img class="footer__logo--image" src="/assets/image/jwu_logo1.png" alt="">
+        </a>
     </footer>
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- Sub-MenuBar -->
+    <script>
+        $(document).ready(function () {
+
+            $(".menubar__content__list--one").mouseover(function () {
+                $(".sub-menubar").css("display", "block");
+                $(".sub-menubar").css("position", "fixed");
+                $(".main__section").css("display", "none");
+
+                $(".sub-menubar__list-box--one").css("display","flex");
+                $(".sub-menubar__list-box--two").css("display","none");
+                $(".sub-menubar__list-box--three").css("display","none");
+                $(".sub-menubar__list-box--four").css("display","none");
+                $(".sub-menubar__list-box--five").css("display","none");
+                $(".sub-menubar__list-box--six").css("display","none");
+            });
+
+            $(".menubar__content__list--two").mouseover(function () {
+                $(".sub-menubar").css("display", "block");
+                $(".sub-menubar").css("position", "fixed");
+                $(".main__section").css("display", "none");
+
+                $(".sub-menubar__list-box--one").css("display","none");
+                $(".sub-menubar__list-box--two").css("display","flex");
+                $(".sub-menubar__list-box--three").css("display","none");
+                $(".sub-menubar__list-box--four").css("display","none");
+                $(".sub-menubar__list-box--five").css("display","none");
+                $(".sub-menubar__list-box--six").css("display","none");
+            });
+
+            $(".menubar__content__list--three").mouseover(function () {
+                $(".sub-menubar").css("display", "block");
+                $(".sub-menubar").css("position", "fixed");
+                $(".main__section").css("display", "none");
+
+                $(".sub-menubar__list-box--one").css("display","none");
+                $(".sub-menubar__list-box--two").css("display","none");
+                $(".sub-menubar__list-box--three").css("display","flex");
+                $(".sub-menubar__list-box--four").css("display","none");
+                $(".sub-menubar__list-box--five").css("display","none");
+                $(".sub-menubar__list-box--six").css("display","none");
+            });
+
+            $(".menubar__content__list--four").mouseover(function () {
+                $(".sub-menubar").css("display", "block");
+                $(".sub-menubar").css("position", "fixed");
+                $(".main__section").css("display", "none");
+
+                $(".sub-menubar__list-box--one").css("display","none");
+                $(".sub-menubar__list-box--two").css("display","none");
+                $(".sub-menubar__list-box--three").css("display","none");
+                $(".sub-menubar__list-box--four").css("display","flex");
+                $(".sub-menubar__list-box--five").css("display","none");
+                $(".sub-menubar__list-box--six").css("display","none");
+            });
+
+            $(".menubar__content__list--five").mouseover(function () {
+                $(".sub-menubar").css("display", "block");
+                $(".sub-menubar").css("position", "fixed");
+                $(".main__section").css("display", "none");
+                $(".sub-menubar__list-box--one").css("display","none");
+                $(".sub-menubar__list-box--two").css("display","none");
+                $(".sub-menubar__list-box--three").css("display","none");
+                $(".sub-menubar__list-box--four").css("display","none");
+                $(".sub-menubar__list-box--five").css("display","flex");
+                $(".sub-menubar__list-box--six").css("display","none");
+            });
+
+            $(".menubar__content__list--six").mouseover(function () {
+                $(".sub-menubar").css("display", "block");
+                $(".sub-menubar").css("position", "fixed");
+                $(".main__section").css("display", "none");
+
+                $(".sub-menubar__list-box--one").css("display","none");
+                $(".sub-menubar__list-box--two").css("display","none");
+                $(".sub-menubar__list-box--three").css("display","none");
+                $(".sub-menubar__list-box--four").css("display","none");
+                $(".sub-menubar__list-box--five").css("display","none");
+                $(".sub-menubar__list-box--six").css("display","flex");
+            });
+
+            $(".sub-menubar").mouseleave(function () {
+                $(".sub-menubar").css("display", "none");
+                $(".main__section").css("display", "block");
+                $("main").css("display","block");
+            });
+
+        });
+    </script>
 
     <!-- Weather API -->
     <script>
@@ -129,7 +230,7 @@
                 function (data) {
 
                     var weatherTemp = Math.floor(data.main.temp) + ' º ';
-                    var weatherIcon = (data.weather[0].icon).substr(0,2);
+                    var weatherIcon = (data.weather[0].icon).substr(0, 2);
                     var weatherCity = data.name;
 
                     $('.menubar__weather--temp').append(weatherTemp);
