@@ -15,4 +15,11 @@
 @import url("aside.css"); /* aside */
 @import url("section-tip.css");
 
+#wrap {
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    background-color: #fafafa;
+}
+
 /* <-- body */

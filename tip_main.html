@@ -11,7 +11,7 @@
 </head>
 
 <body>
-
+    <div id="wrap">
     <!-- Header-->
     <header class="menubar">
         <div class="menubar__content">
@@ -85,7 +85,6 @@
                 </div>
             </div>
         </div>
-        </div>
         <!-- Aside__menubar -->
         <div class="aside__menubar">
             <!-- <div class="aside__menubar-box--btn">
@@ -115,11 +114,24 @@
             <img class="footer__logo--image" src="/assets/image/jwu_logo1.png" alt="">
         </a>
     </footer>
-
+</div>
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
+    <script>
+        $(document).scroll(function () {
+            let scrollLocation = document.documentElement.scrollTop; // 현재 스크롤바 위치
+            let windowHeight = window.innerHeight; // 스크린 창
+            let fullHeight = document.body.scrollHeight; //  margin 값은 포함 x
+
+            if (scrollLocation + windowHeight >= fullHeight - 60) {
+                $(".aside__menubar").css("marginBottom","60px");
+            } else {
+                $(".aside__menubar").css("marginBottom","0px");
+            }
+        })
+    </script>
     <!-- Sub-MenuBar -->
     <script>
         $(document).ready(function () {

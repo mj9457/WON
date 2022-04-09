@@ -1,5 +1,7 @@
 section {    
     background-color: #fafafa;
+    padding-bottom: 60px;
+    min-height: 1580px;
 }
 
 .section__content {
