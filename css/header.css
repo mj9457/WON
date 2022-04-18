@@ -85,27 +85,41 @@
 
 .sub-menubar__list-box--two {
     padding-left: 99.5px;
-    display: none;
 }
 
 .sub-menubar__list-box--three {
     padding-left: 198.5px;
-    display: none;
 }
 
 .sub-menubar__list-box--four {
     padding-left:  305.5px;
-    display: none;
 }
 
-.sub-menubar__list-box--five {
+.sub-menubar__list-box--five-title {
     padding-left:  411.5px;
-    display: none;
+}
+
+.sub-menubar__list-box--five-title * {
+    margin-bottom: 8px;
 }
 
 .sub-menubar__list-box--six {
     padding-left:  516.5px;
+}
+
+.sub-menubar__tip-box {
+    display: flex;
+}
+
+
+.sub-menubar__tip-box--flex-location, .sub-menubar__tip-box--flex-bus {
     display: none;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.sub-menubar__tip-box--flex-location a, .sub-menubar__tip-box--flex-bus  a {
+    margin-bottom: 8px;
 }
 
 /* animations */

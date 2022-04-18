@@ -10,7 +10,7 @@ aside {
     font-size: 28px;
     position: fixed;
     float: right;
-    bottom: 0;
+    bottom: 60px;
     right: 12px;
     background-color: #fafafa;
 }

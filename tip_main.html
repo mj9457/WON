@@ -35,12 +35,89 @@
 
     <!-- Sub Header -->
     <div class="sub-menubar">
-        <a href="credit.html"><div class="sub-menubar__list-box sub-menubar__list-box--one">학점계산기</div></a>
-        <a href="activites.html"><div class="sub-menubar__list-box sub-menubar__list-box--two">비교과</div></a>
-        <a href="sen.html"><div class="sub-menubar__list-box sub-menubar__list-box--three">SEN-TEST</div></a>
-        <a href="#"><div class="sub-menubar__list-box sub-menubar__list-box--four">자가진단</div></a>
-        <a href="tip_main.html"><div class="sub-menubar__list-box sub-menubar__list-box--five">시설위치</div></a>
-        <a href="notice.html"><div class="sub-menubar__list-box sub-menubar__list-box--six">장학</div></a>
+
+        <div class="sub-menubar__credit-box">
+            <a class="" href="credit.html">
+                <div class="sub-menubar__list-box sub-menubar__list-box--one">학점계산기</div>
+            </a>
+        </div>
+        
+        <div class="sub-menubar__activities-box">
+            <a class="" href="activities.html">
+                <div class="sub-menubar__list-box sub-menubar__list-box--two">비교과</div>
+            </a>
+        </div>
+        
+        <div class="sub-menubar__sentest-box">
+            <a class="" href="sen.html">
+                <div class="sub-menubar__list-box sub-menubar__list-box--three">SEN-TEST</div>
+            </a>
+        </div>
+        
+
+        <div class="sub-menubar__self-box">
+            <a class="" href="#">
+                <div class="sub-menubar__list-box sub-menubar__list-box--four">자가진단</div>
+            </a>
+        </div>
+        
+
+        <div class="sub-menubar__tip-box">
+            <div class="sub-menubar__list-box--five-title">
+                <a href="tip_main.html">
+                    <div class="sub-menubar__list-box sub-menubar__list-box--location">시설위치</div>
+                </a>
+                <a href="tip_main.html">
+                    <div class="sub-menubar__list-box sub-menubar__list-box--bus">버스정보</div>
+                </a>
+                <a href="tip_main.html">
+                    <div class="sub-menubar__list-box sub-menubar__list-box--scholarship">장학금</div>
+                </a> 
+            </div>                
+
+            <div class="sub-menubar__tip-box--flex-location">
+                <a href="#">
+                    <div class="sub-menubar__list-box ani">수영장/샤워장</div>
+                </a>
+                <a href="#">
+                    <div class="sub-menubar__list-box ani">스포츠 센터</div>
+                </a>
+                <a href="#">
+                    <div class="sub-menubar__list-box ani">박물관</div>
+                </a>
+                <a href="#">
+                    <div class="sub-menubar__list-box ani">식물원</div>
+                </a>
+                <a href="#">
+                    <div class="sub-menubar__list-box ani">카페테리아</div>
+                </a>
+                <a href="#">
+                    <div class="sub-menubar__list-box ani">골프장</div>
+                </a>
+                <a href="#">
+                    <div class="sub-menubar__list-box ani">도서관</div>
+                </a>
+                <a href="#">
+                    <div class="sub-menubar__list-box ani">주차장</div>
+                </a>
+            </div>                
+            <div class="sub-menubar__tip-box--flex-bus">
+                <a href="#">
+                    <div class="sub-menubar__list-box ani">시내버스</div>
+                </a>
+                <a href="#">
+                    <div class="sub-menubar__list-box ani">통학버스</div>
+                </a>
+                </a>
+            </div>                             
+        </div>
+        
+        <div class="sub-menubar__notice-box">
+            <a class="" href="notice.html">
+                <div class="sub-menubar__list-box sub-menubar__list-box--six">장학</div>
+            </a>
+        </div>
+        
     </div>
 
     <!-- Main -->
@@ -52,7 +129,7 @@
     </main>
 
     <!-- Section -->
-    <section>
+    <section class="section">
 
         <div class="section__content sub__section__content ">
             <div class="section__content--row">
@@ -87,17 +164,6 @@
         </div>
         <!-- Aside__menubar -->
         <div class="aside__menubar">
-            <!-- <div class="aside__menubar-box--btn">
-                <a href="" class="aside__menubar--frs">
-                    <div class="aside__menubar--title">시설위치</div>
-                </a>
-                <a href="" class="aside__menubar--sec">
-                    <div class="aside__menubar--title">버스정보</div>
-                </a>
-                <a href="" class="aside__menubar--thr">
-                    <div class="aside__menubar--title">장학안내</div>
-                </a>
-            </div> -->
             <div class="aside__menubar-box--inquiry">
                 <a class="kakao-box" href="https://open.kakao.com/o/smLQd66d" target="_blank"><i
                         class="fa-solid fa-comment kakao"></i></a>
@@ -140,85 +206,142 @@
                 $(".sub-menubar").css("display", "block");
                 $(".sub-menubar").css("position", "fixed");
                 $(".main__section").css("display", "none");
+                $("main").css("display", "none");
+                $(".section").css("padding-top", "280px");
 
-                $(".sub-menubar__list-box--one").css("display","flex");
-                $(".sub-menubar__list-box--two").css("display","none");
-                $(".sub-menubar__list-box--three").css("display","none");
-                $(".sub-menubar__list-box--four").css("display","none");
-                $(".sub-menubar__list-box--five").css("display","none");
-                $(".sub-menubar__list-box--six").css("display","none");
+                $(".sub-menubar__credit-box").css("display", "flex");
+                $(".sub-menubar__activities-box").css("display", "none");
+                $(".sub-menubar__sentest-box").css("display", "none");
+                $(".sub-menubar__self-box").css("display", "none");
+                $(".sub-menubar__tip-box").css("display", "none");
+                $(".sub-menubar__notice-box").css("display", "none");
+
+                $(".sub-menubar__tip-box--flex-location").css("display", "none");
+                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
             });
 
             $(".menubar__content__list--two").mouseover(function () {
                 $(".sub-menubar").css("display", "block");
                 $(".sub-menubar").css("position", "fixed");
                 $(".main__section").css("display", "none");
+                $("main").css("display", "none");
+                $(".section").css("padding-top", "280px");
 
-                $(".sub-menubar__list-box--one").css("display","none");
-                $(".sub-menubar__list-box--two").css("display","flex");
-                $(".sub-menubar__list-box--three").css("display","none");
-                $(".sub-menubar__list-box--four").css("display","none");
-                $(".sub-menubar__list-box--five").css("display","none");
-                $(".sub-menubar__list-box--six").css("display","none");
+                $(".sub-menubar__credit-box").css("display", "none");
+                $(".sub-menubar__activities-box").css("display", "flex");
+                $(".sub-menubar__sentest-box").css("display", "none");
+                $(".sub-menubar__self-box").css("display", "none");
+                $(".sub-menubar__tip-box").css("display", "none");
+                $(".sub-menubar__notice-box").css("display", "none");
+
+                $(".sub-menubar__tip-box--flex-location").css("display", "none");
+                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
             });
 
             $(".menubar__content__list--three").mouseover(function () {
                 $(".sub-menubar").css("display", "block");
                 $(".sub-menubar").css("position", "fixed");
                 $(".main__section").css("display", "none");
+                $("main").css("display", "none");
+                $(".section").css("padding-top", "280px");
 
-                $(".sub-menubar__list-box--one").css("display","none");
-                $(".sub-menubar__list-box--two").css("display","none");
-                $(".sub-menubar__list-box--three").css("display","flex");
-                $(".sub-menubar__list-box--four").css("display","none");
-                $(".sub-menubar__list-box--five").css("display","none");
-                $(".sub-menubar__list-box--six").css("display","none");
+                $(".sub-menubar__credit-box").css("display", "none");
+                $(".sub-menubar__activities-box").css("display", "none");
+                $(".sub-menubar__sentest-box").css("display", "flex");
+                $(".sub-menubar__self-box").css("display", "none");
+                $(".sub-menubar__tip-box").css("display", "none");
+                $(".sub-menubar__notice-box").css("display", "none");
+
+                $(".sub-menubar__tip-box--flex-location").css("display", "none");
+                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
             });
 
             $(".menubar__content__list--four").mouseover(function () {
                 $(".sub-menubar").css("display", "block");
                 $(".sub-menubar").css("position", "fixed");
                 $(".main__section").css("display", "none");
+                $("main").css("display", "none");
+                $(".section").css("padding-top", "280px");
 
-                $(".sub-menubar__list-box--one").css("display","none");
-                $(".sub-menubar__list-box--two").css("display","none");
-                $(".sub-menubar__list-box--three").css("display","none");
-                $(".sub-menubar__list-box--four").css("display","flex");
-                $(".sub-menubar__list-box--five").css("display","none");
-                $(".sub-menubar__list-box--six").css("display","none");
+                $(".sub-menubar__credit-box").css("display", "none");
+                $(".sub-menubar__activities-box").css("display", "none");
+                $(".sub-menubar__sentest-box").css("display", "none");
+                $(".sub-menubar__self-box").css("display", "flex");
+                $(".sub-menubar__tip-box").css("display", "none");
+                $(".sub-menubar__notice-box").css("display", "none");
+
+                $(".sub-menubar__tip-box--flex-location").css("display", "none");
+                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
             });
 
             $(".menubar__content__list--five").mouseover(function () {
                 $(".sub-menubar").css("display", "block");
                 $(".sub-menubar").css("position", "fixed");
                 $(".main__section").css("display", "none");
-                $(".sub-menubar__list-box--one").css("display","none");
-                $(".sub-menubar__list-box--two").css("display","none");
-                $(".sub-menubar__list-box--three").css("display","none");
-                $(".sub-menubar__list-box--four").css("display","none");
-                $(".sub-menubar__list-box--five").css("display","flex");
-                $(".sub-menubar__list-box--six").css("display","none");
+                $("main").css("display", "none");
+                $(".section").css("padding-top", "280px");
+
+                $(".sub-menubar__credit-box").css("display", "none");
+                $(".sub-menubar__activities-box").css("display", "none");
+                $(".sub-menubar__sentest-box").css("display", "none");
+                $(".sub-menubar__self-box").css("display", "none");
+                $(".sub-menubar__tip-box").css("display", "flex");
+                $(".sub-menubar__notice-box").css("display", "none");
             });
 
             $(".menubar__content__list--six").mouseover(function () {
                 $(".sub-menubar").css("display", "block");
                 $(".sub-menubar").css("position", "fixed");
                 $(".main__section").css("display", "none");
+                $("main").css("display", "none");
+                $(".section").css("padding-top", "280px");
 
-                $(".sub-menubar__list-box--one").css("display","none");
-                $(".sub-menubar__list-box--two").css("display","none");
-                $(".sub-menubar__list-box--three").css("display","none");
-                $(".sub-menubar__list-box--four").css("display","none");
-                $(".sub-menubar__list-box--five").css("display","none");
-                $(".sub-menubar__list-box--six").css("display","flex");
+                $(".sub-menubar__credit-box").css("display", "none");
+                $(".sub-menubar__activities-box").css("display", "none");
+                $(".sub-menubar__sentest-box").css("display", "none");
+                $(".sub-menubar__self-box").css("display", "none");
+                $(".sub-menubar__tip-box").css("display", "none");
+                $(".sub-menubar__notice-box").css("display", "flex");
+
+                $(".sub-menubar__tip-box--flex-location").css("display", "none");
+                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
             });
 
             $(".sub-menubar").mouseleave(function () {
                 $(".sub-menubar").css("display", "none");
                 $(".main__section").css("display", "block");
-                $("main").css("display","block");
+                $("main").css("display", "block");
+                $(".section").css("padding-top", "0px")
             });
 
+            $(".sub-menubar__list-box--location").mouseover(function () {
+                $(".sub-menubar__tip-box--flex-location").css("display", "flex");
+                $(".sub-menubar__tip-box--flex-bus").css("display", "none");             
+            });
+
+            $(".sub-menubar__tip-box--flex-location").mouseleave(function () {
+                $(".sub-menubar__tip-box--flex-location").css("display", "none");
+            });
+
+            $(".sub-menubar__list-box--bus").mouseover(function () {
+                $(".sub-menubar__tip-box--flex-location").css("display", "none");
+                $(".sub-menubar__tip-box--flex-bus").css("display", "flex");                
+            });
+
+            $(".sub-menubar__tip-box--flex-location").mouseleave(function () {
+                $(".sub-menubar__tip-box--flex-location").css("display", "none");
+            });
+
+            $(".sub-menubar__list-box--scholarship").mouseover(function () {
+                $(".sub-menubar__tip-box--flex-location").css("display", "none");
+                $(".sub-menubar__tip-box--flex-bus").css("display", "none");              
+            });
+
+            $(".sub-menubar__tip-box--flex-location").mouseleave(function () {
+                $(".sub-menubar__tip-box--flex-location").css("display", "none");
+                $(".sub-menubar__tip-box--flex-bus").css("display", "none");  
+            });
+            
         });
     </script>
 
@@ -252,6 +375,8 @@
             )
         })
     </script>
+
+    
 </body>
 
 </html>
