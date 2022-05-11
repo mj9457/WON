@@ -10,9 +10,9 @@ aside {
     font-size: 28px;
     position: fixed;
     float: right;
-    bottom: 60px;
+    bottom: 0px;
     right: 12px;
-    background-color: #fafafa;
+    z-index: 1000;
 }
 
 .aside__menubar-box--btn {
