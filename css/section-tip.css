@@ -1,5 +1,21 @@
 /*PDF 중앙 배열*/
-.centered{display: table; margin-left:auto; margin-right:auto;}
+/* .centered{display: table; margin-left:auto; margin-right:auto;} */
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  width: 100%;
+}
+
+.school-scholar__pdf {
+  width: 100%;
+  min-width: 200px;    
+  height: 1000px;
+  overflow:hidden !important;
+  
+  }
 
 .swiper-container {
 	width:620px;
@@ -177,4 +193,78 @@
   font-size: 20px;
   letter-spacing: 1px;
   line-height: 23px;
+}
+
+/* 국가 장학금 버튼 */
+.section__content--row-btn-wrap {
+  display: block;
+  margin: 20px;
+}
+
+.app-btn {
+  width: 100% !important;
+  background-color: rgb(0, 52, 102) !important;
+  color: #ffffff !important;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 2px 1px -1px #0003, 0 1px 1px #00000024, 0 1px 3px #0000001f;
+}
+
+.app-btn:link,
+.app-btn:visited{
+  text-decoration: none;
+  text-transform:uppercase;
+  padding:20px 40px;
+  border-radius:100px;
+  display:inline-block;
+  transition: all .5s;
+}
+
+.app-btn:hover{
+   box-shadow:0px 10px 10px rgba(0,0,0,0.2);
+   transform : translateY(-3px);
+}
+
+.app-btn:active{
+  box-shadow:0px 5px 10px rgba(0,0,0,0.2);
+  transform:translateY(-1px);
+}
+
+.app-btn-bottom-animation-1{
+  animation:comeFromBottom 1s ease-out .8s;
+}
+
+.app-btn::after{
+  content:"";
+  text-decoration: none;
+  text-transform:uppercase;
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  border-radius:100px;
+  display:inline-block;
+  z-index:-1;
+  transition: all .5s;
+}
+
+.app-btn-animation-1:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.app-btn::after {
+  background: rgb(0, 52, 102);
+}
+
+@keyframes comeFromBottom{
+  0%{
+    opacity:0;
+    transform:translateY(40px);
+  } 
+  100%{
+    opacity:1;
+    transform:translateY(0);
+  }
 }

@@ -112,13 +112,13 @@
 }
 
 
-.sub-menubar__tip-box--flex-location, .sub-menubar__tip-box--flex-bus {
+.sub-menubar__tip-box--flex-location, .sub-menubar__tip-box--flex-bus, .sub-menubar__tip-box--flex-scholarship {
     display: none;
     justify-content: flex-start;
     flex-direction: column;
 }
 
-.sub-menubar__tip-box--flex-location a, .sub-menubar__tip-box--flex-bus  a {
+.sub-menubar__tip-box--flex-location a, .sub-menubar__tip-box--flex-bus a, .sub-menubar__tip-box--flex-scholarship  a {
     margin-bottom: 8px;
 }
 

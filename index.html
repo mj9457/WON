@@ -48,26 +48,26 @@
         <div class="sub-menubar">
 
             <div class="sub-menubar__credit-box">
-                <a class="" href="credit.html">
+                <a href="credit.html">
                     <div class="sub-menubar__list-box sub-menubar__list-box--one">학점계산기</div>
                 </a>
             </div>
 
             <div class="sub-menubar__activities-box">
-                <a class="" href="activities.html">
+                <a href="activities.html">
                     <div class="sub-menubar__list-box sub-menubar__list-box--two">비교과</div>
                 </a>
             </div>
 
             <div class="sub-menubar__sentest-box">
-                <a class="" href="sen.html">
+                <a href="sen.html">
                     <div class="sub-menubar__list-box sub-menubar__list-box--three">SEN-TEST</div>
                 </a>
             </div>
 
 
             <div class="sub-menubar__self-box">
-                <a class="" href="#">
+                <a href="#">
                     <div class="sub-menubar__list-box sub-menubar__list-box--four">자가진단</div>
                 </a>
             </div>
@@ -82,7 +82,7 @@
                         <div class="sub-menubar__list-box sub-menubar__list-box--bus">버스정보</div>
                     </a>
                     <a href="tip-scholar.html">
-                        <div class="sub-menubar__list-box sub-menubar__list-box--scholarship">장학금</div>
+                        <div class="sub-menubar__list-box sub-menubar__list-box--scholarship">장학정보</div>
                     </a>
                 </div>
 
@@ -113,11 +113,19 @@
                     </a>
                 </div>
                 <div class="sub-menubar__tip-box--flex-bus">
-                    <a href="tip-bus.html#shuttle">
+                    <a href="tip-bus.html#shuttle-bus">
                         <div class="sub-menubar__list-box ani">셔틀버스</div>
                     </a>
-                    <a href="tip-bus.html#school">
+                    <a href="tip-bus.html#school-bus">
                         <div class="sub-menubar__list-box ani">통학버스</div>
+                    </a>
+                </div>
+                <div class="sub-menubar__tip-box--flex-scholarship">
+                    <a href="tip-scholar.html#school-scholar">
+                        <div class="sub-menubar__list-box ani">교내 장학금</div>
+                    </a>
+                    <a href="tip-scholar.html#national-scholar">
+                        <div class="sub-menubar__list-box ani">국가 장학금</div>
                     </a>
                 </div>
             </div>
@@ -353,6 +361,7 @@
             $(".sub-menubar__list-box--location").mouseover(function () {
                 $(".sub-menubar__tip-box--flex-location").css("display", "flex");
                 $(".sub-menubar__tip-box--flex-bus").css("display", "none");
+                $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");                
             });
 
             $(".sub-menubar__tip-box--flex-location").mouseleave(function () {
@@ -362,20 +371,21 @@
             $(".sub-menubar__list-box--bus").mouseover(function () {
                 $(".sub-menubar__tip-box--flex-location").css("display", "none");
                 $(".sub-menubar__tip-box--flex-bus").css("display", "flex");
+                $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");  
             });
 
-            $(".sub-menubar__tip-box--flex-location").mouseleave(function () {
-                $(".sub-menubar__tip-box--flex-location").css("display", "none");
+            $(".sub-menubar__tip-box--flex-bus").mouseleave(function () {
+                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
             });
 
             $(".sub-menubar__list-box--scholarship").mouseover(function () {
                 $(".sub-menubar__tip-box--flex-location").css("display", "none");
                 $(".sub-menubar__tip-box--flex-bus").css("display", "none");
+                $(".sub-menubar__tip-box--flex-scholarship").css("display", "flex");  
             });
 
-            $(".sub-menubar__tip-box--flex-location").mouseleave(function () {
-                $(".sub-menubar__tip-box--flex-location").css("display", "none");
-                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
+            $(".sub-menubar__tip-box--flex-scholarship").mouseleave(function () {
+                $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");  
             });
 
         });
