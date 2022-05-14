@@ -34,7 +34,7 @@
                 <div class="menubar__content--list menubar__content__list--four ani">
                     <a href="#">자가진단</a></div>
                 <div class="menubar__content--list menubar__content__list--five ani">
-                    <a href="tip-main.html">학교생활팁</a>
+                    <a href="tip-place.html">학교생활팁</a>
                 </div>
                 <div class="menubar__content--list menubar__content__list--six ani">
                     <a href="notice.html">학사공지</a>
@@ -153,53 +153,6 @@
         <!-- Section -->
         <section class="section">
 
-            <div class="section__content sub__section__content ">
-                <div class="section__content--row">
-                    <div class="section__content--row-title">주요 기능</div>
-                    <div class="section__content--row-listbox">
-
-                        <a href="tip-place.html">
-                            <div class="section__content--row--list hg-100">
-                                <p class="list-title hg-20">시설 위치</p>
-                                <div class="list-divider"></div>
-                                <div class="list-content wd-90 m-L-R-auto">
-                                    <div class="list-content__list-title">수영장/사우나</div>
-                                    <div class="list-content__list-title">도서관</div>
-                                    <div class="list-content__list-title">스포츠센터</div>
-                                    <div class="list-content__list-title">카페테리아</div>
-                                    <div class="list-content__list-title">박물관</div>
-                                    <div class="list-content__list-title">식물원</div>
-                                    <div class="list-content__list-title">주차장</div>
-                                    <div class="list-content__list-title">골프장</div>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="tip-bus.html">
-                            <div class="section__content--row--list hg-100">
-                                <p class="list-title hg-20">버스 정보</p>
-                                <div class="list-divider"></div>
-                                <div class="list-content wd-90 m-L-R-auto m-b-20">
-                                    <div class="list-content__list-title">셔틀버스</div>
-                                    <div class="list-content__list-title">통학버스</div>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="tip-scholar.html">
-                            <div class="section__content--row--list hg-100">
-                                <p class="list-title hg-20">장학 정보</p>
-                                <div class="list-divider"></div>
-                                <div class="list-content wd-90 m-L-R-auto m-b-20">
-                                    <div class="list-content__list-title">교내 장학금</div>
-                                    <div class="list-content__list-title">국가 장학금</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
             <!-- 교내 장학금 -->
             <div id="school-scholar" class="place-wrap-box">
                 <div class="section__content">
@@ -227,9 +180,9 @@
             <!-- Aside__menubar -->
             <div class="aside__menubar">
                 <div class="aside__menubar-box--inquiry">
-                    <a class="kakao-box" href="https://open.kakao.com/o/smLQd66d" target="_blank"><i
-                            class="fa-solid fa-comment kakao"></i></a>
+                    <a class="kakao-box" href="https://open.kakao.com/o/smLQd66d" target="_blank"><i class="fa-solid fa-comment kakao"></i></a>
                     <a class="mail-box" href="mailto:mj9457@naver.com"><i class="fa-solid fa-envelope mail"></i></a>
+                    <a class="top-box" href="#"><i class="fa-solid fa-arrow-up top-btn"></i></a>
                 </div>
             </div>
             <div style="clear: both;"></div>
@@ -442,24 +395,11 @@
         })
     </script>
 
-    <!--Images Slider-->
+    <!-- top Btn -->
     <script>
-        new Swiper('.myswiper', {
-            // 큐브 효과 사용
-            effect: 'cube',
-
-            // 슬라이드 반복
-            loop: true,
-
-            // 페이징 설정
-            pagination: {
-
-                // 페이징 요소의 클래스명
-                el: '.swiper-pagination',
-
-                // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
-                clickable: true,
-            },
+        $(".top-box").click(function() {
+            $('html, body').animate({ scrollTop : 0 }, 800);
+            return false;
         });
     </script>
 </body>

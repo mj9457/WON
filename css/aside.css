@@ -48,3 +48,31 @@ aside {
     border-radius: 50px;
     margin-bottom: 10px;
 }
+
+.aside__menubar-box--inquiry i {
+    transition: all 1s;
+    transform-style: preserve-3d;
+}
+
+.aside__menubar-box--inquiry i:hover {
+    transform: rotateY(180deg);
+} 
+
+.top-box :hover {
+    animation-name: moveTop;
+    animation-duration: 1s;
+}
+
+@keyframes moveTop {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
