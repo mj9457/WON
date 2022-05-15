@@ -96,7 +96,7 @@ if ( f21 > 80 ) {
     var sumFOS21 = f21 + o21 + s21;
     resultAllFOS21.innerHTML = sumFOS21;
 
-    if ( sumFOS21 >= 180 && ( f21 >= 40 && o21 >= 40 && s21 >= 30) ) {
+    if ( sumFOS21 >= 150 && ( f21 >= 40 && o21 >= 40 && s21 >= 30) ) {
         resultAll21.innerHTML = "충족"
         resultAll21.style.color = "blue";
         resultOk21.style.display = "none";
