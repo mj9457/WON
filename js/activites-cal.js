@@ -11,7 +11,7 @@ var resultBtn21 = document.querySelector("#fos-result-btn-21"); /* 확인하기 
 var resultF21 = document.querySelector("#fos-f-val-21"); /* F 영역 결과 확인 */
 var resultO21 = document.querySelector("#fos-o-val-21"); /* O 영역 결과 확인 */
 var resultS21 = document.querySelector("#fos-s-val-21"); /* S 영역 결과 확인 */
-var resultAllFOS21 = document.querySelector("#fos-all-val-21"); /* 총 이수 시간 */
+var resultAllFOS21 = document.querySelector("#fos-all-val-21"); /* 유효 이수 시간 */
 
 var resultOk21 = document.querySelector("#fos-result-val-ok-21"); /* 충족 글자 */
 var resultNk21 = document.querySelector("#fos-result-val-nk-21"); /* 미충족 글자 */
@@ -32,7 +32,7 @@ var resultBtn22 = document.querySelector("#fos-result-btn-22"); /* 확인하기 
 var resultF22 = document.querySelector("#fos-f-val-22"); /* F 영역 결과 확인 */
 var resultO22 = document.querySelector("#fos-o-val-22"); /* O 영역 결과 확인 */
 var resultS22 = document.querySelector("#fos-s-val-22"); /* S 영역 결과 확인 */
-var resultAllFOS22 = document.querySelector("#fos-all-val-22"); /* 총 이수 시간 */
+var resultAllFOS22 = document.querySelector("#fos-all-val-22"); /* 유효 이수 시간 */
 
 var resultOk22 = document.querySelector("#fos-result-val-ok-22"); /* 충족 글자 */
 var resultNk22 = document.querySelector("#fos-result-val-nk-22"); /* 미충족 글자 */
