@@ -13,7 +13,9 @@
 @import url("section.css"); /* section */
 @import url("footer.css"); /* footer */
 @import url("aside.css"); /* aside */
-@import url("section-tip.css");
+
+@import url("section-tip.css"); /* section-tip.html */
+@import url("section-activites.css"); /* activites.html */
 
 #wrap {
     min-height: 100vh;

@@ -1,0 +1,104 @@
+.fos-cal {
+    width: 50%;
+}
+
+.btn-wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+    margin: 20px 0;
+}
+
+.student-number-btn {
+    width: 40%;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 1px -1px #0003, 0 1px 1px #00000024, 0 1px 3px #0000001f;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cal-wrap {
+    width: 90%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;    
+    margin: 20px 0;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 1px -1px #0003, 0 1px 1px #00000024, 0 1px 3px #0000001f;
+    border-radius: 5px;
+}
+
+.cal-wrap input, .cal-wrap button {
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 1px -1px #0003, 0 1px 1px #00000024, 0 1px 3px #0000001f;
+    border-radius: 5px;
+}
+
+.input-flex-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;   
+    margin-bottom: 20px;
+}
+
+.dashed {
+    padding-bottom: 40px;
+    border-bottom: 4px dashed rgba(226, 226, 226, 0.707);
+}
+
+.input-flex-box label {
+    width: 24%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "NotoSansKR";
+    text-align: center;
+}
+
+.input-flex-box input, .input-flex-box button {
+    width: 24%;
+    height: 60px;
+    box-sizing: border-box;
+}
+
+.input-flex-box button {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: inherit;
+}
+
+.input-flex-result-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.fos-result-title, .fos-result-val {
+    width: 25%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "NotoSansKR";
+    text-align: center;
+}
+
+.fos-result-title-box {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "NotoSansKR";
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 10px 0 20px 0;
+}

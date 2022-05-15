@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+    <!-- 슬라이더 css -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <title>WON</title>
+
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- Header-->
+        <header class="menubar">
+            <div class="menubar__content">
+                <div class="menubar__content--logo ani">
+                    <a href="index.html"><i class="fa-solid fa-house"></i></a>
+                </div>
+                <div class="menubar__content--list menubar__content__list--one ani">
+                    <a href="credit.html">학점계산기</a>
+                </div>
+                <div class="menubar__content--list menubar__content__list--two ani">
+                    <a href="activities.html">비교과</a>
+                </div>
+                <div class="menubar__content--list menubar__content__list--three ani">
+                    <a href="sen-test.html">SEN-TEST</a>
+                </div>
+                <div class="menubar__content--list menubar__content__list--four ani">
+                    <a href="#">자가진단</a></div>
+                <div class="menubar__content--list menubar__content__list--five ani">
+                    <a href="tip-place.html">학교생활팁</a>
+                </div>
+                <div class="menubar__content--list menubar__content__list--six ani">
+                    <a href="notice.html">학사공지</a>
+                </div>
+            </div>
+
+            <div class="menubar__weather">
+                <div class="menubar__weather--loacation">학교 날씨 :</div>
+                <div class="menubar__weather--icon"></div>
+                <div class="menubar__weather--temp"></div>
+            </div>
+        </header>
+
+        <!-- Sub Header -->
+        <div class="sub-menubar">
+
+            <div class="sub-menubar__credit-box">
+                <a href="credit.html">
+                    <div class="sub-menubar__list-box sub-menubar__list-box--one">학점계산기</div>
+                </a>
+            </div>
+
+            <div class="sub-menubar__activities-box">
+                <a href="activities.html">
+                    <div class="sub-menubar__list-box sub-menubar__list-box--two">비교과</div>
+                </a>
+            </div>
+
+            <div class="sub-menubar__sentest-box">
+                <a href="sen.html">
+                    <div class="sub-menubar__list-box sub-menubar__list-box--three">SEN-TEST</div>
+                </a>
+            </div>
+
+
+            <div class="sub-menubar__self-box">
+                <a href="#">
+                    <div class="sub-menubar__list-box sub-menubar__list-box--four">자가진단</div>
+                </a>
+            </div>
+
+
+            <div class="sub-menubar__tip-box">
+                <div class="sub-menubar__list-box--five-title">
+                    <a href="tip-place.html">
+                        <div class="sub-menubar__list-box sub-menubar__list-box--location">시설위치</div>
+                    </a>
+                    <a href="tip-bus.html">
+                        <div class="sub-menubar__list-box sub-menubar__list-box--bus">버스정보</div>
+                    </a>
+                    <a href="tip-scholar.html">
+                        <div class="sub-menubar__list-box sub-menubar__list-box--scholarship">장학정보</div>
+                    </a>
+                </div>
+
+                <div class="sub-menubar__tip-box--flex-location">
+                    <a href="tip-place.html#swim">
+                        <div class="sub-menubar__list-box ani">수영장/샤워장</div>
+                    </a>
+                    <a href="tip-place.html#library">
+                        <div class="sub-menubar__list-box ani">도서관</div>
+                    </a>
+                    <a href="tip-place.html#sports">
+                        <div class="sub-menubar__list-box ani">스포츠 센터</div>
+                    </a>
+                    <a href="tip-place.html#cafeteria">
+                        <div class="sub-menubar__list-box ani">카페테리아</div>
+                    </a>
+                    <a href="tip-place.html#museum">
+                        <div class="sub-menubar__list-box ani">박물관</div>
+                    </a>
+                    <a href="tip-place.html#garden">
+                        <div class="sub-menubar__list-box ani">식물원</div>
+                    </a>
+                    <a href="tip-place.html#park">
+                        <div class="sub-menubar__list-box ani">주차장</div>
+                    </a>                    
+                    <a href="tip-place.html#golf">
+                        <div class="sub-menubar__list-box ani">골프장</div>
+                    </a>
+                </div>
+                <div class="sub-menubar__tip-box--flex-bus">
+                    <a href="tip-bus.html#shuttle-bus">
+                        <div class="sub-menubar__list-box ani">셔틀버스</div>
+                    </a>
+                    <a href="tip-bus.html#school-bus">
+                        <div class="sub-menubar__list-box ani">통학버스</div>
+                    </a>
+                </div>
+                <div class="sub-menubar__tip-box--flex-scholarship">
+                    <a href="tip-scholar.html#school-scholar">
+                        <div class="sub-menubar__list-box ani">교내 장학금</div>
+                    </a>
+                    <a href="tip-scholar.html#national-scholar">
+                        <div class="sub-menubar__list-box ani">국가 장학금</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="sub-menubar__notice-box">
+                <a class="" href="notice.html">
+                    <div class="sub-menubar__list-box sub-menubar__list-box--six">학사공지</div>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Main -->
+        <main class="sub__main">
+            <div class="main__section sub__section">
+                <h1 class="main__section--main-title sub__section--main-title">비교과</h1>
+                <h2 class="main__section--sub-title sub__section--sub-title"></h2>
+            </div>
+        </main>
+
+        <!-- Section -->
+        <section class="section">
+
+            <!-- fos-cal -->
+            <div id="fos-cal" class="place-wrap-box">
+                <div class="section__content fos-cal">
+                    <div class="section__content--row box-shadow">
+                        <div class="section__content--row-title">비교과 간편 계산기📌</div>
+                        <div class="btn-wrap">
+                            <div id="btn-21" class="student-number-btn">21학번 까지</div>
+                            <div id="btn-22" class="student-number-btn">22학번 부터</div>
+                        </div>
+                        <form id="cal-wrap-21" class="cal-wrap" action="" autocomplete="off">
+                            <div class="fos-result-title-box m-t-20">비교과 계산 (~21학번)</div>
+                            <div class="input-flex-box">
+                                <label for="fos-f">F</label>
+                                <label for="fos-o">O</label>
+                                <label for="fos-s">S</label>
+                                <label for="fos-result">결과</label>
+                            </div>
+                            <div class="input-flex-box dashed">
+                                <input type="text" name="fos-f" placeholder="F영역 이수 시간" id="fos-f-21">
+                                <input type="text" name="fos-o" placeholder="O영역 이수 시간" id="fos-o-21">
+                                <input type="text" name="fos-s" placeholder="S영역 이수 시간" id="fos-s-21">
+                                <button type="button" name="" id="fos-result-btn-21">확인하기</button>
+                            </div>
+                            <div class="input-flex-result-box ">
+                                <div class="fos-result-title-box m-t-20">결과 확인</div>
+                                <div class="fos-result-title-box">
+                                    <div class="fos-result-title">F</div>
+                                    <div class="fos-result-title">O</div>
+                                    <div class="fos-result-title">S</div>
+                                    <div class="fos-result-title">총 이수 시간</div>
+                                </div>
+                                <div class="fos-result-title-box">
+                                    <div id="fos-f-val-21" class="fos-result-val">?</div>
+                                    <div id="fos-o-val-21" class="fos-result-val">?</div>
+                                    <div id="fos-s-val-21" class="fos-result-val">?</div>
+                                    <div id="fos-all-val-21" class="fos-result-val">?</div>
+                                </div>
+                                <div class="fos-result-title-box">
+                                    <div class="fos-result-title" style="width: 100%">졸업조건</div>
+                                </div>
+                                <div class="fos-result-title-box">
+                                    <div id="fos-result-val-ok-21" class="fos-result-val" style="color: blue;" >충족</div>
+                                    <div id="fos-result-val-21" class="fos-result-val" >/</div>
+                                    <div id="fos-result-val-nk-21" class="fos-result-val" style="color: red;">미충족</div>
+                                </div>
+                            </div>
+                        </form>
+                        <form id="cal-wrap-22" class="cal-wrap" action="" autocomplete="off">
+                            <div class="fos-result-title-box m-t-20">비교과 계산 (22학번~)</div>
+                            <div class="input-flex-box">
+                                <label for="fos-f">F</label>
+                                <label for="fos-o">O</label>
+                                <label for="fos-s">S</label>
+                                <label for="fos-result">결과</label>
+                            </div>
+                            <div class="input-flex-box dashed">
+                                <input type="text" name="fos-f" placeholder="F영역 이수 시간" id="fos-f-22">
+                                <input type="text" name="fos-o" placeholder="O영역 이수 시간" id="fos-o-22">
+                                <input type="text" name="fos-s" placeholder="S영역 이수 시간" id="fos-s-22">
+                                <button type="button" name="" id="fos-result-btn-22">확인하기</button>
+                            </div>
+                            <div class="input-flex-result-box ">
+                                <div class="fos-result-title-box m-t-20">결과 확인</div>
+                                <div class="fos-result-title-box">
+                                    <div class="fos-result-title">F</div>
+                                    <div class="fos-result-title">O</div>
+                                    <div class="fos-result-title">S</div>
+                                    <div class="fos-result-title">총 이수 시간</div>
+                                </div>
+                                <div class="fos-result-title-box">
+                                    <div id="fos-f-val-22" class="fos-result-val">?</div>
+                                    <div id="fos-o-val-22" class="fos-result-val">?</div>
+                                    <div id="fos-s-val-22" class="fos-result-val">?</div>
+                                    <div id="fos-all-val-22" class="fos-result-val">?</div>
+                                </div>
+                                <div class="fos-result-title-box">
+                                    <div class="fos-result-title" style="width: 100%">졸업조건</div>
+                                </div>
+                                <div class="fos-result-title-box">
+                                    <div id="fos-result-val-ok-22" class="fos-result-val" style="color: blue;" >충족</div>
+                                    <div id="fos-result-val-22" class="fos-result-val" >/</div>
+                                    <div id="fos-result-val-nk-22" class="fos-result-val" style="color: red;">미충족</div>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="section--sub-title" style="text-align: center;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aside__menubar -->
+            <div class="aside__menubar">
+                <div class="aside__menubar-box--inquiry">
+                    <a class="kakao-box" href="https://open.kakao.com/o/smLQd66d" target="_blank"><i class="fa-solid fa-comment kakao"></i></a>
+                    <a class="mail-box" href="mailto:mj9457@naver.com"><i class="fa-solid fa-envelope mail"></i></a>
+                    <a class="top-box" href="#"><i class="fa-solid fa-arrow-up top-btn"></i></a>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer__title">Copyright © 2022 WON</div>
+            <a href="https://haksa.jwu.ac.kr/com/index.html">
+                <img class="footer__logo--image" src="/assets/image/jwu_logo1.png" alt="">
+            </a>
+        </footer>
+    </div>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script src="/js/activites-cal.js"></script>
+
+    <!-- 문의하기 -->
+    <script>
+        $(document).scroll(function () {
+            let scrollLocation = document.documentElement.scrollTop; // 현재 스크롤바 위치
+            let windowHeight = window.innerHeight; // 스크린 창
+            let fullHeight = document.body.scrollHeight; //  margin 값은 포함 x
+
+            if (scrollLocation + windowHeight >= fullHeight - 60) {
+                $(".aside__menubar").css("marginBottom", "60px");
+            } else {
+                $(".aside__menubar").css("marginBottom", "0px");
+            }
+        })
+    </script>
+    <!-- Sub-MenuBar -->
+    <script>
+        $(document).ready(function () {
+
+            $(".menubar__content__list--one").mouseover(function () {
+                $(".sub-menubar").css("display", "block");
+                $(".sub-menubar").css("position", "fixed");
+                $(".main__section").css("display", "none");
+                $("main").css("display", "none");
+                $(".section").css("padding-top", "280px");
+
+                $(".sub-menubar__credit-box").css("display", "flex");
+                $(".sub-menubar__activities-box").css("display", "none");
+                $(".sub-menubar__sentest-box").css("display", "none");
+                $(".sub-menubar__self-box").css("display", "none");
+                $(".sub-menubar__tip-box").css("display", "none");
+                $(".sub-menubar__notice-box").css("display", "none");
+
+                $(".sub-menubar__tip-box--flex-location").css("display", "none");
+                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
+            });
+
+            $(".menubar__content__list--two").mouseover(function () {
+                $(".sub-menubar").css("display", "block");
+                $(".sub-menubar").css("position", "fixed");
+                $(".main__section").css("display", "none");
+                $("main").css("display", "none");
+                $(".section").css("padding-top", "280px");
+
+                $(".sub-menubar__credit-box").css("display", "none");
+                $(".sub-menubar__activities-box").css("display", "flex");
+                $(".sub-menubar__sentest-box").css("display", "none");
+                $(".sub-menubar__self-box").css("display", "none");
+                $(".sub-menubar__tip-box").css("display", "none");
+                $(".sub-menubar__notice-box").css("display", "none");
+
+                $(".sub-menubar__tip-box--flex-location").css("display", "none");
+                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
+            });
+
+            $(".menubar__content__list--three").mouseover(function () {
+                $(".sub-menubar").css("display", "block");
+                $(".sub-menubar").css("position", "fixed");
+                $(".main__section").css("display", "none");
+                $("main").css("display", "none");
+                $(".section").css("padding-top", "280px");
+
+                $(".sub-menubar__credit-box").css("display", "none");
+                $(".sub-menubar__activities-box").css("display", "none");
+                $(".sub-menubar__sentest-box").css("display", "flex");
+                $(".sub-menubar__self-box").css("display", "none");
+                $(".sub-menubar__tip-box").css("display", "none");
+                $(".sub-menubar__notice-box").css("display", "none");
+
+                $(".sub-menubar__tip-box--flex-location").css("display", "none");
+                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
+            });
+
+            $(".menubar__content__list--four").mouseover(function () {
+                $(".sub-menubar").css("display", "block");
+                $(".sub-menubar").css("position", "fixed");
+                $(".main__section").css("display", "none");
+                $("main").css("display", "none");
+                $(".section").css("padding-top", "280px");
+
+                $(".sub-menubar__credit-box").css("display", "none");
+                $(".sub-menubar__activities-box").css("display", "none");
+                $(".sub-menubar__sentest-box").css("display", "none");
+                $(".sub-menubar__self-box").css("display", "flex");
+                $(".sub-menubar__tip-box").css("display", "none");
+                $(".sub-menubar__notice-box").css("display", "none");
+
+                $(".sub-menubar__tip-box--flex-location").css("display", "none");
+                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
+            });
+
+            $(".menubar__content__list--five").mouseover(function () {
+                $(".sub-menubar").css("display", "block");
+                $(".sub-menubar").css("position", "fixed");
+                $(".main__section").css("display", "none");
+                $("main").css("display", "none");
+                $(".section").css("padding-top", "280px");
+
+                $(".sub-menubar__credit-box").css("display", "none");
+                $(".sub-menubar__activities-box").css("display", "none");
+                $(".sub-menubar__sentest-box").css("display", "none");
+                $(".sub-menubar__self-box").css("display", "none");
+                $(".sub-menubar__tip-box").css("display", "flex");
+                $(".sub-menubar__notice-box").css("display", "none");
+            });
+
+            $(".menubar__content__list--six").mouseover(function () {
+                $(".sub-menubar").css("display", "block");
+                $(".sub-menubar").css("position", "fixed");
+                $(".main__section").css("display", "none");
+                $("main").css("display", "none");
+                $(".section").css("padding-top", "280px");
+
+                $(".sub-menubar__credit-box").css("display", "none");
+                $(".sub-menubar__activities-box").css("display", "none");
+                $(".sub-menubar__sentest-box").css("display", "none");
+                $(".sub-menubar__self-box").css("display", "none");
+                $(".sub-menubar__tip-box").css("display", "none");
+                $(".sub-menubar__notice-box").css("display", "flex");
+
+                $(".sub-menubar__tip-box--flex-location").css("display", "none");
+                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
+            });
+
+            $(".sub-menubar").mouseleave(function () {
+                $(".sub-menubar").css("display", "none");
+                $(".main__section").css("display", "block");
+                $("main").css("display", "block");
+                $(".section").css("padding-top", "0px")
+            });
+
+            $(".sub-menubar__list-box--location").mouseover(function () {
+                $(".sub-menubar__tip-box--flex-location").css("display", "flex");
+                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
+                $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");                
+            });
+
+            $(".sub-menubar__tip-box--flex-location").mouseleave(function () {
+                $(".sub-menubar__tip-box--flex-location").css("display", "none");
+            });
+
+            $(".sub-menubar__list-box--bus").mouseover(function () {
+                $(".sub-menubar__tip-box--flex-location").css("display", "none");
+                $(".sub-menubar__tip-box--flex-bus").css("display", "flex");
+                $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");  
+            });
+
+            $(".sub-menubar__tip-box--flex-bus").mouseleave(function () {
+                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
+            });
+
+            $(".sub-menubar__list-box--scholarship").mouseover(function () {
+                $(".sub-menubar__tip-box--flex-location").css("display", "none");
+                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
+                $(".sub-menubar__tip-box--flex-scholarship").css("display", "flex");  
+            });
+
+            $(".sub-menubar__tip-box--flex-scholarship").mouseleave(function () {
+                $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");  
+            });
+
+        });
+    </script>
+
+    <!-- Weather API -->
+    <script>
+        $(document).ready(function () {
+            let weathersIcon = {
+                '01': 'fas fa-sun',
+                '02': 'fas fa-cloud-sun',
+                '03': 'fas fa-cloud',
+                '04': 'fas fa-cloud-meatball',
+                '09': 'fas fa-cloud-showers-heavy',
+                '10': 'fas fa-cloud-rain',
+                '11': 'fas fa-poo-storm',
+                '13': 'fas fa-snowflake',
+                '50': 'fas fa-smog'
+            }
+
+            $.getJSON(
+                'https://api.openweathermap.org/data/2.5/weather?lat=36.8187&lon=127.7996&appid=54d8b56b9ce4d6cafa110738a09ec718&units=metric',
+                function (data) {
+
+                    var weatherTemp = Math.floor(data.main.temp) + ' º ';
+                    var weatherIcon = (data.weather[0].icon).substr(0, 2);
+                    var weatherCity = data.name;
+
+                    $('.menubar__weather--temp').append(weatherTemp);
+                    $('.menubar__weather--icon').append('<i class="' + weathersIcon[weatherIcon] + '"></i>');
+                    // $('.menubar__weather--city').append(weatherCity); /* 학교 날씨 */
+                }
+            )
+        })
+    </script>
+
+    <!-- top Btn -->
+    <script>
+        $(".top-box").click(function() {
+            $('html, body').animate({ scrollTop : 0 }, 800);
+            return false;
+        });
+    </script>
+</body>
+
+</html>
