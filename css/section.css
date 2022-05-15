@@ -26,7 +26,7 @@ section {
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 16px;
     font-size: 30px;
     font-family: "NotoSansKR";
@@ -156,8 +156,52 @@ section {
     background-color: #e28b8b;
 }
 
+/* bus-html */
+
+.bus_map, .road_view {
+    width: 49%;
+    height: 285px;
+    border-radius: 5px;
+}
+
+
+.map-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.map-title {
+    width: 49%;
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "NotoSansKR";
+}
+
+.bus_map img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;    
+}
+
+.image-enlarge {
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    transition: all 1s;
+}
+
+/* another class */ 
 .wd-90 {
     width: 90%;
+}
+
+.wd-50 {
+    width: 50%;
 }
 
 .hg-100 {
@@ -168,10 +212,26 @@ section {
     height: 20%;
 }
 
+.pd-10 {
+    padding: 10px !important;
+}
+
 .m-L-R-auto {
     margin: 0 auto;
 }
 
 .m-b-20 {
     margin-bottom: 20px;
+}
+
+.txt-c {
+    text-align: center;
+}
+
+.txt-r {
+    text-align: right;
+}
+
+.txt-l {
+    text-align: left;
 }

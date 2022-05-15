@@ -10,17 +10,8 @@
     <!-- 슬라이더 css -->
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
-    
-    <title>WON</title>
 
-    <style>
-        .bus_map,
-        .road_view {
-            width: 385px;
-            height: 285px;
-            float: left
-        }
-    </style>
+    <title>WON</title>
 
 </head>
 
@@ -42,7 +33,8 @@
                     <a href="sen-test.html">SEN-TEST</a>
                 </div>
                 <div class="menubar__content--list menubar__content__list--four ani">
-                    <a href="#">자가진단</a></div>
+                    <a href="#">자가진단</a>
+                </div>
                 <div class="menubar__content--list menubar__content__list--five ani">
                     <a href="tip-place.html">학교생활팁</a>
                 </div>
@@ -121,7 +113,7 @@
                     </a>
                     <a href="tip-place.html#park">
                         <div class="sub-menubar__list-box ani">주차장</div>
-                    </a>                    
+                    </a>
                     <a href="tip-place.html#golf">
                         <div class="sub-menubar__list-box ani">골프장</div>
                     </a>
@@ -164,34 +156,301 @@
         <section class="section">
 
             <!-- 셔틀버스 -->
-            <div id="swim" class="place-wrap-box">
+            <div id="shuttle-bus" class="place-wrap-box">
                 <div class="section__content">
                     <div class="section__content--row box-shadow">
                         <div class="section__content--row-title">셔틀버스📌</div>
-                        <div class="section--sub-title">
+                        <table class="shuttle-bus-time">
+                            <thead>
+                              <tr>
+                                <th>회차</th>
+                                <th>월</th>
+                                <th>화</th>
+                                <th>수</th>
+                                <th>목</th>
+                                <th>금</th>
+                                <th>토</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td class="yellow-box">08:30</td>
+                                <td class="yellow-box">08:30</td>
+                                <td class="yellow-box">08:30</td>
+                                <td class="yellow-box">08:30</td>
+                                <td class="yellow-box">08:30</td>
+                                <td class="yellow-box">08:30</td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td class="yellow-box">09:30</td>
+                                <td class="yellow-box">09:30</td>
+                                <td class="yellow-box">09:30</td>
+                                <td class="yellow-box">09:30</td>
+                                <td class="yellow-box">09:30</td>
+                                <td class="yellow-box">09:30</td>
+                              </tr>
+                              <tr>
+                                <td>3</td>
+                                <td class="yellow-box">10:30</td>
+                                <td class="yellow-box">10:30</td>
+                                <td class="yellow-box">10:30</td>
+                                <td class="yellow-box">10:30</td>
+                                <td class="yellow-box">10:30</td>
+                                <td class="yellow-box">10:30</td>
+                              </tr>
+                              <tr>
+                                <td>4</td>
+                                <td class="yellow-box">11:30</td>
+                                <td class="yellow-box">11:30</td>
+                                <td class="yellow-box">11:30</td>
+                                <td class="yellow-box">11:30</td>
+                                <td class="yellow-box">11:30</td>
+                                <td class="yellow-box">11:30</td>
+                              </tr>
+                              <tr>
+                                <td>5</td>
+                                <td class="yellow-box">13:30</td>
+                                <td class="yellow-box">13:30</td>
+                                <td class="yellow-box">13:30</td>
+                                <td class="yellow-box">13:30</td>
+                                <td class="yellow-box">13:30</td>
+                                <td class="yellow-box">13:30</td>
+                              </tr>
+                              <tr>
+                                <td>6</td>
+                                <td class="yellow-box">15:30</td>
+                                <td class="yellow-box">15:30</td>
+                                <td class="yellow-box">15:30</td>
+                                <td class="yellow-box">15:30</td>
+                                <td class="yellow-box">15:30</td>
+                                <td class="yellow-box">15:30</td>
+                              </tr>
+                              <tr>
+                                <td>7</td>
+                                <td class="yellow-box">17:30</td>
+                                <td class="yellow-box">17:30</td>
+                                <td class="yellow-box">17:30</td>
+                                <td class="yellow-box">17:30</td>
+                                <td class="yellow-box">17:30</td>
+                                <td class="yellow-box">17:30</td>
+                              </tr>
+                              <tr>
+                                <td>8</td>
+                                <td class="yellow-box">18:10</td>
+                                <td class="yellow-box">18:10</td>
+                                <td class="yellow-box">18:10</td>
+                                <td class="yellow-box">18:10</td>
+                                <td class="yellow-box">18:10</td>
+                                <td class="yellow-box">18:10</td>
+                              </tr>
+                            </tbody>
+                        </table>
+                        <div class="map-box">
+                            <div class="map-title">노선도</div>
+                            <div class="map-title">로드뷰</div>
+                            <div id="schoolbus-image" class="bus_map"><img src="/assets/image/schoolbus.jpg" alt="셔틀노선도"></div>                            
+                            <!-- <div id="map_00" class="bus_map" style="z-index: 0;"></div> -->
+                        </div>
+                        <div class="section--sub-title-tip txt-r">
                             ※ 토요일은 정규학기 기간만 운행합니다.<br>
                             ※ 휴일 및 공휴일은 운행하지 않습니다.
                         </div>
-                        <div class="section__content">
-                            <div class="secetion_content--row">
-                                <div class="section__content--row-title">동서울행📌</div>
-                                <div class="section--sub-title">
-                                    테크노마트 앞 택시부 위쪽<br>
-                                    ※ 기존정거장 맞은편으로 이동
-                                </div>
-                                <div id="map_01" class="bus_map"></div>                                
-                                <div id="map_01_view" class="road_view"></div>
-                                
-                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 통학버스 -->
+            <div id="school-bus" class="place-wrap-box">
+                <div class="section__content">
+                    <div class="section__content--row box-shadow">
+                        <div class="section__content--row-title">통학버스📌</div>
+                        <table class="school-bus-table">
+                            <thead>
+                              <tr>                                
+                                <th colspan="4">노선도</th>
+                                <th colspan="2">금액</th>
+                                <th>정류장 지도 보기</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="yellow-box" colspan="3">동서울행</td>
+                                <td class="yellow-box" >학교&lt; &gt;동서울 터미널</td>
+                                <td class="yellow-box"  colspan="2">11,000원</td>
+                                <td class="yellow-box" id="school-bus-td1" style="cursor: pointer;">Click!</td>
+                              </tr>
+                              <tr>
+                                <td class="yellow-box"  colspan="3">석계 태릉 구리행 (구리)</td>
+                                <td class="yellow-box" >학교&lt; &gt; 구리역 (GS백화점)</td>
+                                <td class="yellow-box"  colspan="2">11,000원</td>
+                                <td class="yellow-box" id="school-bus-td2" style="cursor: pointer;">Click!</td>
+                              </tr>
+                              <tr>
+                                <td class="yellow-box"  colspan="3">석계 태릉 구리행 (태릉)</td>
+                                <td class="yellow-box" >구리역 &lt; &gt; 태릉입구역 (7번 출구)</td>
+                                <td class="yellow-box" colspan="2">11,000원</td>
+                                <td class="yellow-box" id="school-bus-td3" style="cursor: pointer;">Click!</td>
+                              </tr>
+                              <tr>
+                                <td class="yellow-box"  colspan="3">석계 태릉 구리행 (석계)</td>
+                                <td class="yellow-box" >태릉입구역 &lt; &gt; 석계역 (3번 출구)</td>
+                                <td class="yellow-box"  colspan="2">11,000원</td>
+                                <td class="yellow-box" id="school-bus-td4" style="cursor: pointer;">Click!</td>
+                              </tr>
+                              <tr>
+                                <td class="yellow-box"  colspan="3">인천행</td>
+                                <td class="yellow-box" >학교 &lt; &gt; 인천터미널</td>
+                                <td class="yellow-box"  colspan="2">13,000원</td>
+                                <td class="yellow-box" id="school-bus-td5" style="cursor: pointer;">Click!</td>
+                              </tr>
+                              <tr>
+                                <td class="yellow-box"  colspan="3">금정행</td>
+                                <td class="yellow-box" >학교 &lt; &gt; 금정역 (3번 출구)</td>
+                                <td class="yellow-box"  colspan="2">11,000원</td>
+                                <td class="yellow-box" id="school-bus-td6" style="cursor: pointer;">Click!</td>
+                              </tr>
+                              <tr>
+                                <td class="yellow-box"  colspan="3">성남 용인행 (용인)</td>
+                                <td class="yellow-box" >학교 &lt; &gt; 용인터미널</td>
+                                <td class="yellow-box"  colspan="2">10,000원</td>
+                                <td class="yellow-box" id="school-bus-td7" style="cursor: pointer;">Click!</td>
+                              </tr>
+                              <tr>
+                                <td class="yellow-box"  colspan="3">성남 용인행 (성남)</td>
+                                <td class="yellow-box" >용인터미널 &lt; &gt; 성남 (야탑역)</td>
+                                <td class="yellow-box"  colspan="2">11,000원</td>
+                                <td class="yellow-box" id="school-bus-td8" style="cursor: pointer;">Click!</td>
+                              </tr>
+                              <tr>
+                                <td class="yellow-box"  colspan="3">수원행</td>
+                                <td class="yellow-box" >학교 &lt; &gt; 수원역 (시내버스 정류장)</td>
+                                <td class="yellow-box"  colspan="2">10,000원</td>
+                                <td class="yellow-box" id="school-bus-td9" style="cursor: pointer;">Click!</td>
+                              </tr>
+                            </tbody>
+                            </table>
+                        <div class="section--sub-title-tip txt-r">
+                            ※ 해당 노선도 클릭시 지도를 보여줍니다.<br>
+                            ※ 토요일은 정규학기 기간만 운행합니다.<br>
+                            ※ 휴일 및 공휴일은 운행하지 않습니다.
                         </div>
                     </div>
+                    <div id="school-bus1" class="section__content--row box-shadow">
+                        <div class="section__content--row-title">동서울행📌</div>
+                        <div class="section--sub-title txt-c">
+                            테크노마트 앞 택시부 위쪽<br>
+                            ※ 기존정거장 맞은편으로 이동
+                        </div>
+                        <div class="map-box">
+                            <div class="map-title">지도</div>
+                            <div class="map-title">로드뷰</div>
+                            <div id="map_01" class="bus_map"></div>
+                            <div id="map_01_view" class="road_view"></div>
+                        </div>
+                    </div>
+
+                    <div id="school-bus2" class="section__content--row box-shadow">
+                        <div class="section__content--row-title">석계/태능/구리행📌</div>
+                        <div class="section--sub-title txt-c">
+                            구리 롯데백화점 건너편 주차장입구
+                        </div>
+                        <div class="map-box">
+                            <div class="map-title">지도</div>
+                            <div class="map-title">로드뷰</div>
+                            <div id="map_02" class="bus_map"></div>
+                            <div id="map_02_view" class="bus_map"></div>
+                        </div>
+                        <div class="section--sub-title txt-c">
+                            태릉 태릉입구역 7번출구
+                        </div>
+                        <div class="map-box">
+                            <div class="map-title">지도</div>
+                            <div class="map-title">로드뷰</div>
+                            <div id="map_03" class="bus_map"></div>
+                            <div id="map_03_view" class="bus_map"></div>
+                        </div>
+                        <div class="section--sub-title txt-c">
+                            석계역 3번 출구 건너편 버스정거장 위쪽
+                        </div>
+                        <div class="map-box">
+                            <div class="map-title">지도</div>
+                            <div class="map-title">로드뷰</div>
+                            <div id="map_04" class="bus_map"></div>
+                            <div id="map_04_view" class="bus_map"></div>
+                        </div>
+                    </div>
+
+                    <div id="school-bus3" class="section__content--row box-shadow">
+                        <div class="section__content--row-title">인천행📌</div>
+                        <div class="section--sub-title txt-c">
+                            신세계 백화점 맞은편 인천터미널역 1번출구
+                        </div>
+                        <div class="map-box">
+                            <div class="map-title">지도</div>
+                            <div class="map-title">로드뷰</div>
+                            <div id="map_05" class="bus_map"></div>
+                            <div id="map_05_view" class="road_view"></div>
+                        </div>
+                    </div>
+
+                    <div id="school-bus4" class="section__content--row box-shadow">
+                        <div class="section__content--row-title">금정행📌</div>
+                        <div class="section--sub-title txt-c">
+                            금정역 3번출구 앞
+                        </div>
+                        <div class="map-box">
+                            <div class="map-title">지도</div>
+                            <div class="map-title">로드뷰</div>
+                            <div id="map_06" class="bus_map"></div>
+                            <div id="map_06_view" class="road_view"></div>
+                        </div>
+                    </div>
+
+                    <div id="school-bus5" class="section__content--row box-shadow">
+                        <div class="section__content--row-title">성남 용인행📌</div>
+                        <div class="section--sub-title txt-c">
+                            용인 버스터미널 뒤쪽 다리 위 버스정거장                            
+                        </div>
+                        <div class="map-box">
+                            <div class="map-title">지도</div>
+                            <div class="map-title">로드뷰</div>
+                            <div id="map_08" class="bus_map"></div>
+                            <div id="map_08_view" class="road_view"></div>
+                        </div>
+                        <div class="section--sub-title txt-c">
+                            성남 성남터미널앞 공항버스 정거장
+                        </div>
+                        <div class="map-box">
+                            <div class="map-title">지도</div>
+                            <div class="map-title">로드뷰</div>
+                            <div id="map_07" class="bus_map"></div>
+                            <div id="map_07_view" class="road_view"></div>
+                        </div>
+                    </div>
+
+                    <div id="school-bus6" class="section__content--row box-shadow">
+                        <div class="section__content--row-title">수원행📌</div>
+                        <div class="section--sub-title txt-c">
+                            수원 매산지구대 좌측편(AK플라자반대편) 30m 육교입구
+                        </div>
+                        <div class="map-box">
+                            <div class="map-title">지도</div>
+                            <div class="map-title">로드뷰</div>
+                            <div id="map_09" class="bus_map"></div>
+                            <div id="map_09_view" class="road_view"></div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
             <!-- Aside__menubar -->
             <div class="aside__menubar">
                 <div class="aside__menubar-box--inquiry">
-                    <a class="kakao-box" href="https://open.kakao.com/o/smLQd66d" target="_blank"><i class="fa-solid fa-comment kakao"></i></a>
+                    <a class="kakao-box" href="https://open.kakao.com/o/smLQd66d" target="_blank"><i
+                            class="fa-solid fa-comment kakao"></i></a>
                     <a class="mail-box" href="mailto:mj9457@naver.com"><i class="fa-solid fa-envelope mail"></i></a>
                     <a class="top-box" href="#"><i class="fa-solid fa-arrow-up top-btn"></i></a>
                 </div>
@@ -210,17 +469,20 @@
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
-    </script>
+        </script>
 
-    <!--지도 스크립트-->
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ccc4bab02709ecb013e1f865905ca051"></script>
+    <!--map script-->
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ccc4bab02709ecb013e1f865905ca051"></script>
     <script charset="UTF-8" src="http://t1.daumcdn.net/mapjsapi/js/main/4.4.3/kakao.js"></script>
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=APIKEY&amp;libraries=LIBRARY"></script>
     <!-- services 라이브러리 불러오기 -->
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=APIKEY&amp;libraries=services"></script>
     <!-- services와 clusterer, drawing 라이브러리 불러오기 -->
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appey=APIKEY&amp;libraries=services,clusterer,drawing"></script>
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appey=APIKEY&amp;libraries=services,clusterer,drawing"></script>
 
+    <!-- 동서울행 -->
     <script>
         //지도 생성
         var container = document.getElementById('map_01');
@@ -236,7 +498,7 @@
         });
         marker01.setMap(jwu_map_01);
         //인포윈도우 표시
-        var iwContent01 = '<div style="padding:5px;">셔틀버스 정류장</div>',
+        var iwContent01 = '<div style="padding:5px; width:100%;">셔틀버스 정류장</div>',
             iwPosition = new kakao.maps.LatLng(37.536509, 127.095431);
         var infowindow01 = new kakao.maps.InfoWindow({
             position: iwPosition,
@@ -244,7 +506,6 @@
         });
         infowindow01.open(jwu_map_01, marker01); 
     </script>
-
     <script>
         //로드뷰
         var roadviewContainer = document.getElementById('map_01_view');
@@ -255,6 +516,316 @@
         var position = new kakao.maps.LatLng(37.536509, 127.095431);
         roadviewClient.getNearestPanoId(position, 50, function (panoId) {
             roadview.setPanoId(panoId, position);
+        });
+    </script>
+
+    <!-- 석계태능구리행 -->
+    <!-- 구리 -->
+    <script>
+        //지도 생성
+        var container = document.getElementById('map_02');
+        var options = {
+            center: new kakao.maps.LatLng(37.602168, 127.144275),
+            level: 3
+        };
+        var jwu_map_02 = new kakao.maps.Map(container, options);
+        // 마커 생성
+        var markerPosition02 = new kakao.maps.LatLng(37.602168, 127.144275);
+        var marker02 = new kakao.maps.Marker({
+            position: markerPosition02
+        });
+        marker02.setMap(jwu_map_02);
+        //인포윈도우 표시
+        var iwContent02 = '<div style="padding:5px; width:100%;">주차장 입구</div>',
+            iwPosition = new kakao.maps.LatLng(37.602168, 127.144275);
+        var infowindow02 = new kakao.maps.InfoWindow({
+            position: iwPosition,
+            content: iwContent02
+        });
+        infowindow02.open(jwu_map_02, marker02);
+    </script>
+    <script>
+        //로드뷰
+        var roadviewContainer02 = document.getElementById('map_02_view');
+        var roadview02 = new kakao.maps.Roadview(roadviewContainer02, {
+            pan: 108, // 로드뷰 처음 실행시에 바라봐야 할 수평 각
+            zoom: 2
+        });
+        var roadviewClient02 = new kakao.maps.RoadviewClient();
+        var position02 = new kakao.maps.LatLng(37.602149, 127.144171);
+        roadviewClient02.getNearestPanoId(position02, 50, function (panoId) {
+            roadview02.setPanoId(panoId, position02);
+        });
+    </script>
+
+    <!-- 태능 -->
+    <script>
+
+        //지도 생성
+        var container = document.getElementById('map_03');
+        var options = {
+            center: new kakao.maps.LatLng(37.617702, 127.075363),
+            level: 3
+        };
+        var jwu_map_03 = new kakao.maps.Map(container, options);
+        // 마커 생성
+        var markerPosition03 = new kakao.maps.LatLng(37.617681, 127.076079);
+        var marker03 = new kakao.maps.Marker({
+            position: markerPosition03
+        });
+        marker03.setMap(jwu_map_03);
+        //인포윈도우 표시
+        var iwContent03 = '<div style="padding:5px; width:100%;">태릉입구역<br/>6호선 7번출구</div>',
+            iwPosition = new kakao.maps.LatLng(37.617620, 127.076034);
+        var infowindow03 = new kakao.maps.InfoWindow({
+            position: iwPosition,
+            content: iwContent03
+        });
+        infowindow03.open(jwu_map_03, marker03);
+
+    </script>
+    <script>
+
+        //로드뷰
+        var roadviewContainer03 = document.getElementById('map_03_view');
+        var roadview03 = new kakao.maps.Roadview(roadviewContainer03, {
+            pan: 120, // 로드뷰 처음 실행시에 바라봐야 할 수평 각
+        });
+        var roadviewClient03 = new kakao.maps.RoadviewClient();
+        var position03 = new kakao.maps.LatLng(37.617598, 127.076098);
+        roadviewClient03.getNearestPanoId(position03, 50, function (panoId) {
+            roadview03.setPanoId(panoId, position03);
+        });
+
+    </script>
+
+    <!-- 석계 -->
+    <script>
+        //지도 생성
+        var container = document.getElementById('map_04');
+        var options = {
+            center: new kakao.maps.LatLng(37.615047, 127.066768),
+            level: 3
+        };
+        var jwu_map_04 = new kakao.maps.Map(container, options);
+        // 마커 생성
+        var markerPosition04 = new kakao.maps.LatLng(37.615047, 127.066768);
+        var marker04 = new kakao.maps.Marker({
+            position: markerPosition04
+        });
+        marker04.setMap(jwu_map_04);
+        //인포윈도우 표시
+        var iwContent04 = '<div style="padding:5px; width:100%;">석계역 3번 출구<br/>건너편 버스정거장 위쪽</div>',
+            iwPosition = new kakao.maps.LatLng(37.615047, 127.066768);
+        var infowindow04 = new kakao.maps.InfoWindow({
+            position: iwPosition,
+            content: iwContent04
+        });
+        infowindow04.open(jwu_map_04, marker04);
+    </script>
+    <script>
+        //로드뷰
+        var roadviewContainer04 = document.getElementById('map_04_view');
+        var roadview04 = new kakao.maps.Roadview(roadviewContainer04, {
+            pan: 130, // 로드뷰 처음 실행시에 바라봐야 할 수평 각
+            zoom: 3
+        });
+        var roadviewClient04 = new kakao.maps.RoadviewClient();
+        var position04 = new kakao.maps.LatLng(37.615144, 127.066559);
+        roadviewClient04.getNearestPanoId(position04, 50, function (panoId) {
+            roadview04.setPanoId(panoId, position04);
+        });
+    </script>
+
+    <!-- 인천 -->
+    <script>
+
+        //지도 생성
+        var container = document.getElementById('map_05');
+        var options = {
+            center: new kakao.maps.LatLng(37.442199, 126.699917),
+            level: 3
+        };
+        var jwu_map_05 = new kakao.maps.Map(container, options);
+        // 마커 생성
+        var markerPosition05 = new kakao.maps.LatLng(37.442199, 126.699917);
+        var marker05 = new kakao.maps.Marker({
+            position: markerPosition05
+        });
+        marker05.setMap(jwu_map_05);
+        //인포윈도우 표시
+        var iwContent05 = '<div style="padding:5px; width:100%;">인천터미널역 1번출구</div>',
+            iwPosition = new kakao.maps.LatLng(37.442199, 126.699917);
+        var infowindow05 = new kakao.maps.InfoWindow({
+            position: iwPosition,
+            content: iwContent05
+        });
+        infowindow05.open(jwu_map_05, marker05);
+
+    </script>
+    <script>
+
+        //로드뷰
+        var roadviewContainer05 = document.getElementById('map_05_view');
+        var roadview05 = new kakao.maps.Roadview(roadviewContainer05, {
+            pan: -110 // 로드뷰 처음 실행시에 바라봐야 할 수평 각
+        });
+        var roadviewClient05 = new kakao.maps.RoadviewClient();
+        var position05 = new kakao.maps.LatLng(37.442199, 126.699917);
+        roadviewClient05.getNearestPanoId(position05, 50, function (panoId) {
+            roadview05.setPanoId(panoId, position05);
+        });
+    </script>
+
+    <!-- 금정 -->
+    <script>
+        //지도 생성
+        var container = document.getElementById('map_06');
+        var options = {
+            center: new kakao.maps.LatLng(37.372101, 126.943468),
+            level: 3
+        };
+        var jwu_map_06 = new kakao.maps.Map(container, options);
+        // 마커 생성
+        var markerPosition06 = new kakao.maps.LatLng(37.371366, 126.943484);
+        var marker06 = new kakao.maps.Marker({
+            position: markerPosition06
+        });
+        marker06.setMap(jwu_map_06);
+        //인포윈도우 표시
+        var iwContent06 = '<div style="padding:5px; width:100%;">금정역 3번출구 앞</div>',
+            iwPosition = new kakao.maps.LatLng(37.371366, 126.943484);
+        var infowindow06 = new kakao.maps.InfoWindow({
+            position: iwPosition,
+            content: iwContent06
+        });
+        infowindow06.open(jwu_map_06, marker06);
+    </script>
+    <script>
+        //로드뷰
+        var roadviewContainer06 = document.getElementById('map_06_view');
+        var roadview06 = new kakao.maps.Roadview(roadviewContainer06, {
+            pan: 20 // 로드뷰 처음 실행시에 바라봐야 할 수평 각
+        });
+        var roadviewClient06 = new kakao.maps.RoadviewClient();
+        var position06 = new kakao.maps.LatLng(37.371366, 126.943484);
+        roadviewClient06.getNearestPanoId(position06, 50, function (panoId) {
+            roadview06.setPanoId(panoId, position06);
+        });
+    </script>
+
+    <!-- 성남용인행-->
+    <!-- 성남-->
+    <script>
+        //지도 생성
+        var container = document.getElementById('map_07');
+        var options = {
+            center: new kakao.maps.LatLng(37.413378, 127.128502),
+            level: 3
+        };
+        var jwu_map_07 = new kakao.maps.Map(container, options);
+        // 마커 생성
+        var markerPosition07 = new kakao.maps.LatLng(37.413378, 127.128502);
+        var marker07 = new kakao.maps.Marker({
+            position: markerPosition07
+        });
+        marker07.setMap(jwu_map_07);
+        //인포윈도우 표시
+        var iwContent07 = '<div style="padding:5px; width:100%;">공항버스 정거장</div>',
+            iwPosition = new kakao.maps.LatLng(37.413378, 127.128502);
+        var infowindow07 = new kakao.maps.InfoWindow({
+            position: iwPosition,
+            content: iwContent07
+        });
+        infowindow07.open(jwu_map_07, marker07);
+    </script>
+    <script>
+        //로드뷰
+        var roadviewContainer07 = document.getElementById('map_07_view');
+        var roadview07 = new kakao.maps.Roadview(roadviewContainer07, {
+            pan: -145, // 로드뷰 처음 실행시에 바라봐야 할 수평 각
+            zoom: 3
+        });
+        var roadviewClient07 = new kakao.maps.RoadviewClient();
+        var position07 = new kakao.maps.LatLng(37.413378, 127.128502);
+        roadviewClient07.getNearestPanoId(position07, 50, function (panoId) {
+            roadview07.setPanoId(panoId, position07);
+        });
+    </script>
+
+    <!-- 용인 -->
+    <script>
+        //지도 생성
+        var container = document.getElementById('map_08');
+        var options = {
+            center: new kakao.maps.LatLng(37.233098, 127.211177),
+            level: 3
+        };
+        var jwu_map_08 = new kakao.maps.Map(container, options);
+        // 마커 생성
+        var markerPosition08 = new kakao.maps.LatLng(37.233186, 127.211175);
+        var marker08 = new kakao.maps.Marker({
+            position: markerPosition08
+        });
+        marker08.setMap(jwu_map_08);
+        //인포윈도우 표시
+        var iwContent08 = '<div style="padding:5px; width:100%;">버스 정거장</div>',
+            iwPosition = new kakao.maps.LatLng(37.233180, 127.211261);
+        var infowindow08 = new kakao.maps.InfoWindow({
+            position: iwPosition,
+            content: iwContent08
+        });
+        infowindow08.open(jwu_map_08, marker08);
+    </script>
+    <script>
+        //로드뷰
+        var roadviewContainer08 = document.getElementById('map_08_view');
+        var roadview08 = new kakao.maps.Roadview(roadviewContainer08, {
+            pan: 126, // 로드뷰 처음 실행시에 바라봐야 할 수평 각
+            zoom: 3
+        });
+        var roadviewClient08 = new kakao.maps.RoadviewClient();
+        var position08 = new kakao.maps.LatLng(37.233180, 127.211261);
+        roadviewClient08.getNearestPanoId(position08, 50, function (panoId) {
+            roadview08.setPanoId(panoId, position08);
+        });
+    </script>
+
+    <!-- 수원 -->
+    <script>
+        //지도 생성
+        var container = document.getElementById('map_09');
+        var options = {
+            center: new kakao.maps.LatLng(37.263794, 127.002293),
+            level: 3
+        };
+        var jwu_map_09 = new kakao.maps.Map(container, options);
+        // 마커 생성
+        var markerPosition09 = new kakao.maps.LatLng(37.263794, 127.002293);
+        var marker09 = new kakao.maps.Marker({
+            position: markerPosition09
+        });
+        marker09.setMap(jwu_map_09);
+        //인포윈도우 표시
+        var iwContent09 = '<div style="padding:5px; width:100%;">육교입구</div>',
+            iwPosition = new kakao.maps.LatLng(37.263794, 127.002293);
+        var infowindow09 = new kakao.maps.InfoWindow({
+            position: iwPosition,
+            content: iwContent09
+        });
+        infowindow09.open(jwu_map_09, marker09);
+    </script>
+    <script>
+        //로드뷰
+        var roadviewContainer09 = document.getElementById('map_09_view');
+        var roadview09 = new kakao.maps.Roadview(roadviewContainer09, {
+            pan: -150, // 로드뷰 처음 실행시에 바라봐야 할 수평 각
+            zoom: 1
+        });
+        var roadviewClient09 = new kakao.maps.RoadviewClient();
+        var position09 = new kakao.maps.LatLng(37.263794, 127.002293);
+        roadviewClient09.getNearestPanoId(position09, 50, function (panoId) {
+            roadview09.setPanoId(panoId, position09);
         });
     </script>
 
@@ -391,7 +962,7 @@
             $(".sub-menubar__list-box--location").mouseover(function () {
                 $(".sub-menubar__tip-box--flex-location").css("display", "flex");
                 $(".sub-menubar__tip-box--flex-bus").css("display", "none");
-                $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");                
+                $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
             });
 
             $(".sub-menubar__tip-box--flex-location").mouseleave(function () {
@@ -401,7 +972,7 @@
             $(".sub-menubar__list-box--bus").mouseover(function () {
                 $(".sub-menubar__tip-box--flex-location").css("display", "none");
                 $(".sub-menubar__tip-box--flex-bus").css("display", "flex");
-                $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");  
+                $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
             });
 
             $(".sub-menubar__tip-box--flex-bus").mouseleave(function () {
@@ -411,11 +982,11 @@
             $(".sub-menubar__list-box--scholarship").mouseover(function () {
                 $(".sub-menubar__tip-box--flex-location").css("display", "none");
                 $(".sub-menubar__tip-box--flex-bus").css("display", "none");
-                $(".sub-menubar__tip-box--flex-scholarship").css("display", "flex");  
+                $(".sub-menubar__tip-box--flex-scholarship").css("display", "flex");
             });
 
             $(".sub-menubar__tip-box--flex-scholarship").mouseleave(function () {
-                $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");  
+                $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
             });
 
         });
@@ -454,10 +1025,95 @@
 
     <!-- top Btn -->
     <script>
-        $(".top-box").click(function() {
-            $('html, body').animate({ scrollTop : 0 }, 800);
+        $(".top-box").click(function () {
+            $('html, body').animate({ scrollTop: 0 }, 800);
             return false;
         });
+    </script>
+
+    <!-- img enlage -->
+    <script>
+        var count = 0;
+        $("#schoolbus-image").click(function() {
+            if( count % 2 == 0 ) {
+                $("#schoolbus-image").addClass("image-enlarge");
+                count++;
+            } else {
+                $("#schoolbus-image").removeClass("image-enlarge");
+                count++;
+            }
+        });
+    </script>
+
+    <!-- show map -->
+    <script>
+
+        //height 라는 변수에 t1 이라는 이름의 클래스명을 가진 위치값을 받아온다.
+         var height1 = $("#school-bus1").offset();
+         var height2 = $("#school-bus2").offset();
+         var height3 = $("#school-bus3").offset();
+         var height4 = $("#school-bus4").offset();
+         var height5 = $("#school-bus5").offset();
+         var height6 = $("#school-bus6").offset();
+         var height7 = $("#school-bus7").offset();
+         var height8 = $("#school-bus8").offset();
+         var height9 = $("#school-bus9").offset();
+    
+        //animate의안에 들어가는 매개 변수는 1번째는 움직일 위치 2번째는 속도이다.
+        //heigh의 top 위치로 이동 시킨다.
+        $("#school-bus-td1").click(function() {
+            $("html, body").animate({
+            scrollTop: 1790
+        }, 400);     
+        })
+
+        $("#school-bus-td2").click(function() {
+            $("html, body").animate({
+            scrollTop: 2340
+        }, 400);      
+        })
+
+        $("#school-bus-td3").click(function() {
+            $("html, body").animate({
+            scrollTop: 2890
+        }, 400);      
+        })
+
+        $("#school-bus-td4").click(function() {
+            $("html, body").animate({
+            scrollTop: 3340
+        }, 400);      
+        })
+
+        $("#school-bus-td5").click(function() {
+            $("html, body").animate({
+            scrollTop: 3810
+        }, 400);      
+        })
+
+        $("#school-bus-td6").click(function() {
+            $("html, body").animate({
+            scrollTop: 4340
+        }, 400);      
+        })
+
+        $("#school-bus-td7").click(function() {
+            $("html, body").animate({
+            scrollTop: 4940
+        }, 400);      
+        })
+
+        $("#school-bus-td8").click(function() {
+            $("html, body").animate({
+            scrollTop: 5440
+        }, 400);      
+        })
+
+        $("#school-bus-td9").click(function() {
+            $("html, body").animate({
+            scrollTop: 5920
+        }, 400);      
+        })
     </script>
 </body>
 
