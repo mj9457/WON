@@ -85,7 +85,7 @@ resultBtn21.addEventListener("click", function () {
 // f영역 ,o영역 80시간 이내 조건
 if ( f21 > 80 ) {
     f21 = 80
-} else if ( o22 > 80 ) {
+} else if ( o21 > 80 ) {
     o21 = 80
 } else if ( f21 > 80 && o21 > 80 ) {
     f21 = 80
