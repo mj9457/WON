@@ -83,7 +83,7 @@
     
 }
 
-.sub-menubar__list-box--two {
+.sub-menubar__list-box--two-title {
     padding-left: 99.5px;
 }
 
@@ -112,14 +112,18 @@
 }
 
 
-.sub-menubar__tip-box--flex-location, .sub-menubar__tip-box--flex-bus, .sub-menubar__tip-box--flex-scholarship {
+.sub-menubar__tip-box--flex-location, .sub-menubar__tip-box--flex-bus, .sub-menubar__tip-box--flex-scholarship, .sub-menubar__fos-box--flex-fos {
     display: none;
     justify-content: flex-start;
     flex-direction: column;
 }
 
-.sub-menubar__tip-box--flex-location a, .sub-menubar__tip-box--flex-bus a, .sub-menubar__tip-box--flex-scholarship  a {
+.sub-menubar__tip-box--flex-location a, .sub-menubar__tip-box--flex-bus a, .sub-menubar__tip-box--flex-scholarship a, .sub-menubar__fos-box--flex-fos a {
     margin-bottom: 8px;
+}
+
+.sub-menubar__fos-box--flex-fos a div {
+    justify-content: flex-start;
 }
 
 /* animations */

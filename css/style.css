@@ -15,7 +15,7 @@
 @import url("aside.css"); /* aside */
 
 @import url("section-tip.css"); /* section-tip.html */
-@import url("section-activites.css"); /* activites.html */
+@import url("section-fos.css"); /* section-fos.html */
 
 #wrap {
     min-height: 100vh;

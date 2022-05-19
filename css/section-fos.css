@@ -102,3 +102,20 @@
     box-sizing: border-box;
     margin: 10px 0 20px 0;
 }
+
+.fos-list {
+    box-sizing: border-box;
+    width: 80% !important;
+    max-width: none !important;
+    margin-bottom: 40px;
+}
+
+#fos-list-table td {
+    vertical-align: middle;
+    line-height: 17px;
+}
+
+.ani1 {
+    position: relative;
+    content: "✔";
+}

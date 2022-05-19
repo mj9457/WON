@@ -196,6 +196,10 @@ section {
 }
 
 /* another class */ 
+.wd-150px {
+    width: 150px;
+}
+
 .wd-90 {
     width: 90%;
 }
