@@ -54,14 +54,14 @@
 
             <div class="sub-menubar__credit-box">
                 <a href="credit.html">
-                    <div class="sub-menubar__list-box sub-menubar__list-box--one">학점계산기</div>
+                    <div class="sub-menubar__list-box sub-menubar__list-box--one ani">학점계산기</div>
                 </a>
             </div>
 
             <div class="sub-menubar__fos-box">
                 <div class="sub-menubar__list-box--two-title">
                     <a href="fos.html">
-                        <div class="sub-menubar__list-box sub-menubar__list-box--fos">비교과</div>
+                        <div class="sub-menubar__list-box sub-menubar__list-box--fos ani">비교과</div>
                     </a>
                 </div>
 
@@ -82,11 +82,14 @@
             <div class="sub-menubar__sentest-box">
                 <div class="sub-menubar__list-box--three-title">
                     <a href="sen-test.html">
-                        <div class="sub-menubar__list-box sub-menubar__list-box--sen">SEN-TEST</div>
+                        <div class="sub-menubar__list-box sub-menubar__list-box--sen ani">SEN-TEST</div>
                     </a>
                 </div>
 
                 <div class="sub-menubar__sen-box--flex-sen">
+                    <a href="sen-test.html#sen-notice">
+                        <div class="sub-menubar__list-box ani">시험 공지</div>
+                    </a>
                     <a href="sen-test.html#sen-calendar">
                         <div class="sub-menubar__list-box ani">시험 일정</div>
                     </a>
@@ -99,7 +102,7 @@
 
             <div class="sub-menubar__self-box">
                 <a href="self.html">
-                    <div class="sub-menubar__list-box sub-menubar__list-box--four">자가진단</div>
+                    <div class="sub-menubar__list-box sub-menubar__list-box--four ani">자가진단</div>
                 </a>
             </div>
 
@@ -107,13 +110,13 @@
             <div class="sub-menubar__tip-box">
                 <div class="sub-menubar__list-box--five-title">
                     <a href="tip-bus.html">
-                        <div class="sub-menubar__list-box sub-menubar__list-box--bus">버스정보</div>
+                        <div class="sub-menubar__list-box sub-menubar__list-box--bus ani">버스정보</div>
                     </a>
                     <a href="tip-place.html">
-                        <div class="sub-menubar__list-box sub-menubar__list-box--location">시설위치</div>
+                        <div class="sub-menubar__list-box sub-menubar__list-box--location ani">시설정보</div>
                     </a>
                     <a href="tip-scholar.html">
-                        <div class="sub-menubar__list-box sub-menubar__list-box--scholarship">장학정보</div>
+                        <div class="sub-menubar__list-box sub-menubar__list-box--scholarship ani">장학정보</div>
                     </a>
                 </div>
 
@@ -163,7 +166,7 @@
 
             <div class="sub-menubar__notice-box">
                 <a class="" href="notice.html">
-                    <div class="sub-menubar__list-box sub-menubar__list-box--six">학사공지</div>
+                    <div class="sub-menubar__list-box sub-menubar__list-box--six ani">학사공지</div>
                 </a>
             </div>
 
@@ -179,6 +182,17 @@
 
         <!-- Section -->
         <section class="section">
+
+            <!-- sen-notice 시험 공지 -->
+            <div id="sen-notice" class="place-wrap-box">
+                <div class="section__content">
+                    <div class="section__content--row box-shadow">
+                        <div class="section__content--row-title">시험 공지📌</div>
+                        <img class="notice-img" src="/assets/image/sen-notice.png" alt="sen-notice">
+                    </div>
+                </div>
+            </div>
+
             <!-- sen-notice 시험 일정 -->
             <div id="sen-calendar" class="place-wrap-box">
                 <div class="section__content">
@@ -287,7 +301,7 @@
                 </div>
             </div>
 
-            <!-- sen-review -->
+            <!-- sen-review 리뷰 -->
             <div id="sen-review" class="place-wrap-box">
                 <div class="section__content">
                     <div class="section__content--row box-shadow">
@@ -296,7 +310,9 @@
                             <div class="fos-review-box">
                                 <img src="/assets/image/sean-main.jpg" alt="profile-main">
                                 <div class="pro-title">Sean</div>
-                                <img class="main-img" src="/assets/image/star-rating.png" alt="profile-img">
+                                <div class="pro-title" style="font-size: 19px">lampert.sean@gmail.com</div>
+                                <div class="pro-title">043-830-8665</div>
+                                <img class="star-img" src="/assets/image/star-rating.png" alt="profile-img">
                             </div>
                             <img id="review-1" class="review-img" src="/assets/image/sean-review-1.png" alt="review-1">
                             <img id="review-2" class="review-img" src="/assets/image/sean-review-2.png" alt="review-2">
@@ -307,22 +323,26 @@
                             <div class="fos-review-box">
                                 <img src="/assets/image/jose-main.png" alt="profile-main">
                                 <div class="pro-title">Jose</div>
-                                <img class="main-img" src="/assets/image/star-rating.png" alt="profile-img">
+                                <div class="pro-title" style="font-size: 19px">hohohojose@gmail.com</div>
+                                <div class="pro-title">043-830-8655</div>
+                                <img class="star-img" src="/assets/image/star-rating.png" alt="profile-img">
                             </div>
-                            <img class="review-img" src="/assets/image/jose-review-1.png" alt="review-1">
-                            <img class="review-img" src="/assets/image/jose-review-2.png" alt="review-2">
-                            <img class="review-img" src="/assets/image/jose-review-3.png" alt="review-3">
+                            <img id="review-4" class="review-img" src="/assets/image/jose-review-1.png" alt="review-4">
+                            <img id="review-5" class="review-img" src="/assets/image/jose-review-2.png" alt="review-5">
+                            <img id="review-6" class="review-img" src="/assets/image/jose-review-3.png" alt="review-6">
                         </div>
 
                         <div class="fos-review-wrap">
                             <div class="fos-review-box">
                                 <img src="/assets/image/alex-main.jpg" alt="profile-main">
                                 <div class="pro-title">Alex</div>
-                                <img class="main-img" src="/assets/image/star-rating.png" alt="profile-img">
+                                <div class="pro-title" style="font-size: 19px">ahwang@jwu.ac.kr</div>
+                                <div class="pro-title">043-830-8662</div>
+                                <img class="star-img" src="/assets/image/star-rating.png" alt="profile-img">
                             </div>
-                            <img class="review-img" src="/assets/image/alex-review-1.png" alt="review-1">
-                            <img class="review-img" src="/assets/image/alex-review-2.png" alt="review-2">
-                            <img class="review-img" src="/assets/image/alex-review-3.png" alt="review-3">
+                            <img id="review-7" class="review-img" src="/assets/image/alex-review-1.png" alt="review-7">
+                            <img id="review-8" class="review-img" src="/assets/image/alex-review-2.png" alt="review-8">
+                            <img id="review-9" class="review-img" src="/assets/image/alex-review-3.png" alt="review-9">
                         </div>
 
                         <a href="https://www.picktime.com/SENTEST"></a>
@@ -356,6 +376,183 @@
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
     <script src="/js/fos-cal.js"></script>
+
+    <!-- img resize -->
+    <script>
+        let reviewImg1 = document.getElementById("review-1");
+        let reviewImg2 = document.getElementById("review-2");
+        let reviewImg3 = document.getElementById("review-3");
+        let reviewImg4 = document.getElementById("review-4");
+        let reviewImg5 = document.getElementById("review-5");
+        let reviewImg6 = document.getElementById("review-6");
+        let reviewImg7 = document.getElementById("review-7");
+        let reviewImg8 = document.getElementById("review-8");
+        let reviewImg9 = document.getElementById("review-9");
+
+        let count = 0;
+        
+        /* Sean-review */
+        reviewImg1.addEventListener("click", function() {
+            count += 1
+            if ( count % 2 != 0 ) {
+            reviewImg1.style.width = "50%";
+            reviewImg1.style.height = "600px";
+
+            reviewImg2.style.display = "none";
+            reviewImg3.style.display = "none";
+            } else {
+                reviewImg1.style.width = "24%";
+                reviewImg1.style.height = "350px";
+
+                reviewImg2.style.display = "block";
+                reviewImg3.style.display = "block";
+            }
+        })
+
+        reviewImg2.addEventListener("click", function() {
+            count += 1
+            if ( count % 2 != 0 ) {
+            reviewImg2.style.width = "50%";
+            reviewImg2.style.height = "600px";
+
+            reviewImg1.style.display = "none";
+            reviewImg3.style.display = "none";
+            } else {
+                reviewImg2.style.width = "24%";
+                reviewImg2.style.height = "350px";
+
+                reviewImg1.style.display = "block";
+                reviewImg3.style.display = "block";
+            }
+        })
+
+        reviewImg3.addEventListener("click", function() {
+
+            
+            count += 1
+            if ( count % 2 != 0 ) {
+            reviewImg3.style.width = "50%";
+            reviewImg3.style.height = "600px";
+
+            reviewImg2.style.display = "none";
+            reviewImg1.style.display = "none";
+            } else {
+                reviewImg3.style.width = "24%";
+                reviewImg3.style.height = "350px";
+
+                reviewImg2.style.display = "block";
+                reviewImg1.style.display = "block";
+            }
+        })
+
+        /* jose-review */
+        reviewImg4.addEventListener("click", function() {
+            count += 1
+            if ( count % 2 != 0 ) {
+            reviewImg4.style.width = "50%";
+            reviewImg4.style.height = "600px";
+
+            reviewImg5.style.display = "none";
+            reviewImg6.style.display = "none";
+            } else {
+                reviewImg4.style.width = "24%";
+                reviewImg4.style.height = "350px";
+
+                reviewImg5.style.display = "block";
+                reviewImg6.style.display = "block";
+            }
+        })
+
+        reviewImg5.addEventListener("click", function() {
+            count += 1
+            if ( count % 2 != 0 ) {
+            reviewImg5.style.width = "50%";
+            reviewImg5.style.height = "600px";
+
+            reviewImg4.style.display = "none";
+            reviewImg6.style.display = "none";
+            } else {
+                reviewImg5.style.width = "24%";
+                reviewImg5.style.height = "350px";
+
+                reviewImg4.style.display = "block";
+                reviewImg6.style.display = "block";
+            }
+        })
+
+        reviewImg6.addEventListener("click", function() {
+
+            
+            count += 1
+            if ( count % 2 != 0 ) {
+            reviewImg6.style.width = "50%";
+            reviewImg6.style.height = "600px";
+
+            reviewImg5.style.display = "none";
+            reviewImg4.style.display = "none";
+            } else {
+                reviewImg6.style.width = "24%";
+                reviewImg6.style.height = "350px";
+
+                reviewImg5.style.display = "block";
+                reviewImg4.style.display = "block";
+            }
+        })
+
+        /* Sean-review */
+        reviewImg7.addEventListener("click", function() {
+            count += 1
+            if ( count % 2 != 0 ) {
+            reviewImg7.style.width = "50%";
+            reviewImg7.style.height = "600px";
+
+            reviewImg8.style.display = "none";
+            reviewImg9.style.display = "none";
+            } else {
+                reviewImg7.style.width = "24%";
+                reviewImg7.style.height = "350px";
+
+                reviewImg8.style.display = "block";
+                reviewImg9.style.display = "block";
+            }
+        })
+
+        reviewImg8.addEventListener("click", function() {
+            count += 1
+            if ( count % 2 != 0 ) {
+            reviewImg8.style.width = "50%";
+            reviewImg8.style.height = "600px";
+
+            reviewImg7.style.display = "none";
+            reviewImg9.style.display = "none";
+            } else {
+                reviewImg8.style.width = "24%";
+                reviewImg8.style.height = "350px";
+
+                reviewImg7.style.display = "block";
+                reviewImg9.style.display = "block";
+            }
+        })
+
+        reviewImg9.addEventListener("click", function() {
+
+            
+            count += 1
+            if ( count % 2 != 0 ) {
+            reviewImg9.style.width = "50%";
+            reviewImg9.style.height = "600px";
+
+            reviewImg8.style.display = "none";
+            reviewImg7.style.display = "none";
+            } else {
+                reviewImg9.style.width = "24%";
+                reviewImg9.style.height = "350px";
+
+                reviewImg8.style.display = "block";
+                reviewImg7.style.display = "block";
+            }
+        })
+    </script>
 
     <!-- 문의하기 -->
     <script>
