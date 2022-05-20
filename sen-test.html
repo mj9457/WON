@@ -172,37 +172,160 @@
         <!-- Main -->
         <main class="sub__main">
             <div class="main__section sub__section">
-                <h1 class="main__section--main-title sub__section--main-title">장학 정보</h1>
+                <h1 class="main__section--main-title sub__section--main-title">SEN-TEST</h1>
                 <h2 class="main__section--sub-title sub__section--sub-title"></h2>
             </div>
         </main>
 
         <!-- Section -->
         <section class="section">
-
-            <!-- 교내 장학금 -->
-            <div id="school-scholar" class="place-wrap-box">
+            <!-- sen-notice 시험 일정 -->
+            <div id="sen-calendar" class="place-wrap-box">
                 <div class="section__content">
                     <div class="section__content--row box-shadow">
-                        <div class="section__content--row-title">교내 장학금📌</div>
-                        <div class="centered">
-                            <embed class="school-scholar__pdf" src="/assets/pdf/school-scholar.pdf#toolbar=0"
-                                type="application/pdf">
+                        <div class="section__content--row-title">시험 일정📌</div>
+                        <table class="sen-test-time-table">
+                            <thead>
+                                <tr>
+                                    <th colspan="7">6월</th>
+                                </tr>
+                                <tr>
+                                    <th>Sun</th>
+                                    <th style="width: 18%">Mon</th>
+                                    <th style="width: 18%">Tue</th>
+                                    <th style="width: 18%">Wed</th>
+                                    <th style="width: 18%">Thu</th>
+                                    <th style="width: 18%">Fri</th>
+                                    <th>Sat</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="color:red">5/29</td>
+                                    <td>5/30</td>
+                                    <td>5/31</td>
+                                    <td style="color:red">1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td style="color:red">4</td>
+                                </tr>
+                                <tr style="height: 75px;">
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td style="color:red">2022 지방선거</td>
+                                    <td class="yellow-box text-r">Sean 10:00 ~ 11:00<br><br>13:00 ~ 14:00<br>Jose 13:00
+                                        ~ 14:00</td>
+                                    <td class="yellow-box">Sean 11:00 ~ 12:00</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td style="color:red">5</td>
+                                    <td style="color:red">6</td>
+                                    <td>7</td>
+                                    <td>8</td>
+                                    <td>9</td>
+                                    <td>10</td>
+                                    <td style="color:red">11</td>
+                                </tr>
+                                <tr style="height: 75px;">
+                                    <td></td>
+                                    <td style="color:red">현충일</td>
+                                    <td class="yellow-box text-r">Sean 11:00 ~ 12:00<br><br>Jose 15:00 ~ 16:00<br>17:00
+                                        ~ 18:00</td>
+                                    <td class="yellow-box text-r">Sean 10:00 ~ 11:00<br>13:00 ~ 14:00<br><br>Jose 10:00
+                                        ~ 11:00</td>
+                                    <td class="yellow-box text-r">Sean 10:00 ~ 11:00<br>13:00 ~ 14:00<br><br>Jose 13:00
+                                        ~ 14:00</td>
+                                    <td class="yellow-box">Sean 11:00 ~ 12:00</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td style="color:red">12</td>
+                                    <td>13</td>
+                                    <td>14</td>
+                                    <td>15</td>
+                                    <td>16</td>
+                                    <td>17</td>
+                                    <td style="color:red">18</td>
+                                </tr>
+                                <tr style="height: 75px;">
+                                    <td></td>
+                                    <td class="yellow-box text-r">Jose 14:00 ~ 15:00<br>16:00 ~ 17:00</td>
+                                    <td class="yellow-box text-r">Sean 11:00 ~ 12:00<br><br>Jose 15:00 ~ 16:00<br>17:00
+                                        ~ 18:00</td>
+                                    <td class="yellow-box text-r">Sean 10:00 ~ 11:00<br>13:00 ~ 14:00</td>
+                                    <td class="yellow-box text-r">Sean 10:00 ~ 11:00<br>13:00 ~ 14:00</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td style="color:red">19</td>
+                                    <td>20</td>
+                                    <td>21</td>
+                                    <td>22</td>
+                                    <td>23</td>
+                                    <td>24</td>
+                                    <td style="color:red">25</td>
+                                </tr>
+                                <tr style="height: 75px;">
+                                    <td></td>
+                                    <td></td>
+                                    <td>22년 1학기 종강</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="section__content--row-btn-wrap">
+                            <a class="app-btn app-btn-animation-1" href="https://www.picktime.com/SENTEST""  target="
+                                _blank">예약가기</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- 국가 장학금 -->
-            <div id="national-scholar" class="place-wrap-box">
+            <!-- sen-review -->
+            <div id="sen-review" class="place-wrap-box">
                 <div class="section__content">
                     <div class="section__content--row box-shadow">
-                        <div class="section__content--row-title">국가 장학금📌</div>
-                        <div class="section__content--row-btn-wrap">
-                            <a class="app-btn app-btn-animation-1"
-                                href="https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship_main"
-                                target="_blank">신청하기</a>
+                        <div class="section__content--row-title">담당 교수님 생생 후기📌</div>
+                        <div class="fos-review-wrap">
+                            <div class="fos-review-box">
+                                <img src="/assets/image/sean-main.jpg" alt="profile-main">
+                                <div class="pro-title">Sean</div>
+                                <img class="main-img" src="/assets/image/star-rating.png" alt="profile-img">
+                            </div>
+                            <img id="review-1" class="review-img" src="/assets/image/sean-review-1.png" alt="review-1">
+                            <img id="review-2" class="review-img" src="/assets/image/sean-review-2.png" alt="review-2">
+                            <img id="review-3" class="review-img" src="/assets/image/sean-review-3.png" alt="review-3">
                         </div>
+
+                        <div class="fos-review-wrap">
+                            <div class="fos-review-box">
+                                <img src="/assets/image/jose-main.png" alt="profile-main">
+                                <div class="pro-title">Jose</div>
+                                <img class="main-img" src="/assets/image/star-rating.png" alt="profile-img">
+                            </div>
+                            <img class="review-img" src="/assets/image/jose-review-1.png" alt="review-1">
+                            <img class="review-img" src="/assets/image/jose-review-2.png" alt="review-2">
+                            <img class="review-img" src="/assets/image/jose-review-3.png" alt="review-3">
+                        </div>
+
+                        <div class="fos-review-wrap">
+                            <div class="fos-review-box">
+                                <img src="/assets/image/alex-main.jpg" alt="profile-main">
+                                <div class="pro-title">Alex</div>
+                                <img class="main-img" src="/assets/image/star-rating.png" alt="profile-img">
+                            </div>
+                            <img class="review-img" src="/assets/image/alex-review-1.png" alt="review-1">
+                            <img class="review-img" src="/assets/image/alex-review-2.png" alt="review-2">
+                            <img class="review-img" src="/assets/image/alex-review-3.png" alt="review-3">
+                        </div>
+
+                        <a href="https://www.picktime.com/SENTEST"></a>
                     </div>
                 </div>
             </div>
@@ -227,10 +350,12 @@
             </a>
         </footer>
     </div>
+
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
+    <script src="https://code.jquer y.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
+    <script src="/js/fos-cal.js"></script>
 
     <!-- 문의하기 -->
     <script>

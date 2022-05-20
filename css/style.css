@@ -16,6 +16,7 @@
 
 @import url("section-tip.css"); /* section-tip.html */
 @import url("section-fos.css"); /* section-fos.html */
+@import url("section-sen-test.css"); /* section-sen-test.html */
 
 #wrap {
     min-height: 100vh;

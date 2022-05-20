@@ -20,6 +20,11 @@
     font-weight: bold;
 }
 
+.fos-cals-ani1 {
+    color: white !important;
+    background-color: rgb(0, 52, 102) !important;
+}
+
 .cal-wrap {
     width: 90%;
     display: none;
@@ -113,9 +118,4 @@
 #fos-list-table td {
     vertical-align: middle;
     line-height: 17px;
-}
-
-.ani1 {
-    position: relative;
-    content: "✔";
 }

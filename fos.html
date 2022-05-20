@@ -2,1340 +2,1389 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
-    <!-- 슬라이더 css -->
-    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
-    <title>WON</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+  <!-- 슬라이더 css -->
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+  <title>WON</title>
 
 </head>
 
 <body>
-    <div id="wrap">
-        <!-- Header-->
-        <header class="menubar">
-            <div class="menubar__content">
-                <div class="menubar__content--logo ani">
-                    <a href="index.html"><i class="fa-solid fa-house"></i></a>
-                </div>
-                <div class="menubar__content--list menubar__content__list--one ani">
-                    <a href="credit.html">학점계산기</a>
-                </div>
-                <div class="menubar__content--list menubar__content__list--two ani">
-                    <a href="fos.html">비교과</a>
-                </div>
-                <div class="menubar__content--list menubar__content__list--three ani">
-                    <a href="sen-test.html">SEN-TEST</a>
-                </div>
-                <div class="menubar__content--list menubar__content__list--four ani">
-                    <a href="#">자가진단</a>
-                </div>
-                <div class="menubar__content--list menubar__content__list--five ani">
-                    <a href="tip-place.html">학교생활팁</a>
-                </div>
-                <div class="menubar__content--list menubar__content__list--six ani">
-                    <a href="notice.html">학사공지</a>
-                </div>
-            </div>
+  <div id="wrap">
+    <!-- Header-->
+    <header class="menubar">
+      <div class="menubar__content">
+        <div class="menubar__content--logo ani">
+          <a href="index.html"><i class="fa-solid fa-house"></i></a>
+        </div>
+        <div class="menubar__content--list menubar__content__list--one ani">
+          <a href="credit.html">학점계산기</a>
+        </div>
+        <div class="menubar__content--list menubar__content__list--two ani">
+          <a href="fos.html">비교과</a>
+        </div>
+        <div class="menubar__content--list menubar__content__list--three ani">
+          <a href="sen-test.html">SEN-TEST</a>
+        </div>
+        <div class="menubar__content--list menubar__content__list--four ani">
+          <a href="self.html">자가진단</a>
+        </div>
+        <div class="menubar__content--list menubar__content__list--five ani">
+          <a href="tip-bus.html">학교생활팁</a>
+        </div>
+        <div class="menubar__content--list menubar__content__list--six ani">
+          <a href="notice.html">학사공지</a>
+        </div>
+      </div>
 
-            <div class="menubar__weather">
-                <div class="menubar__weather--loacation">학교 날씨 :</div>
-                <div class="menubar__weather--icon"></div>
-                <div class="menubar__weather--temp"></div>
-            </div>
-        </header>
+      <div class="menubar__weather">
+        <div class="menubar__weather--loacation">학교 날씨 :</div>
+        <div class="menubar__weather--icon"></div>
+        <div class="menubar__weather--temp"></div>
+      </div>
+    </header>
 
-        <!-- Sub Header -->
-        <div class="sub-menubar">
+    <!-- Sub Header -->
+    <div class="sub-menubar">
 
-            <div class="sub-menubar__credit-box">
-                <a href="credit.html">
-                    <div class="sub-menubar__list-box sub-menubar__list-box--one">학점계산기</div>
-                </a>
-            </div>
+      <div class="sub-menubar__credit-box">
+          <a href="credit.html">
+              <div class="sub-menubar__list-box sub-menubar__list-box--one">학점계산기</div>
+          </a>
+      </div>
 
-            <div class="sub-menubar__fos-box">
-                <div class="sub-menubar__list-box--two-title">
-                    <a href="fos.html">
-                        <div class="sub-menubar__list-box sub-menubar__list-box--fos">비교과</div>
-                    </a>
-                </div>
+      <div class="sub-menubar__fos-box">
+          <div class="sub-menubar__list-box--two-title">
+              <a href="fos.html">
+                  <div class="sub-menubar__list-box sub-menubar__list-box--fos">비교과</div>
+              </a>
+          </div>
 
-                <div class="sub-menubar__fos-box--flex-fos">
-                    <a href="fos.html#fos-table">
-                        <div class="sub-menubar__list-box ani">비교과 이수 기준</div>
-                    </a>
-                    <a href="fos.html#fos-cal">
-                        <div class="sub-menubar__list-box ani wd-150px">비교과 간편 계산기</div>
-                    </a>
-                    <a href="fos.html#fos-list">
-                        <div class="sub-menubar__list-box ani">비교과 목록</div>
-                    </a>
-                </div>
+          <div class="sub-menubar__fos-box--flex-fos">
+              <a href="fos.html#fos-table">
+                  <div class="sub-menubar__list-box ani">비교과 이수 기준</div>
+              </a>
+              <a href="fos.html#fos-cal">
+                  <div class="sub-menubar__list-box ani wd-150px">비교과 간편 계산기</div>
+              </a>
+              <a href="fos.html#fos-list">
+                  <div class="sub-menubar__list-box ani">비교과 목록</div>
+              </a>
+          </div>
 
-            </div>
+      </div>
 
-            <div class="sub-menubar__sentest-box">
-                <a href="sen.html">
-                    <div class="sub-menubar__list-box sub-menubar__list-box--three">SEN-TEST</div>
-                </a>
-            </div>
+      <div class="sub-menubar__sentest-box">
+          <div class="sub-menubar__list-box--three-title">
+              <a href="sen-test.html">
+                  <div class="sub-menubar__list-box sub-menubar__list-box--sen">SEN-TEST</div>
+              </a>
+          </div>
+
+          <div class="sub-menubar__sen-box--flex-sen">
+              <a href="sen-test.html#sen-calendar">
+                  <div class="sub-menubar__list-box ani">시험 일정</div>
+              </a>
+              <a href="sen-test.html#sen-review">
+                  <div class="sub-menubar__list-box ani">생생 후기</div>
+              </a>
+          </div>
+      </div>
 
 
-            <div class="sub-menubar__self-box">
-                <a href="#">
-                    <div class="sub-menubar__list-box sub-menubar__list-box--four">자가진단</div>
-                </a>
-            </div>
+      <div class="sub-menubar__self-box">
+          <a href="self.html">
+              <div class="sub-menubar__list-box sub-menubar__list-box--four">자가진단</div>
+          </a>
+      </div>
 
 
-            <div class="sub-menubar__tip-box">
-                <div class="sub-menubar__list-box--five-title">
-                    <a href="tip-place.html">
-                        <div class="sub-menubar__list-box sub-menubar__list-box--location">시설위치</div>
-                    </a>
-                    <a href="tip-bus.html">
-                        <div class="sub-menubar__list-box sub-menubar__list-box--bus">버스정보</div>
-                    </a>
-                    <a href="tip-scholar.html">
-                        <div class="sub-menubar__list-box sub-menubar__list-box--scholarship">장학정보</div>
-                    </a>
-                </div>
+      <div class="sub-menubar__tip-box">
+          <div class="sub-menubar__list-box--five-title">
+              <a href="tip-bus.html">
+                  <div class="sub-menubar__list-box sub-menubar__list-box--bus">버스정보</div>
+              </a>
+              <a href="tip-place.html">
+                  <div class="sub-menubar__list-box sub-menubar__list-box--location">시설위치</div>
+              </a>
+              <a href="tip-scholar.html">
+                  <div class="sub-menubar__list-box sub-menubar__list-box--scholarship">장학정보</div>
+              </a>
+          </div>
 
-                <div class="sub-menubar__tip-box--flex-location">
-                    <a href="tip-place.html#swim">
-                        <div class="sub-menubar__list-box ani">수영장/샤워장</div>
-                    </a>
-                    <a href="tip-place.html#library">
-                        <div class="sub-menubar__list-box ani">도서관</div>
-                    </a>
-                    <a href="tip-place.html#sports">
-                        <div class="sub-menubar__list-box ani">스포츠 센터</div>
-                    </a>
-                    <a href="tip-place.html#cafeteria">
-                        <div class="sub-menubar__list-box ani">카페테리아</div>
-                    </a>
-                    <a href="tip-place.html#museum">
-                        <div class="sub-menubar__list-box ani">박물관</div>
-                    </a>
-                    <a href="tip-place.html#garden">
-                        <div class="sub-menubar__list-box ani">식물원</div>
-                    </a>
-                    <a href="tip-place.html#park">
-                        <div class="sub-menubar__list-box ani">주차장</div>
-                    </a>
-                    <a href="tip-place.html#golf">
-                        <div class="sub-menubar__list-box ani">골프장</div>
-                    </a>
-                </div>
-                <div class="sub-menubar__tip-box--flex-bus">
-                    <a href="tip-bus.html#shuttle-bus">
-                        <div class="sub-menubar__list-box ani">셔틀버스</div>
-                    </a>
-                    <a href="tip-bus.html#school-bus">
-                        <div class="sub-menubar__list-box ani">통학버스</div>
-                    </a>
-                </div>
-                <div class="sub-menubar__tip-box--flex-scholarship">
-                    <a href="tip-scholar.html#school-scholar">
-                        <div class="sub-menubar__list-box ani">교내 장학금</div>
-                    </a>
-                    <a href="tip-scholar.html#national-scholar">
-                        <div class="sub-menubar__list-box ani">국가 장학금</div>
-                    </a>
-                </div>
-            </div>
+          <div class="sub-menubar__tip-box--flex-bus">
+              <a href="tip-bus.html#shuttle-bus">
+                  <div class="sub-menubar__list-box ani">셔틀버스</div>
+              </a>
+              <a href="tip-bus.html#school-bus">
+                  <div class="sub-menubar__list-box ani">통학버스</div>
+              </a>
+          </div>
+          <div class="sub-menubar__tip-box--flex-location">
+              <a href="tip-place.html#swim">
+                  <div class="sub-menubar__list-box ani">수영장/샤워장</div>
+              </a>
+              <a href="tip-place.html#library">
+                  <div class="sub-menubar__list-box ani">도서관</div>
+              </a>
+              <a href="tip-place.html#sports">
+                  <div class="sub-menubar__list-box ani">스포츠 센터</div>
+              </a>
+              <a href="tip-place.html#cafeteria">
+                  <div class="sub-menubar__list-box ani">카페테리아</div>
+              </a>
+              <a href="tip-place.html#museum">
+                  <div class="sub-menubar__list-box ani">박물관</div>
+              </a>
+              <a href="tip-place.html#garden">
+                  <div class="sub-menubar__list-box ani">식물원</div>
+              </a>
+              <a href="tip-place.html#park">
+                  <div class="sub-menubar__list-box ani">주차장</div>
+              </a>
+              <a href="tip-place.html#golf">
+                  <div class="sub-menubar__list-box ani">골프장</div>
+              </a>
+          </div>
+          <div class="sub-menubar__tip-box--flex-scholarship">
+              <a href="tip-scholar.html#school-scholar">
+                  <div class="sub-menubar__list-box ani">교내 장학금</div>
+              </a>
+              <a href="tip-scholar.html#national-scholar">
+                  <div class="sub-menubar__list-box ani">국가 장학금</div>
+              </a>
+          </div>
+      </div>
 
-            <div class="sub-menubar__notice-box">
-                <a class="" href="notice.html">
-                    <div class="sub-menubar__list-box sub-menubar__list-box--six">학사공지</div>
-                </a>
-            </div>
+      <div class="sub-menubar__notice-box">
+          <a class="" href="notice.html">
+              <div class="sub-menubar__list-box sub-menubar__list-box--six">학사공지</div>
+          </a>
+      </div>
+
+  </div>
+
+    <!-- Main -->
+    <main class="sub__main">
+      <div class="main__section sub__section">
+        <h1 class="main__section--main-title sub__section--main-title">비교과</h1>
+        <h2 class="main__section--sub-title sub__section--sub-title"></h2>
+      </div>
+    </main>
+
+    <!-- Section -->
+    <section class="section">
+      <div id="fos-table" class="place-wrap-box">
+        <div class="section__content fos-cal">
+          <div class="section__content--row box-shadow">
+            <div class="section__content--row-title">비교과 이수 기준📌</div>
+            <table class="fos-table">
+              <thead>
+                <tr>
+                  <th>영역</th>
+                  <th colspan="4" style="width: 43%;">~ 21학번</th>
+                  <th colspan="4" style="width: 43%;">22학번 ~</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>F</td>
+                  <td class="yellow-box" colspan="4">40~80 시간</td>
+                  <td class="yellow-box" colspan="4">30 시간 이상</td>
+                </tr>
+                <tr>
+                  <td>O</td>
+                  <td class="yellow-box" colspan="4">40~80 시간</td>
+                  <td class="yellow-box" colspan="4">25 시간 이상</td>
+                </tr>
+                <tr>
+                  <td>S</td>
+                  <td class="yellow-box" colspan="4">30 시간 이상</td>
+                  <td class="yellow-box" colspan="4">35 시간 이상</td>
+                </tr>
+                <tr>
+                  <td>총</td>
+                  <td class="yellow-box" colspan="4">150 시간 이상</td>
+                  <td class="yellow-box" colspan="4">총 100 시간 이상</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
         </div>
-
-        <!-- Main -->
-        <main class="sub__main">
-            <div class="main__section sub__section">
-                <h1 class="main__section--main-title sub__section--main-title">비교과</h1>
-                <h2 class="main__section--sub-title sub__section--sub-title"></h2>
+      </div>
+      <!-- fos-cal -->
+      <div id="fos-cal" class="place-wrap-box">
+        <div class="section__content fos-cal">
+          <div class="section__content--row box-shadow">
+            <div class="section__content--row-title">비교과 간편 계산기📌</div>
+            <div class="btn-wrap">
+              <div id="btn-21" class="student-number-btn">21학번 까지</div>
+              <div id="btn-22" class="student-number-btn">22학번 부터</div>
             </div>
-        </main>
-
-        <!-- Section -->
-        <section class="section">
-            <div id="fos-table" class="place-wrap-box">
-                <div class="section__content fos-cal">
-                    <div class="section__content--row box-shadow">
-                        <div class="section__content--row-title">비교과 이수 기준📌</div>
-                        <table class="fos-table">
-                            <thead>
-                                <tr>
-                                    <th>영역</th>
-                                    <th colspan="4" style="width: 43%;">~ 21학번</th>
-                                    <th colspan="4" style="width: 43%;">22학번 ~</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>F</td>
-                                    <td class="yellow-box" colspan="4">40~80 시간</td>
-                                    <td class="yellow-box" colspan="4">30 시간 이상</td>
-                                </tr>
-                                <tr>
-                                    <td>O</td>
-                                    <td class="yellow-box" colspan="4">40~80 시간</td>
-                                    <td class="yellow-box" colspan="4">25 시간 이상</td>
-                                </tr>
-                                <tr>
-                                    <td>S</td>
-                                    <td class="yellow-box" colspan="4">30 시간 이상</td>
-                                    <td class="yellow-box" colspan="4">35 시간 이상</td>
-                                </tr>
-                                <tr>
-                                    <td>총</td>
-                                    <td class="yellow-box" colspan="4">150 시간 이상</td>
-                                    <td class="yellow-box" colspan="4">총 100 시간 이상</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
+            <form id="cal-wrap-21" class="cal-wrap" action="" autocomplete="off">
+              <div class="fos-result-title-box m-t-20">비교과 계산 ( ~ 21학번 )</div>
+              <div class="input-flex-box">
+                <label for="fos-f">F</label>
+                <label for="fos-o">O</label>
+                <label for="fos-s">S</label>
+                <label for="fos-result">결과</label>
+              </div>
+              <div class="input-flex-box dashed">
+                <input type="text" name="fos-f" placeholder="F영역 이수 시간" id="fos-f-21">
+                <input type="text" name="fos-o" placeholder="O영역 이수 시간" id="fos-o-21">
+                <input type="text" name="fos-s" placeholder="S영역 이수 시간" id="fos-s-21">
+                <button type="button" name="" id="fos-result-btn-21">확인하기</button>
+              </div>
+              <div class="input-flex-result-box ">
+                <div class="fos-result-title-box m-t-20">결과 확인</div>
+                <div class="fos-result-title-box">
+                  <div class="fos-result-title">F</div>
+                  <div class="fos-result-title">O</div>
+                  <div class="fos-result-title">S</div>
+                  <div class="fos-result-title">유효 이수 시간</div>
                 </div>
-            </div>
-            <!-- fos-cal -->
-            <div id="fos-cal" class="place-wrap-box">
-                <div class="section__content fos-cal">
-                    <div class="section__content--row box-shadow">
-                        <div class="section__content--row-title">비교과 간편 계산기📌</div>
-                        <div class="btn-wrap">
-                            <div id="btn-21" class="student-number-btn">21학번 까지</div>
-                            <div id="btn-22" class="student-number-btn">22학번 부터</div>
-                        </div>
-                        <form id="cal-wrap-21" class="cal-wrap" action="" autocomplete="off">
-                            <div class="fos-result-title-box m-t-20">비교과 계산 ( ~ 21학번 )</div>
-                            <div class="input-flex-box">
-                                <label for="fos-f">F</label>
-                                <label for="fos-o">O</label>
-                                <label for="fos-s">S</label>
-                                <label for="fos-result">결과</label>
-                            </div>
-                            <div class="input-flex-box dashed">
-                                <input type="text" name="fos-f" placeholder="F영역 이수 시간" id="fos-f-21">
-                                <input type="text" name="fos-o" placeholder="O영역 이수 시간" id="fos-o-21">
-                                <input type="text" name="fos-s" placeholder="S영역 이수 시간" id="fos-s-21">
-                                <button type="button" name="" id="fos-result-btn-21">확인하기</button>
-                            </div>
-                            <div class="input-flex-result-box ">
-                                <div class="fos-result-title-box m-t-20">결과 확인</div>
-                                <div class="fos-result-title-box">
-                                    <div class="fos-result-title">F</div>
-                                    <div class="fos-result-title">O</div>
-                                    <div class="fos-result-title">S</div>
-                                    <div class="fos-result-title">유효 이수 시간</div>
-                                </div>
-                                <div class="fos-result-title-box">
-                                    <div id="fos-f-val-21" class="fos-result-val">?</div>
-                                    <div id="fos-o-val-21" class="fos-result-val">?</div>
-                                    <div id="fos-s-val-21" class="fos-result-val">?</div>
-                                    <div id="fos-all-val-21" class="fos-result-val">?</div>
-                                </div>
-                                <div class="fos-result-title-box">
-                                    <div class="fos-result-title" style="width: 100%">졸업조건</div>
-                                </div>
-                                <div class="fos-result-title-box">
-                                    <div id="fos-result-val-ok-21" class="fos-result-val" style="color: blue;">충족</div>
-                                    <div id="fos-result-val-21" class="fos-result-val">/</div>
-                                    <div id="fos-result-val-nk-21" class="fos-result-val" style="color: red;">미충족</div>
-                                </div>
-                            </div>
-                            <div class="section--sub-title-tip txt-r">
-                                ※ F,O 영역에서 이수 시간이 80 시간을 초과할 시 자동으로 제외하고 계산합니다<br>
-                                ※ 총 이수 시간에 제외된 나머지 값이 적용됩니다.
-                            </div>
-                        </form>
-                        <form id="cal-wrap-22" class="cal-wrap" action="" autocomplete="off">
-                            <div class="fos-result-title-box m-t-20">비교과 계산 ( 22학번 ~ )</div>
-                            <div class="input-flex-box">
-                                <label for="fos-f">F</label>
-                                <label for="fos-o">O</label>
-                                <label for="fos-s">S</label>
-                                <label for="fos-result">결과</label>
-                            </div>
-                            <div class="input-flex-box dashed">
-                                <input type="text" name="fos-f" placeholder="F영역 이수 시간" id="fos-f-22">
-                                <input type="text" name="fos-o" placeholder="O영역 이수 시간" id="fos-o-22">
-                                <input type="text" name="fos-s" placeholder="S영역 이수 시간" id="fos-s-22">
-                                <button type="button" name="" id="fos-result-btn-22">확인하기</button>
-                            </div>
-                            <div class="input-flex-result-box ">
-                                <div class="fos-result-title-box m-t-20">결과 확인</div>
-                                <div class="fos-result-title-box">
-                                    <div class="fos-result-title">F</div>
-                                    <div class="fos-result-title">O</div>
-                                    <div class="fos-result-title">S</div>
-                                    <div class="fos-result-title">유효 이수 시간</div>
-                                </div>
-                                <div class="fos-result-title-box">
-                                    <div id="fos-f-val-22" class="fos-result-val">?</div>
-                                    <div id="fos-o-val-22" class="fos-result-val">?</div>
-                                    <div id="fos-s-val-22" class="fos-result-val">?</div>
-                                    <div id="fos-all-val-22" class="fos-result-val">?</div>
-                                </div>
-                                <div class="fos-result-title-box">
-                                    <div class="fos-result-title" style="width: 100%">졸업조건</div>
-                                </div>
-                                <div class="fos-result-title-box">
-                                    <div id="fos-result-val-ok-22" class="fos-result-val" style="color: blue;">충족</div>
-                                    <div id="fos-result-val-22" class="fos-result-val">/</div>
-                                    <div id="fos-result-val-nk-22" class="fos-result-val" style="color: red;">미충족</div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+                <div class="fos-result-title-box">
+                  <div id="fos-f-val-21" class="fos-result-val">?</div>
+                  <div id="fos-o-val-21" class="fos-result-val">?</div>
+                  <div id="fos-s-val-21" class="fos-result-val">?</div>
+                  <div id="fos-all-val-21" class="fos-result-val">?</div>
                 </div>
-            </div>
-
-            <div id="fos-list" class="place-wrap-box">
-                <div class="section__content fos-list">
-                    <div class="section__content--row box-shadow">
-                        <div class="section__content--row-title">비교과 목록📌</div>
-                        <table id="fos-list-table" class="fos-list-table">
-                            <thead>
-                              <tr>
-                                <th style="width: 5%" onclick="sortTable(0)" class="ani1">번호</th>
-                                <th style="width: 5%" onclick="sortTable(1)" class="ani1">영역</th>
-                                <th style="width: 7%">이수시간</th>
-                                <th style="width: 12%">운영부서</th>
-                                <th style="width: 24%;">비교과프로그램명</th>
-                                <th style="width: 12%;">접수기간</th>
-                                <th style="width: 12%;">운영기간</th>
-                                <th style="width: 15%;">신청방법</th>
-                                <th>모집인원</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>01</td>
-                                <td class="yellow-box">O</td>
-                                <td class="yellow-box">없음</td>
-                                <td class="yellow-box">취창업지원센터</td>
-                                <td class="yellow-box">진로·취업상담</td>
-                                <td class="yellow-box">2022.03 ~ 2022.12</td>
-                                <td class="yellow-box">2022.04 ~ 2020.12<br>(연간 운영)</td>
-                                <td class="yellow-box">구글설문신청 (온라인신청)</td>
-                                <td class="yellow-box">제한없음</td>
-                              </tr>
-                              <tr>
-                                <td>02</td>
-                                <td class="yellow-box">F , S</td>
-                                <td class="yellow-box">6</td>
-                                <td class="yellow-box">취창업지원센터</td>
-                                <td class="yellow-box">진로특강</td>
-                                <td class="yellow-box">2022.04.11 ~ 11.18</td>
-                                <td class="yellow-box">2022.04.11 ~ 11.18</td>
-                                <td class="yellow-box">구글설문신청 (온라인신청)</td>
-                                <td class="yellow-box">제한없음</td>
-                              </tr>
-                              <tr>
-                                <td>03</td>
-                                <td class="yellow-box">F , S</td>
-                                <td class="yellow-box">6</td>
-                                <td class="yellow-box">취창업지원센터</td>
-                                <td class="yellow-box">취업특강Ⅰ</td>
-                                <td class="yellow-box">2022.04.11 ~ 11.18</td>
-                                <td class="yellow-box">2022.04.11 ~ 11.18</td>
-                                <td class="yellow-box">구글설문신청 (온라인신청)</td>
-                                <td class="yellow-box">제한없음</td>
-                              </tr>
-                              <tr>
-                                <td>04</td>
-                                <td class="yellow-box">F</td>
-                                <td class="yellow-box">없음</td>
-                                <td class="yellow-box">취창업지원센터</td>
-                                <td class="yellow-box">취업동아리</td>
-                                <td class="yellow-box">2022.03.14 ~ 03.28</td>
-                                <td class="yellow-box">2022.03.14 ~ 11.25</td>
-                                <td class="yellow-box">센터 방문 신청</td>
-                                <td class="yellow-box">5개팀</td>
-                              </tr>
-                              <tr>
-                                <td>05</td>
-                                <td class="yellow-box">F</td>
-                                <td class="yellow-box">없음</td>
-                                <td class="yellow-box">취창업지원센터</td>
-                                <td class="yellow-box">취업능력UP프로그램</td>
-                                <td class="yellow-box">2022.03.14 ~ 11.25</td>
-                                <td class="yellow-box">2022.03.14 ~ 11.25</td>
-                                <td class="yellow-box">구글설문신청 (온라인신청)</td>
-                                <td class="yellow-box">제한없음</td>
-                              </tr>
-                              <tr>
-                                <td>06</td>
-                                <td class="yellow-box">F</td>
-                                <td class="yellow-box">없음</td>
-                                <td class="yellow-box">취창업지원센터</td>
-                                <td class="yellow-box">취업스펙UP프로그램</td>
-                                <td class="yellow-box">2022.03.14 ~ 11.25</td>
-                                <td class="yellow-box">2022.03.14 ~ 11.25</td>
-                                <td class="yellow-box">구글설문신청 (온라인신청)</td>
-                                <td class="yellow-box">제한없음</td>
-                              </tr>
-                              <tr>
-                                <td>07</td>
-                                <td class="yellow-box">O</td>
-                                <td class="yellow-box">10</td>
-                                <td class="yellow-box">취창업지원센터</td>
-                                <td class="yellow-box">채용설명회</td>
-                                <td class="yellow-box">2022.03.21 ~ 04.01</td>
-                                <td class="yellow-box">2022.04.04 ~ 05.31</td>
-                                <td class="yellow-box">구글설문신청 (온라인신청)</td>
-                                <td class="yellow-box">1회 40명 이내</td>
-                              </tr>
-                              <tr>
-                                <td>08</td>
-                                <td class="yellow-box">O</td>
-                                <td class="yellow-box">40</td>
-                                <td class="yellow-box">취창업지원센터</td>
-                                <td class="yellow-box">취업 준비를 위한 토익 교육반</td>
-                                <td class="yellow-box">2022.03.14 ~ 03.30</td>
-                                <td class="yellow-box">2022.04.04 ~ 04.29</td>
-                                <td class="yellow-box">구글설문신청 (온라인신청)</td>
-                                <td class="yellow-box">40명</td>
-                              </tr>
-                              <tr>
-                                <td>09</td>
-                                <td class="yellow-box">F</td>
-                                <td class="yellow-box">없음</td>
-                                <td class="yellow-box">취창업지원센터</td>
-                                <td class="yellow-box">해외취업성공지원프로그램</td>
-                                <td class="yellow-box">2022.03.14 ~ 12.16</td>
-                                <td class="yellow-box">2022.03.14 ~ 12.16</td>
-                                <td class="yellow-box">센터 방문 또는 메일 신청</td>
-                                <td class="yellow-box">5명</td>
-                              </tr>
-                              <tr>
-                                <td>10</td>
-                                <td class="yellow-box">F</td>
-                                <td class="yellow-box">최대 6</td>
-                                <td class="yellow-box">취창업지원센터</td>
-                                <td class="yellow-box">온라인취업솔루션</td>
-                                <td class="yellow-box">2022.03 ~ 2022.12</td>
-                                <td class="yellow-box">2022.03 ~ 2022.12<br>(연간 운영)</td>
-                                <td class="yellow-box">해당 사이트 로그인 이용</td>
-                                <td class="yellow-box">제한없음</td>
-                              </tr>
-                              <tr>
-                                <td>11</td>
-                                <td class="yellow-box">O</td>
-                                <td class="yellow-box">없음</td>
-                                <td class="yellow-box">취창업지원센터</td>
-                                <td class="yellow-box">창업상담</td>
-                                <td class="yellow-box">2022.03 ~ 2022.12</td>
-                                <td class="yellow-box">2022.03 ~ 2022.12<br>(연간 운영)</td>
-                                <td class="yellow-box">구글설문신청 (온라인신청)</td>
-                                <td class="yellow-box">제한없음</td>
-                              </tr>
-                              <tr>
-                                <td>12</td>
-                                <td class="yellow-box">F , S</td>
-                                <td class="yellow-box">최대 18</td>
-                                <td class="yellow-box">취창업지원센터</td>
-                                <td class="yellow-box">창업특강</td>
-                                <td class="yellow-box">2022.04 ~ 2022.05</td>
-                                <td class="yellow-box">2022.04 ~ 2020.06<br>(1학기 운영)</td>
-                                <td class="yellow-box">통합정보시스템</td>
-                                <td class="yellow-box">회차당 300명</td>
-                              </tr>
-                              <tr>
-                                <td>13</td>
-                                <td class="yellow-box">F</td>
-                                <td class="yellow-box">없음</td>
-                                <td class="yellow-box">취창업지원센터</td>
-                                <td class="yellow-box">창업동아리</td>
-                                <td class="yellow-box">2022.03 ~ 2022.09</td>
-                                <td class="yellow-box">2022.04 ~ 2020.11<br>(연간 운영)</td>
-                                <td class="yellow-box">센터 방문 또는 메일 신청</td>
-                                <td class="yellow-box">5개팀</td>
-                              </tr>
-                              <tr>
-                                <td>14</td>
-                                <td class="yellow-box">F</td>
-                                <td class="yellow-box">없음</td>
-                                <td class="yellow-box">취창업지원센터</td>
-                                <td class="yellow-box">학생창업기업지원프로그램</td>
-                                <td class="yellow-box">2022.03 ~ 2022.12</td>
-                                <td class="yellow-box">2022.04 ~ 2020.12<br>(연간 운영)</td>
-                                <td class="yellow-box">센터 방문 신청</td>
-                                <td class="yellow-box">5명</td>
-                              </tr>
-                              <tr>
-                                <td>15</td>
-                                <td class="yellow-box">자체</td>
-                                <td class="yellow-box">없음</td>
-                                <td class="yellow-box">학생상담센터</td>
-                                <td class="yellow-box">개인상담</td>
-                                <td class="yellow-box">상시</td>
-                                <td class="yellow-box">2022.03.12 ~ 2023.01.27</td>
-                                <td class="yellow-box">전화, 이메일, <br>홈페이지, 방문</td>
-                                <td class="yellow-box">제한없음</td>
-                              </tr>
-                              <tr>
-                                <td>16</td>
-                                <td class="yellow-box">자체</td>
-                                <td class="yellow-box">없음</td>
-                                <td class="yellow-box">학생상담센터</td>
-                                <td class="yellow-box">개인 심리검사 및 해석</td>
-                                <td class="yellow-box">상시</td>
-                                <td class="yellow-box">2022.03.12 ~ 2023.01.27</td>
-                                <td class="yellow-box">전화, 이메일, <br>홈페이지, 방문</td>
-                                <td class="yellow-box">제한없음</td>
-                              </tr>
-                              <tr>
-                                <td>17</td>
-                                <td class="yellow-box">자체</td>
-                                <td class="yellow-box">없음</td>
-                                <td class="yellow-box">학생상담센터</td>
-                                <td class="yellow-box">너도 받을 수 있어, 점프장학!<br>(직전학기 학사경고자 대상 상담)</td>
-                                <td class="yellow-box">2022.02.24 ~ 03.08</td>
-                                <td class="yellow-box">2022.02.24 ~ 03.08</td>
-                                <td class="yellow-box">전화, 이메일, <br>홈페이지, 방문</td>
-                                <td class="yellow-box">제한없음</td>
-                              </tr>
-                              <tr>
-                                <td>18</td>
-                                <td class="yellow-box">O</td>
-                                <td class="yellow-box">최대 8</td>
-                                <td class="yellow-box">학생상담센터</td>
-                                <td class="yellow-box">친해지길 바래<br>(대인관계 집단상담)</td>
-                                <td class="yellow-box">2022.03.14 ~ 03.25</td>
-                                <td class="yellow-box">2022.03.30 ~ 04.25</td>
-                                <td class="yellow-box">통합정보시스템</td>
-                                <td class="yellow-box">10명</td>
-                              </tr>
-                              <tr>
-                                <td>19</td>
-                                <td class="yellow-box">O</td>
-                                <td class="yellow-box">2</td>
-                                <td class="yellow-box">학생상담센터</td>
-                                <td class="yellow-box">새내기 마음지킴 프로젝트<br>(1학년 대상 집단심리검사)</td>
-                                <td class="yellow-box">2022.03.14 ~ 03.25</td>
-                                <td class="yellow-box">2022.03.28 ~ 05.31</td>
-                                <td class="yellow-box">통합정보시스템</td>
-                                <td class="yellow-box">900명</td>
-                              </tr>
-                              <tr>
-                                <td>20</td>
-                                <td class="yellow-box">O</td>
-                                <td class="yellow-box">최대 4</td>
-                                <td class="yellow-box">학생상담센터</td>
-                                <td class="yellow-box">지피지기 (1학년)<br>(집단성격검사 및 해석워크숍)</td>
-                                <td class="yellow-box">2022.03.07 ~ 03.31</td>
-                                <td class="yellow-box">2022.03.07 ~ 04.29</td>
-                                <td class="yellow-box">학과 교수 신청서 제출</td>
-                                <td class="yellow-box">200명</td>
-                              </tr>
-                              <tr>
-                                <td>21</td>
-                                <td class="yellow-box">F</td>
-                                <td class="yellow-box">2</td>
-                                <td class="yellow-box">학생상담센터</td>
-                                <td class="yellow-box">소소한 JOB담 (1학년)<br>(대상 진로심리검사)</td>
-                                <td class="yellow-box">2022.03.07 ~ 03.31</td>
-                                <td class="yellow-box">2022.03.21 ~ 04.29</td>
-                                <td class="yellow-box">통합정보시스템</td>
-                                <td class="yellow-box">300명</td>
-                              </tr>
-                              <tr>
-                                <td>22</td>
-                                <td class="yellow-box">O</td>
-                                <td class="yellow-box">4</td>
-                                <td class="yellow-box">학생상담센터</td>
-                                <td class="yellow-box">찾아가는 오픈상담 2</td>
-                                <td class="yellow-box">2022.03.14 ~ 03.25</td>
-                                <td class="yellow-box">2022.03.21 ~ 03.29</td>
-                                <td class="yellow-box">통합정보시스템</td>
-                                <td class="yellow-box">150명</td>
-                              </tr>
-                              <tr>
-                                <td>23</td>
-                                <td class="yellow-box">S</td>
-                                <td class="yellow-box">최대 8</td>
-                                <td class="yellow-box">학생상담센터</td>
-                                <td class="yellow-box">중원또래지킴이 되Go!<br>(3.4학년 또래상담자 양성과정)</td>
-                                <td class="yellow-box">2022.03.07 ~ 03.11</td>
-                                <td class="yellow-box">2022.04.06 ~ 04.27</td>
-                                <td class="yellow-box">통합정보시스템<br>또는 학과추천</td>
-                                <td class="yellow-box">20명</td>
-                              </tr>
-                              <tr>
-                                <td>24</td>
-                                <td class="yellow-box">S</td>
-                                <td class="yellow-box">2</td>
-                                <td class="yellow-box">학생상담센터</td>
-                                <td class="yellow-box">재학생 폭력예방교육</td>
-                                <td class="yellow-box">일괄업로드</td>
-                                <td class="yellow-box">2022.03.21 ~ 05.31</td>
-                                <td class="yellow-box">통합정보시스템</td>
-                                <td class="yellow-box">4,000명</td>
-                              </tr>
-                              <tr>
-                                <td>25</td>
-                                <td class="yellow-box">S</td>
-                                <td class="yellow-box">1</td>
-                                <td class="yellow-box">학생상담센터</td>
-                                <td class="yellow-box">인터넷, 스마트폰 중독(과의존)<br>예방교육</td>
-                                <td class="yellow-box">일괄업로드</td>
-                                <td class="yellow-box">2022.03.21 ~ 05.31</td>
-                                <td class="yellow-box">통합정보시스템</td>
-                                <td class="yellow-box">4,000명</td>
-                              </tr>
-                              <tr>
-                                <td>26</td>
-                                <td class="yellow-box">S</td>
-                                <td class="yellow-box">2</td>
-                                <td class="yellow-box">학생상담센터</td>
-                                <td class="yellow-box">우울증·스트레스 예방교육</td>
-                                <td class="yellow-box">2022.03.07 ~ 03.11</td>
-                                <td class="yellow-box">2022.03.21 ~ 04.29</td>
-                                <td class="yellow-box">통합정보시스템</td>
-                                <td class="yellow-box">200명</td>
-                              </tr>
-                              <tr>
-                                <td>27</td>
-                                <td class="yellow-box">S</td>
-                                <td class="yellow-box">2</td>
-                                <td class="yellow-box">학생상담센터</td>
-                                <td class="yellow-box">자살예방교육</td>
-                                <td class="yellow-box">2022.03.07 ~ 03.11</td>
-                                <td class="yellow-box">2022.03.21 ~ 04.29</td>
-                                <td class="yellow-box">통합정보시스템</td>
-                                <td class="yellow-box">200명</td>
-                              </tr>
-                              <tr>
-                                <td>28</td>
-                                <td class="yellow-box">S</td>
-                                <td class="yellow-box">10</td>
-                                <td class="yellow-box">인성교육센터</td>
-                                <td class="yellow-box">중원 체험 비교과 (골프)</td>
-                                <td class="yellow-box">~2022.03.04</td>
-                                <td class="yellow-box">2022.03.07 ~ 06.02</td>
-                                <td class="yellow-box">통합정보시스템</td>
-                                <td class="yellow-box">분반당 15명</td>
-                              </tr>
-                              <tr>
-                                <td>29</td>
-                                <td class="yellow-box">S</td>
-                                <td class="yellow-box">10</td>
-                                <td class="yellow-box">인성교육센터</td>
-                                <td class="yellow-box">중원 체험 비교과 (승마)</td>
-                                <td class="yellow-box">~2022.03.11</td>
-                                <td class="yellow-box">2022.03.18 ~ 05.27</td>
-                                <td class="yellow-box">통합정보시스템</td>
-                                <td class="yellow-box">분반당 15명</td>
-                              </tr>
-                              <tr>
-                                <td>30</td>
-                                <td class="yellow-box">S</td>
-                                <td class="yellow-box">10</td>
-                                <td class="yellow-box">인성교육센터</td>
-                                <td class="yellow-box">중원 체험 비교과 (수영)</td>
-                                <td class="yellow-box">~2022.03.08</td>
-                                <td class="yellow-box">2022.03.22 ~ 05.27</td>
-                                <td class="yellow-box">통합정보시스템</td>
-                                <td class="yellow-box">분반당 20명</td>
-                              </tr>
-                              <tr>
-                                <td>31</td>
-                                <td class="yellow-box">S</td>
-                                <td class="yellow-box">15</td>
-                                <td class="yellow-box">인성교육센터</td>
-                                <td class="yellow-box">미래를 내가 변화시킬 수 있을까?</td>
-                                <td class="yellow-box">~2022.04.01</td>
-                                <td class="yellow-box">2022.04.08 ~ 06.03</td>
-                                <td class="yellow-box">통합정보시스템</td>
-                                <td class="yellow-box">150명</td>
-                              </tr>
-                              <tr>
-                                <td>32</td>
-                                <td class="yellow-box">S</td>
-                                <td class="yellow-box">15</td>
-                                <td class="yellow-box">인성교육센터</td>
-                                <td class="yellow-box">이런 비교과프로그램 어때요?</td>
-                                <td class="yellow-box">~2022.04.01</td>
-                                <td class="yellow-box">2022.04.12 ~ 05.24</td>
-                                <td class="yellow-box">통합정보시스템</td>
-                                <td class="yellow-box">150명</td>
-                              </tr>
-                              <tr>
-                                <td>33</td>
-                                <td class="yellow-box">S</td>
-                                <td class="yellow-box">15</td>
-                                <td class="yellow-box">인성교육센터</td>
-                                <td class="yellow-box">덕질로 덕(德)하기</td>
-                                <td class="yellow-box">~2022.03.25</td>
-                                <td class="yellow-box">2022.03.30 ~ 05.25</td>
-                                <td class="yellow-box">통합정보시스템</td>
-                                <td class="yellow-box">150명</td>
-                              </tr>
-                              <tr>
-                                <td>34</td>
-                                <td class="yellow-box">S</td>
-                                <td class="yellow-box">6</td>
-                                <td class="yellow-box">인성교육센터</td>
-                                <td class="yellow-box">출발!인성비디오여행</td>
-                                <td class="yellow-box">~2022.03.31.</td>
-                                <td class="yellow-box">2022.03.02 ~ 05.20</td>
-                                <td class="yellow-box">통합정보시스템</td>
-                                <td class="yellow-box">300명</td>
-                              </tr>
-                              <tr>
-                                <td>35</td>
-                                <td class="yellow-box">S</td>
-                                <td class="yellow-box">최대 50</td>
-                                <td class="yellow-box">인성교육센터</td>
-                                <td class="yellow-box">인성교육센터<br>교외 외부활동프로그램</td>
-                                <td class="yellow-box">~2022.05.01.</td>
-                                <td class="yellow-box">2022.03.01 ~ 11.30</td>
-                                <td class="yellow-box">통합정보시스템</td>
-                                <td class="yellow-box">제한없음</td>
-                              </tr>
-                              <tr>
-                                <td>36</td>
-                                <td class="yellow-box">S</td>
-                                <td class="yellow-box">15</td>
-                                <td class="yellow-box">인성교육센터</td>
-                                <td class="yellow-box">내가 만드는 우리 학교 픽토그램</td>
-                                <td class="yellow-box">~2022.04.01.</td>
-                                <td class="yellow-box">2022.04.07 ~ 05.26</td>
-                                <td class="yellow-box">통합정보시스템</td>
-                                <td class="yellow-box">150명</td>
-                              </tr>
-                              <tr>
-                                <td>37</td>
-                                <td class="yellow-box">O</td>
-                                <td class="yellow-box">10</td>
-                                <td class="yellow-box">인성교육센터</td>
-                                <td class="yellow-box">중원 인성 독서 인증제</td>
-                                <td class="yellow-box">~2022.03.24.</td>
-                                <td class="yellow-box">2022.03.28 ~ 05.23</td>
-                                <td class="yellow-box">통합정보시스템</td>
-                                <td class="yellow-box">150명</td>
-                              </tr>
-                              <tr>
-                                <td>38</td>
-                                <td class="yellow-box">O</td>
-                                <td class="yellow-box">10</td>
-                                <td class="yellow-box">인성교육센터</td>
-                                <td class="yellow-box">바른 언어 생활 클리닉</td>
-                                <td class="yellow-box">~2022.04.01.</td>
-                                <td class="yellow-box">2022.04.08 ~ 06.03</td>
-                                <td class="yellow-box">통합정보시스템</td>
-                                <td class="yellow-box">150명</td>
-                              </tr>
-                              <tr>
-                                <td>39</td>
-                                <td class="yellow-box">O , S</td>
-                                <td class="yellow-box">각 7</td>
-                                <td class="yellow-box">교수역량개발센터</td>
-                                <td class="yellow-box">중원리더: 자기관리 학습역량<br>강화 프로그램</td>
-                                <td class="yellow-box">2022.03.07 ~ 03.11</td>
-                                <td class="yellow-box">2022.03.07 ~ 06.10</td>
-                                <td class="yellow-box">방문신청<br>(A401 교수학습지원센터)</td>
-                                <td class="yellow-box">50명<br>(생활관 입사생<br>1,2학년 25명<br>3,4학년 25명)</td>
-                              </tr>
-                              <tr>
-                                <td>40</td>
-                                <td class="yellow-box">F</td>
-                                <td class="yellow-box">14</td>
-                                <td class="yellow-box">교수역량개발센터</td>
-                                <td class="yellow-box">학습플래너 작성을 통한 자기주도적<br>학습역량 강화 프로그램</td>
-                                <td class="yellow-box">2022.03.07 ~ 03.11</td>
-                                <td class="yellow-box">2022.03.07 ~ 06.10</td>
-                                <td class="yellow-box">방문신청<br>(A401 교수학습지원센터)</td>
-                                <td class="yellow-box">100명<br>(생활관 입사생)</td>
-                              </tr>
-                              <tr>
-                                <td>41</td>
-                                <td class="yellow-box">F</td>
-                                <td class="yellow-box">5</td>
-                                <td class="yellow-box">교수역량개발센터</td>
-                                <td class="yellow-box">수업구조화전략: 강의정리 보고서 </td>
-                                <td class="yellow-box">2022.03.07 ~ 03.11</td>
-                                <td class="yellow-box">2022.03.07 ~ 06.10</td>
-                                <td class="yellow-box">통합정보시스템</td>
-                                <td class="yellow-box">25</td>
-                              </tr>
-                              <tr>
-                                <td>42</td>
-                                <td class="yellow-box">F</td>
-                                <td class="yellow-box">2</td>
-                                <td class="yellow-box">교수역량개발센터</td>
-                                <td class="yellow-box">자기조절학습검사(SLT) 및<br>학습지원 프로그램</td>
-                                <td class="yellow-box">2022.03.07 ~ 06.03</td>
-                                <td class="yellow-box">2022.03.07 ~ 06.10</td>
-                                <td class="yellow-box">통합정보시스템</td>
-                                <td class="yellow-box">1000<br>(1, 3학년)</td>
-                              </tr>
-                              <tr>
-                                <td>43</td>
-                                <td class="yellow-box">F</td>
-                                <td class="yellow-box">30 , 20</td>
-                                <td class="yellow-box">교수역량개발센터</td>
-                                <td class="yellow-box">학습역량 강화를 위한<br>외부학습활동 프로그램<br>(한국사능력검정, 자격증)</td>
-                                <td class="yellow-box">2022.03</td>
-                                <td class="yellow-box">2022.03.07 ~ 06.10</td>
-                                <td class="yellow-box">통합정보시스템 →<br>센터 방문 또는 우편으로<br>지정양식 신청서 제출</td>
-                                <td class="yellow-box">100명</td>
-                              </tr>
-                              <tr>
-                                <td>44</td>
-                                <td class="yellow-box">O</td>
-                                <td class="yellow-box">50 , 30</td>
-                                <td class="yellow-box">교수역량개발센터</td>
-                                <td class="yellow-box">학습역량 강화를 위한<br>외부학습활동 프로그램<br>(외국어 학습)</td>
-                                <td class="yellow-box">2022.03</td>
-                                <td class="yellow-box">2022.03.07 ~ 06.10</td>
-                                <td class="yellow-box">통합정보시스템 →<br>센터 방문 또는 우편으로<br>지정양식 신청서 제출</td>
-                                <td class="yellow-box">100명</td>
-                              </tr>
-                              <tr>
-                                <td>45</td>
-                                <td class="yellow-box">F , O</td>
-                                <td class="yellow-box">20</td>
-                                <td class="yellow-box">혁신교육지원팀</td>
-                                <td class="yellow-box">인공지능(AI)활용 학생 맞춤형<br>교육 프로그램<br>(일반과목, 토익)</td>
-                                <td class="yellow-box">2022.03.02 ~ 03.11</td>
-                                <td class="yellow-box">2022.04.04 ~ 05.27</td>
-                                <td class="yellow-box">A401 혁신교육지원팀 ,<br>방문신청</td>
-                                <td class="yellow-box">과정별 100명</td>
-                              </tr>
-                              <tr>
-                                <td>46</td>
-                                <td class="yellow-box">O</td>
-                                <td class="yellow-box">15</td>
-                                <td class="yellow-box">교양학부</td>
-                                <td class="yellow-box">글로벌역량강화 기초영문법강좌</td>
-                                <td class="yellow-box">2022.03.02 ~ 03.13</td>
-                                <td class="yellow-box">2022.03.14 ~ 05.31</td>
-                                <td class="yellow-box">통합정보시스템</td>
-                                <td class="yellow-box">300명</td>
-                              </tr>
-                              <tr>
-                                <td>47</td>
-                                <td class="yellow-box">O</td>
-                                <td class="yellow-box">15</td>
-                                <td class="yellow-box">교양학부</td>
-                                <td class="yellow-box">글로벌역량강화 토익강좌1</td>
-                                <td class="yellow-box">2022.03.02 ~ 03.13</td>
-                                <td class="yellow-box">2022.03.14 ~ 05.31</td>
-                                <td class="yellow-box">통합정보시스템</td>
-                                <td class="yellow-box">300명</td>
-                              </tr>
-                              <tr>
-                                <td>48</td>
-                                <td class="yellow-box">O</td>
-                                <td class="yellow-box">20</td>
-                                <td class="yellow-box">교양학부</td>
-                                <td class="yellow-box">온라인 모의토익시험</td>
-                                <td class="yellow-box">2022.03.02 ~ 03.13</td>
-                                <td class="yellow-box">2022.03.14 ~ 05.31</td>
-                                <td class="yellow-box">통합정보시스템</td>
-                                <td class="yellow-box">300명</td>
-                              </tr>
-                              <tr>
-                                <td>49</td>
-                                <td class="yellow-box">O</td>
-                                <td class="yellow-box">21</td>
-                                <td class="yellow-box">융합디자인학과<br>043-830-8969</td>
-                                <td class="yellow-box">디자인공모전</td>
-                                <td class="yellow-box">2022.03.02 ~ 03.04</td>
-                                <td class="yellow-box">2022.03.15 ~ 04.26<br> 화 17:00-20:00</td>
-                                <td class="yellow-box">방문신청(MII 908)</td>
-                                <td class="yellow-box">15명</td>
-                              </tr>
-                              <tr>
-                                <td>50</td>
-                                <td class="yellow-box">O</td>
-                                <td class="yellow-box">30</td>
-                                <td class="yellow-box">관광경영학 융합전공<br>043-830-8887</td>
-                                <td class="yellow-box">바리스타 되보기</td>
-                                <td class="yellow-box">2022.03.02 ~ 03.13</td>
-                                <td class="yellow-box">2022.03.14. ~ 06.21<br>수 18:30~20:30</td>
-                                <td class="yellow-box">통합정보시스템</td>
-                                <td class="yellow-box">15명</td>
-                              </tr>
-                              <tr>
-                                <td>51</td>
-                                <td class="yellow-box">F</td>
-                                <td class="yellow-box">10</td>
-                                <td class="yellow-box">말산업학과<br>043-830-8811</td>
-                                <td class="yellow-box">말산업 자격증 준비반</td>
-                                <td class="yellow-box">2022.03.01 ~ 03.20</td>
-                                <td class="yellow-box">2022.03.21 ~ 05.30<br>월 13:00~14:00</td>
-                                <td class="yellow-box">통합정보시스템</td>
-                                <td class="yellow-box">40명</td>
-                              </tr>
-                              <tr>
-                                <td>52</td>
-                                <td class="yellow-box">F</td>
-                                <td class="yellow-box">10</td>
-                                <td class="yellow-box">한국어교육문화학과<br>043-8302-8691</td>
-                                <td class="yellow-box">KBS한국어능력시험 준비반 </td>
-                                <td class="yellow-box">2022.03.07 ~ 03.18</td>
-                                <td class="yellow-box">2022.03.21 ~ 04.18<br>월 16:00 ~ 18:00</td>
-                                <td class="yellow-box">통합정보시스템</td>
-                                <td class="yellow-box">20명</td>
-                              </tr>
-                              <tr>
-                                <td>53</td>
-                                <td class="yellow-box">S</td>
-                                <td class="yellow-box">30</td>
-                                <td class="yellow-box">의료뷰티케어학과<br>043-830-8843</td>
-                                <td class="yellow-box">젤네일아트</td>
-                                <td class="yellow-box">2021.03.07 ~ 03.15</td>
-                                <td class="yellow-box">2022.03.16 ~ 05.18<br>수 18:00~21:00</td>
-                                <td class="yellow-box">통합정보시스템</td>
-                                <td class="yellow-box">15명</td>
-                              </tr>
-                              <tr>
-                                <td>54</td>
-                                <td class="yellow-box">F</td>
-                                <td class="yellow-box">15</td>
-                                <td class="yellow-box">항공정비학과<br>043-830-8941</td>
-                                <td class="yellow-box">항공산업기사 실기 실습 대비</td>
-                                <td class="yellow-box">2022.03.03 ~ 03.18</td>
-                                <td class="yellow-box">2022.03.21 ~ 04.12<br>월, 화 19:00~21:00</td>
-                                <td class="yellow-box">방문신청(MI 601호)</td>
-                                <td class="yellow-box">10명</td>
-                              </tr>
-                              <tr>
-                                <td>55</td>
-                                <td class="yellow-box">O</td>
-                                <td class="yellow-box">30</td>
-                                <td class="yellow-box">임상병리학과<br>043-830-8965</td>
-                                <td class="yellow-box">해외 취업을 위한 영어 독해<br>(해외취업을 위한 임상화학<br>지원 프로그램 2)</td>
-                                <td class="yellow-box">2022.03.07 ~ 03.10</td>
-                                <td class="yellow-box">2022.03.11 ~ 05.13<br>금 18:00~21:00</td>
-                                <td class="yellow-box">방문신청(S 812)</td>
-                                <td class="yellow-box">20명</td>
-                              </tr>
-                              <tr>
-                                <td>56</td>
-                                <td class="yellow-box">F</td>
-                                <td class="yellow-box">30</td>
-                                <td class="yellow-box">임상병리학과<br>043-830-8965</td>
-                                <td class="yellow-box">공무원 취업을 위한<br>생물 지원 프로그램 2</td>
-                                <td class="yellow-box">2022.03.07 ~ 03.10</td>
-                                <td class="yellow-box">2022.03.12 ~ 05.14<br>토 15:00~18:00</td>
-                                <td class="yellow-box">방문신청(S 812)</td>
-                                <td class="yellow-box">20명</td>
-                              </tr>
-                              <tr>
-                                <td>57</td>
-                                <td class="yellow-box">O</td>
-                                <td class="yellow-box">30</td>
-                                <td class="yellow-box">의료뷰티케어학과<br>043-830-8846</td>
-                                <td class="yellow-box">피부(미용사)국가 자격증 과정</td>
-                                <td class="yellow-box">2022.03.01 ~ 03.10</td>
-                                <td class="yellow-box">2022.03.10 ~ 05.19<br>목 18:00~21:00</td>
-                                <td class="yellow-box">통합정보시스템</td>
-                                <td class="yellow-box">40명</td>
-                              </tr>
-                              <tr>
-                                <td>58</td>
-                                <td class="yellow-box">O</td>
-                                <td class="yellow-box">30</td>
-                                <td class="yellow-box">말산업학과<br>043-830-5220</td>
-                                <td class="yellow-box">힐링 골프 아카데미</td>
-                                <td class="yellow-box">2022.03.01 ~ 03.20</td>
-                                <td class="yellow-box">2022.03.21 ~ 05.30<br>월 19:00~22:00</td>
-                                <td class="yellow-box">통합정보시스템(10명)<br> 방문신청 MII 704(30명)</td>
-                                <td class="yellow-box">40명</td>
-                              </tr>
-                              <tr>
-                                <td>59</td>
-                                <td class="yellow-box">S</td>
-                                <td class="yellow-box">21</td>
-                                <td class="yellow-box">융합디자인학과<br>043-830-8969</td>
-                                <td class="yellow-box">디자인재능나눔프로젝트</td>
-                                <td class="yellow-box">2022.03.02 ~ 03.04</td>
-                                <td class="yellow-box">2022.03.10 ~ 04.21<br>목 14:00-17:00</td>
-                                <td class="yellow-box">통합정보시스템</td>
-                                <td class="yellow-box">15명</td>
-                              </tr>
-                              <tr>
-                                <td>60</td>
-                                <td class="yellow-box">O</td>
-                                <td class="yellow-box">6</td>
-                                <td class="yellow-box">생활관</td>
-                                <td class="yellow-box">지역의 역사와 문화 탐색프로그램</td>
-                                <td class="yellow-box">2022.03.15 ~ 03.25</td>
-                                <td class="yellow-box">2022.04.01.~ 04.30</td>
-                                <td class="yellow-box">통합정보시스템</td>
-                                <td class="yellow-box">00명</td>
-                              </tr>
-                              <tr>
-                                <td>61</td>
-                                <td class="yellow-box">S</td>
-                                <td class="yellow-box">3~15</td>
-                                <td class="yellow-box">사회봉사단</td>
-                                <td class="yellow-box">학과별 재능기부 봉사활동</td>
-                                <td class="yellow-box">없음</td>
-                                <td class="yellow-box">2022.03.01 ~ 06.21</td>
-                                <td class="yellow-box">학과에서 수시로 신청을 받음<br>(코로나19 단계에 따라<br>대면 활동 가능시 진행)</td>
-                                <td class="yellow-box">00명</td>
-                              </tr>
-                              <tr>
-                                <td>62</td>
-                                <td class="yellow-box">O</td>
-                                <td class="yellow-box">30</td>
-                                <td class="yellow-box">외국인학생지원팀</td>
-                                <td class="yellow-box">한국어 실력향상 프로그램</td>
-                                <td class="yellow-box">2022.03.02 ~ 03.09</td>
-                                <td class="yellow-box">2022.03.26 ~ 05.14<br>매주 토,일 20:00~22:00</td>
-                                <td class="yellow-box">온라인 신청</td>
-                                <td class="yellow-box">30명 </td>
-                              </tr>
-                              <tr>
-                                <td>63</td>
-                                <td class="yellow-box">O</td>
-                                <td class="yellow-box">10</td>
-                                <td class="yellow-box">외국인학생지원팀</td>
-                                <td class="yellow-box">버디프로그램</td>
-                                <td class="yellow-box">2022.03.07 ~ 03.18</td>
-                                <td class="yellow-box">2022.03.24 ~ 04.21<br>목요일 19:00~21:00</td>
-                                <td class="yellow-box">외국인학생지원팀 방문신청<br>또는 온라인</td>
-                                <td class="yellow-box">5개팀</td>
-                              </tr>
-                              <tr>
-                                <td>64</td>
-                                <td class="yellow-box">S</td>
-                                <td class="yellow-box">30</td>
-                                <td class="yellow-box">홍보팀</td>
-                                <td class="yellow-box">통합홍보 네트워크 구축을 위한<br>학과홍보단 활동</td>
-                                <td class="yellow-box">2022.03.21 ~ 03.30.</td>
-                                <td class="yellow-box">2022.04.01 ~ 06.20<br>수요일 18:00~20:00</td>
-                                <td class="yellow-box">운영자 직접 입력</td>
-                                <td class="yellow-box">60명</td>
-                              </tr>
-                              <tr>
-                                <td>65</td>
-                                <td class="yellow-box">F</td>
-                                <td class="yellow-box">6</td>
-                                <td class="yellow-box">박물관</td>
-                                <td class="yellow-box">&lt;박물관 문화 나들이&gt;</td>
-                                <td class="yellow-box">2022.03.02 ~ 03.25</td>
-                                <td class="yellow-box">2022.04.27 ~ 05.25</td>
-                                <td class="yellow-box">통합정보시스템</td>
-                                <td class="yellow-box">10명</td>
-                              </tr>
-                            </tbody>
-                            </table>
-
-                            <div class="section__content--row-btn-wrap">
-                                <a class="app-btn app-btn-animation-1" href="https://fos.jwu.ac.kr"  target="_blank">더보기 +</a> 
-                            </div>
-                    </div>
- 
-                    
-                 </div>
-             </div>
- 
-             
- 
-             <!-- Aside__menubar --> 
-            <div class="aside__menubar">
-                <div class="aside__menubar-box--inquiry">
-                    <a class="kakao-box" href="https://open.kakao.com/o/smLQd66d" target="_blank"><i
-                            class="fa-solid fa-comment kakao"></i></a>
-                    <a class="mail-box" href="mailto:mj9457@naver.com"><i class="fa-solid fa-envelope mail"></i></a>
-                    <a class="top-box" href="#"><i class="fa-solid fa-arrow-up top-btn"></i></a>
+                <div class="fos-result-title-box">
+                  <div class="fos-result-title" style="width: 100%">졸업조건</div>
                 </div>
+                <div class="fos-result-title-box">
+                  <div id="fos-result-val-ok-21" class="fos-result-val" style="color: blue;">충족</div>
+                  <div id="fos-result-val-21" class="fos-result-val">/</div>
+                  <div id="fos-result-val-nk-21" class="fos-result-val" style="color: red;">미충족</div>
+                </div>
+              </div>
+              <div class="section--sub-title-tip txt-r">
+                ※ F,O 영역에서 이수 시간이 80 시간을 초과할 시 자동으로 제외하고 계산합니다<br>
+                ※ 총 이수 시간에 제외된 나머지 값이 적용됩니다.
+              </div>
+            </form>
+            <form id="cal-wrap-22" class="cal-wrap" action="" autocomplete="off">
+              <div class="fos-result-title-box m-t-20">비교과 계산 ( 22학번 ~ )</div>
+              <div class="input-flex-box">
+                <label for="fos-f">F</label>
+                <label for="fos-o">O</label>
+                <label for="fos-s">S</label>
+                <label for="fos-result">결과</label>
+              </div>
+              <div class="input-flex-box dashed">
+                <input type="text" name="fos-f" placeholder="F영역 이수 시간" id="fos-f-22">
+                <input type="text" name="fos-o" placeholder="O영역 이수 시간" id="fos-o-22">
+                <input type="text" name="fos-s" placeholder="S영역 이수 시간" id="fos-s-22">
+                <button type="button" name="" id="fos-result-btn-22">확인하기</button>
+              </div>
+              <div class="input-flex-result-box ">
+                <div class="fos-result-title-box m-t-20">결과 확인</div>
+                <div class="fos-result-title-box">
+                  <div class="fos-result-title">F</div>
+                  <div class="fos-result-title">O</div>
+                  <div class="fos-result-title">S</div>
+                  <div class="fos-result-title">유효 이수 시간</div>
+                </div>
+                <div class="fos-result-title-box">
+                  <div id="fos-f-val-22" class="fos-result-val">?</div>
+                  <div id="fos-o-val-22" class="fos-result-val">?</div>
+                  <div id="fos-s-val-22" class="fos-result-val">?</div>
+                  <div id="fos-all-val-22" class="fos-result-val">?</div>
+                </div>
+                <div class="fos-result-title-box">
+                  <div class="fos-result-title" style="width: 100%">졸업조건</div>
+                </div>
+                <div class="fos-result-title-box">
+                  <div id="fos-result-val-ok-22" class="fos-result-val" style="color: blue;">충족</div>
+                  <div id="fos-result-val-22" class="fos-result-val">/</div>
+                  <div id="fos-result-val-nk-22" class="fos-result-val" style="color: red;">미충족</div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div id="fos-list" class="place-wrap-box">
+        <div class="section__content fos-list">
+          <div class="section__content--row box-shadow">
+            <div class="section__content--row-title">비교과 목록📌</div>
+            <div class="section--sub-title-tip txt-r m-0">
+              ※ 번호, 영역 클릭시 정렬됩니다.
             </div>
-            <div style="clear: both;"></div>
-        </section>
- 
-         <!-- Footer -->
-         <footer>
-            <div class="footer__title">Copyright © 2022 WON</div>
-            <a href="https://haksa.jwu.ac.kr/com/index.html">
-                <img class="footer__logo--image" src="/assets/image/jwu_logo1.png" alt="">
-            </a>
-         </footer>
-     </div>
-     <!-- Scripts -->
-     <script src="https://code.jquer y.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+            <table id="fos-list-table" class="fos-list-table">
+              <thead>
+                <tr>
+                  <th style="width: 5%; cursor: pointer;" onclick="sortTable(0)" class="ani1">번호</th>
+                  <th style="width: 5%; cursor: pointer;" onclick="sortTable(1)" class="ani1">영역</th>
+                  <th style="width: 7%">이수시간</th>
+                  <th style="width: 12%">운영부서</th>
+                  <th style="width: 24%;">비교과프로그램명</th>
+                  <th style="width: 12%;">접수기간</th>
+                  <th style="width: 12%;">운영기간</th>
+                  <th style="width: 15%;">신청방법</th>
+                  <th>모집인원</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>01</td>
+                  <td class="yellow-box">O</td>
+                  <td class="yellow-box">없음</td>
+                  <td class="yellow-box">취창업지원센터</td>
+                  <td class="yellow-box">진로·취업상담</td>
+                  <td class="yellow-box">2022.03 ~ 2022.12</td>
+                  <td class="yellow-box">2022.04 ~ 2020.12<br>(연간 운영)</td>
+                  <td class="yellow-box">구글설문신청 (온라인신청)</td>
+                  <td class="yellow-box">제한없음</td>
+                </tr>
+                <tr>
+                  <td>02</td>
+                  <td class="yellow-box">F , S</td>
+                  <td class="yellow-box">6</td>
+                  <td class="yellow-box">취창업지원센터</td>
+                  <td class="yellow-box">진로특강</td>
+                  <td class="yellow-box">2022.04.11 ~ 11.18</td>
+                  <td class="yellow-box">2022.04.11 ~ 11.18</td>
+                  <td class="yellow-box">구글설문신청 (온라인신청)</td>
+                  <td class="yellow-box">제한없음</td>
+                </tr>
+                <tr>
+                  <td>03</td>
+                  <td class="yellow-box">F , S</td>
+                  <td class="yellow-box">6</td>
+                  <td class="yellow-box">취창업지원센터</td>
+                  <td class="yellow-box">취업특강Ⅰ</td>
+                  <td class="yellow-box">2022.04.11 ~ 11.18</td>
+                  <td class="yellow-box">2022.04.11 ~ 11.18</td>
+                  <td class="yellow-box">구글설문신청 (온라인신청)</td>
+                  <td class="yellow-box">제한없음</td>
+                </tr>
+                <tr>
+                  <td>04</td>
+                  <td class="yellow-box">F</td>
+                  <td class="yellow-box">없음</td>
+                  <td class="yellow-box">취창업지원센터</td>
+                  <td class="yellow-box">취업동아리</td>
+                  <td class="yellow-box">2022.03.14 ~ 03.28</td>
+                  <td class="yellow-box">2022.03.14 ~ 11.25</td>
+                  <td class="yellow-box">센터 방문 신청</td>
+                  <td class="yellow-box">5개팀</td>
+                </tr>
+                <tr>
+                  <td>05</td>
+                  <td class="yellow-box">F</td>
+                  <td class="yellow-box">없음</td>
+                  <td class="yellow-box">취창업지원센터</td>
+                  <td class="yellow-box">취업능력UP프로그램</td>
+                  <td class="yellow-box">2022.03.14 ~ 11.25</td>
+                  <td class="yellow-box">2022.03.14 ~ 11.25</td>
+                  <td class="yellow-box">구글설문신청 (온라인신청)</td>
+                  <td class="yellow-box">제한없음</td>
+                </tr>
+                <tr>
+                  <td>06</td>
+                  <td class="yellow-box">F</td>
+                  <td class="yellow-box">없음</td>
+                  <td class="yellow-box">취창업지원센터</td>
+                  <td class="yellow-box">취업스펙UP프로그램</td>
+                  <td class="yellow-box">2022.03.14 ~ 11.25</td>
+                  <td class="yellow-box">2022.03.14 ~ 11.25</td>
+                  <td class="yellow-box">구글설문신청 (온라인신청)</td>
+                  <td class="yellow-box">제한없음</td>
+                </tr>
+                <tr>
+                  <td>07</td>
+                  <td class="yellow-box">O</td>
+                  <td class="yellow-box">10</td>
+                  <td class="yellow-box">취창업지원센터</td>
+                  <td class="yellow-box">채용설명회</td>
+                  <td class="yellow-box">2022.03.21 ~ 04.01</td>
+                  <td class="yellow-box">2022.04.04 ~ 05.31</td>
+                  <td class="yellow-box">구글설문신청 (온라인신청)</td>
+                  <td class="yellow-box">1회 40명 이내</td>
+                </tr>
+                <tr>
+                  <td>08</td>
+                  <td class="yellow-box">O</td>
+                  <td class="yellow-box">40</td>
+                  <td class="yellow-box">취창업지원센터</td>
+                  <td class="yellow-box">취업 준비를 위한 토익 교육반</td>
+                  <td class="yellow-box">2022.03.14 ~ 03.30</td>
+                  <td class="yellow-box">2022.04.04 ~ 04.29</td>
+                  <td class="yellow-box">구글설문신청 (온라인신청)</td>
+                  <td class="yellow-box">40명</td>
+                </tr>
+                <tr>
+                  <td>09</td>
+                  <td class="yellow-box">F</td>
+                  <td class="yellow-box">없음</td>
+                  <td class="yellow-box">취창업지원센터</td>
+                  <td class="yellow-box">해외취업성공지원프로그램</td>
+                  <td class="yellow-box">2022.03.14 ~ 12.16</td>
+                  <td class="yellow-box">2022.03.14 ~ 12.16</td>
+                  <td class="yellow-box">센터 방문 또는 메일 신청</td>
+                  <td class="yellow-box">5명</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td class="yellow-box">F</td>
+                  <td class="yellow-box">최대 6</td>
+                  <td class="yellow-box">취창업지원센터</td>
+                  <td class="yellow-box">온라인취업솔루션</td>
+                  <td class="yellow-box">2022.03 ~ 2022.12</td>
+                  <td class="yellow-box">2022.03 ~ 2022.12<br>(연간 운영)</td>
+                  <td class="yellow-box">해당 사이트 로그인 이용</td>
+                  <td class="yellow-box">제한없음</td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td class="yellow-box">O</td>
+                  <td class="yellow-box">없음</td>
+                  <td class="yellow-box">취창업지원센터</td>
+                  <td class="yellow-box">창업상담</td>
+                  <td class="yellow-box">2022.03 ~ 2022.12</td>
+                  <td class="yellow-box">2022.03 ~ 2022.12<br>(연간 운영)</td>
+                  <td class="yellow-box">구글설문신청 (온라인신청)</td>
+                  <td class="yellow-box">제한없음</td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td class="yellow-box">F , S</td>
+                  <td class="yellow-box">최대 18</td>
+                  <td class="yellow-box">취창업지원센터</td>
+                  <td class="yellow-box">창업특강</td>
+                  <td class="yellow-box">2022.04 ~ 2022.05</td>
+                  <td class="yellow-box">2022.04 ~ 2020.06<br>(1학기 운영)</td>
+                  <td class="yellow-box">통합정보시스템</td>
+                  <td class="yellow-box">회차당 300명</td>
+                </tr>
+                <tr>
+                  <td>13</td>
+                  <td class="yellow-box">F</td>
+                  <td class="yellow-box">없음</td>
+                  <td class="yellow-box">취창업지원센터</td>
+                  <td class="yellow-box">창업동아리</td>
+                  <td class="yellow-box">2022.03 ~ 2022.09</td>
+                  <td class="yellow-box">2022.04 ~ 2020.11<br>(연간 운영)</td>
+                  <td class="yellow-box">센터 방문 또는 메일 신청</td>
+                  <td class="yellow-box">5개팀</td>
+                </tr>
+                <tr>
+                  <td>14</td>
+                  <td class="yellow-box">F</td>
+                  <td class="yellow-box">없음</td>
+                  <td class="yellow-box">취창업지원센터</td>
+                  <td class="yellow-box">학생창업기업지원프로그램</td>
+                  <td class="yellow-box">2022.03 ~ 2022.12</td>
+                  <td class="yellow-box">2022.04 ~ 2020.12<br>(연간 운영)</td>
+                  <td class="yellow-box">센터 방문 신청</td>
+                  <td class="yellow-box">5명</td>
+                </tr>
+                <tr>
+                  <td>15</td>
+                  <td class="yellow-box">자체</td>
+                  <td class="yellow-box">없음</td>
+                  <td class="yellow-box">학생상담센터</td>
+                  <td class="yellow-box">개인상담</td>
+                  <td class="yellow-box">상시</td>
+                  <td class="yellow-box">2022.03.12 ~ 2023.01.27</td>
+                  <td class="yellow-box">전화, 이메일, <br>홈페이지, 방문</td>
+                  <td class="yellow-box">제한없음</td>
+                </tr>
+                <tr>
+                  <td>16</td>
+                  <td class="yellow-box">자체</td>
+                  <td class="yellow-box">없음</td>
+                  <td class="yellow-box">학생상담센터</td>
+                  <td class="yellow-box">개인 심리검사 및 해석</td>
+                  <td class="yellow-box">상시</td>
+                  <td class="yellow-box">2022.03.12 ~ 2023.01.27</td>
+                  <td class="yellow-box">전화, 이메일, <br>홈페이지, 방문</td>
+                  <td class="yellow-box">제한없음</td>
+                </tr>
+                <tr>
+                  <td>17</td>
+                  <td class="yellow-box">자체</td>
+                  <td class="yellow-box">없음</td>
+                  <td class="yellow-box">학생상담센터</td>
+                  <td class="yellow-box">너도 받을 수 있어, 점프장학!<br>(직전학기 학사경고자 대상 상담)</td>
+                  <td class="yellow-box">2022.02.24 ~ 03.08</td>
+                  <td class="yellow-box">2022.02.24 ~ 03.08</td>
+                  <td class="yellow-box">전화, 이메일, <br>홈페이지, 방문</td>
+                  <td class="yellow-box">제한없음</td>
+                </tr>
+                <tr>
+                  <td>18</td>
+                  <td class="yellow-box">O</td>
+                  <td class="yellow-box">최대 8</td>
+                  <td class="yellow-box">학생상담센터</td>
+                  <td class="yellow-box">친해지길 바래<br>(대인관계 집단상담)</td>
+                  <td class="yellow-box">2022.03.14 ~ 03.25</td>
+                  <td class="yellow-box">2022.03.30 ~ 04.25</td>
+                  <td class="yellow-box">통합정보시스템</td>
+                  <td class="yellow-box">10명</td>
+                </tr>
+                <tr>
+                  <td>19</td>
+                  <td class="yellow-box">O</td>
+                  <td class="yellow-box">2</td>
+                  <td class="yellow-box">학생상담센터</td>
+                  <td class="yellow-box">새내기 마음지킴 프로젝트<br>(1학년 대상 집단심리검사)</td>
+                  <td class="yellow-box">2022.03.14 ~ 03.25</td>
+                  <td class="yellow-box">2022.03.28 ~ 05.31</td>
+                  <td class="yellow-box">통합정보시스템</td>
+                  <td class="yellow-box">900명</td>
+                </tr>
+                <tr>
+                  <td>20</td>
+                  <td class="yellow-box">O</td>
+                  <td class="yellow-box">최대 4</td>
+                  <td class="yellow-box">학생상담센터</td>
+                  <td class="yellow-box">지피지기 (1학년)<br>(집단성격검사 및 해석워크숍)</td>
+                  <td class="yellow-box">2022.03.07 ~ 03.31</td>
+                  <td class="yellow-box">2022.03.07 ~ 04.29</td>
+                  <td class="yellow-box">학과 교수 신청서 제출</td>
+                  <td class="yellow-box">200명</td>
+                </tr>
+                <tr>
+                  <td>21</td>
+                  <td class="yellow-box">F</td>
+                  <td class="yellow-box">2</td>
+                  <td class="yellow-box">학생상담센터</td>
+                  <td class="yellow-box">소소한 JOB담 (1학년)<br>(대상 진로심리검사)</td>
+                  <td class="yellow-box">2022.03.07 ~ 03.31</td>
+                  <td class="yellow-box">2022.03.21 ~ 04.29</td>
+                  <td class="yellow-box">통합정보시스템</td>
+                  <td class="yellow-box">300명</td>
+                </tr>
+                <tr>
+                  <td>22</td>
+                  <td class="yellow-box">O</td>
+                  <td class="yellow-box">4</td>
+                  <td class="yellow-box">학생상담센터</td>
+                  <td class="yellow-box">찾아가는 오픈상담 2</td>
+                  <td class="yellow-box">2022.03.14 ~ 03.25</td>
+                  <td class="yellow-box">2022.03.21 ~ 03.29</td>
+                  <td class="yellow-box">통합정보시스템</td>
+                  <td class="yellow-box">150명</td>
+                </tr>
+                <tr>
+                  <td>23</td>
+                  <td class="yellow-box">S</td>
+                  <td class="yellow-box">최대 8</td>
+                  <td class="yellow-box">학생상담센터</td>
+                  <td class="yellow-box">중원또래지킴이 되Go!<br>(3.4학년 또래상담자 양성과정)</td>
+                  <td class="yellow-box">2022.03.07 ~ 03.11</td>
+                  <td class="yellow-box">2022.04.06 ~ 04.27</td>
+                  <td class="yellow-box">통합정보시스템<br>또는 학과추천</td>
+                  <td class="yellow-box">20명</td>
+                </tr>
+                <tr>
+                  <td>24</td>
+                  <td class="yellow-box">S</td>
+                  <td class="yellow-box">2</td>
+                  <td class="yellow-box">학생상담센터</td>
+                  <td class="yellow-box">재학생 폭력예방교육</td>
+                  <td class="yellow-box">일괄업로드</td>
+                  <td class="yellow-box">2022.03.21 ~ 05.31</td>
+                  <td class="yellow-box">통합정보시스템</td>
+                  <td class="yellow-box">4,000명</td>
+                </tr>
+                <tr>
+                  <td>25</td>
+                  <td class="yellow-box">S</td>
+                  <td class="yellow-box">1</td>
+                  <td class="yellow-box">학생상담센터</td>
+                  <td class="yellow-box">인터넷, 스마트폰 중독(과의존)<br>예방교육</td>
+                  <td class="yellow-box">일괄업로드</td>
+                  <td class="yellow-box">2022.03.21 ~ 05.31</td>
+                  <td class="yellow-box">통합정보시스템</td>
+                  <td class="yellow-box">4,000명</td>
+                </tr>
+                <tr>
+                  <td>26</td>
+                  <td class="yellow-box">S</td>
+                  <td class="yellow-box">2</td>
+                  <td class="yellow-box">학생상담센터</td>
+                  <td class="yellow-box">우울증·스트레스 예방교육</td>
+                  <td class="yellow-box">2022.03.07 ~ 03.11</td>
+                  <td class="yellow-box">2022.03.21 ~ 04.29</td>
+                  <td class="yellow-box">통합정보시스템</td>
+                  <td class="yellow-box">200명</td>
+                </tr>
+                <tr>
+                  <td>27</td>
+                  <td class="yellow-box">S</td>
+                  <td class="yellow-box">2</td>
+                  <td class="yellow-box">학생상담센터</td>
+                  <td class="yellow-box">자살예방교육</td>
+                  <td class="yellow-box">2022.03.07 ~ 03.11</td>
+                  <td class="yellow-box">2022.03.21 ~ 04.29</td>
+                  <td class="yellow-box">통합정보시스템</td>
+                  <td class="yellow-box">200명</td>
+                </tr>
+                <tr>
+                  <td>28</td>
+                  <td class="yellow-box">S</td>
+                  <td class="yellow-box">10</td>
+                  <td class="yellow-box">인성교육센터</td>
+                  <td class="yellow-box">중원 체험 비교과 (골프)</td>
+                  <td class="yellow-box">~2022.03.04</td>
+                  <td class="yellow-box">2022.03.07 ~ 06.02</td>
+                  <td class="yellow-box">통합정보시스템</td>
+                  <td class="yellow-box">분반당 15명</td>
+                </tr>
+                <tr>
+                  <td>29</td>
+                  <td class="yellow-box">S</td>
+                  <td class="yellow-box">10</td>
+                  <td class="yellow-box">인성교육센터</td>
+                  <td class="yellow-box">중원 체험 비교과 (승마)</td>
+                  <td class="yellow-box">~2022.03.11</td>
+                  <td class="yellow-box">2022.03.18 ~ 05.27</td>
+                  <td class="yellow-box">통합정보시스템</td>
+                  <td class="yellow-box">분반당 15명</td>
+                </tr>
+                <tr>
+                  <td>30</td>
+                  <td class="yellow-box">S</td>
+                  <td class="yellow-box">10</td>
+                  <td class="yellow-box">인성교육센터</td>
+                  <td class="yellow-box">중원 체험 비교과 (수영)</td>
+                  <td class="yellow-box">~2022.03.08</td>
+                  <td class="yellow-box">2022.03.22 ~ 05.27</td>
+                  <td class="yellow-box">통합정보시스템</td>
+                  <td class="yellow-box">분반당 20명</td>
+                </tr>
+                <tr>
+                  <td>31</td>
+                  <td class="yellow-box">S</td>
+                  <td class="yellow-box">15</td>
+                  <td class="yellow-box">인성교육센터</td>
+                  <td class="yellow-box">미래를 내가 변화시킬 수 있을까?</td>
+                  <td class="yellow-box">~2022.04.01</td>
+                  <td class="yellow-box">2022.04.08 ~ 06.03</td>
+                  <td class="yellow-box">통합정보시스템</td>
+                  <td class="yellow-box">150명</td>
+                </tr>
+                <tr>
+                  <td>32</td>
+                  <td class="yellow-box">S</td>
+                  <td class="yellow-box">15</td>
+                  <td class="yellow-box">인성교육센터</td>
+                  <td class="yellow-box">이런 비교과프로그램 어때요?</td>
+                  <td class="yellow-box">~2022.04.01</td>
+                  <td class="yellow-box">2022.04.12 ~ 05.24</td>
+                  <td class="yellow-box">통합정보시스템</td>
+                  <td class="yellow-box">150명</td>
+                </tr>
+                <tr>
+                  <td>33</td>
+                  <td class="yellow-box">S</td>
+                  <td class="yellow-box">15</td>
+                  <td class="yellow-box">인성교육센터</td>
+                  <td class="yellow-box">덕질로 덕(德)하기</td>
+                  <td class="yellow-box">~2022.03.25</td>
+                  <td class="yellow-box">2022.03.30 ~ 05.25</td>
+                  <td class="yellow-box">통합정보시스템</td>
+                  <td class="yellow-box">150명</td>
+                </tr>
+                <tr>
+                  <td>34</td>
+                  <td class="yellow-box">S</td>
+                  <td class="yellow-box">6</td>
+                  <td class="yellow-box">인성교육센터</td>
+                  <td class="yellow-box">출발!인성비디오여행</td>
+                  <td class="yellow-box">~2022.03.31.</td>
+                  <td class="yellow-box">2022.03.02 ~ 05.20</td>
+                  <td class="yellow-box">통합정보시스템</td>
+                  <td class="yellow-box">300명</td>
+                </tr>
+                <tr>
+                  <td>35</td>
+                  <td class="yellow-box">S</td>
+                  <td class="yellow-box">최대 50</td>
+                  <td class="yellow-box">인성교육센터</td>
+                  <td class="yellow-box">인성교육센터<br>교외 외부활동프로그램</td>
+                  <td class="yellow-box">~2022.05.01.</td>
+                  <td class="yellow-box">2022.03.01 ~ 11.30</td>
+                  <td class="yellow-box">통합정보시스템</td>
+                  <td class="yellow-box">제한없음</td>
+                </tr>
+                <tr>
+                  <td>36</td>
+                  <td class="yellow-box">S</td>
+                  <td class="yellow-box">15</td>
+                  <td class="yellow-box">인성교육센터</td>
+                  <td class="yellow-box">내가 만드는 우리 학교 픽토그램</td>
+                  <td class="yellow-box">~2022.04.01.</td>
+                  <td class="yellow-box">2022.04.07 ~ 05.26</td>
+                  <td class="yellow-box">통합정보시스템</td>
+                  <td class="yellow-box">150명</td>
+                </tr>
+                <tr>
+                  <td>37</td>
+                  <td class="yellow-box">O</td>
+                  <td class="yellow-box">10</td>
+                  <td class="yellow-box">인성교육센터</td>
+                  <td class="yellow-box">중원 인성 독서 인증제</td>
+                  <td class="yellow-box">~2022.03.24.</td>
+                  <td class="yellow-box">2022.03.28 ~ 05.23</td>
+                  <td class="yellow-box">통합정보시스템</td>
+                  <td class="yellow-box">150명</td>
+                </tr>
+                <tr>
+                  <td>38</td>
+                  <td class="yellow-box">O</td>
+                  <td class="yellow-box">10</td>
+                  <td class="yellow-box">인성교육센터</td>
+                  <td class="yellow-box">바른 언어 생활 클리닉</td>
+                  <td class="yellow-box">~2022.04.01.</td>
+                  <td class="yellow-box">2022.04.08 ~ 06.03</td>
+                  <td class="yellow-box">통합정보시스템</td>
+                  <td class="yellow-box">150명</td>
+                </tr>
+                <tr>
+                  <td>39</td>
+                  <td class="yellow-box">O , S</td>
+                  <td class="yellow-box">각 7</td>
+                  <td class="yellow-box">교수역량개발센터</td>
+                  <td class="yellow-box">중원리더: 자기관리 학습역량<br>강화 프로그램</td>
+                  <td class="yellow-box">2022.03.07 ~ 03.11</td>
+                  <td class="yellow-box">2022.03.07 ~ 06.10</td>
+                  <td class="yellow-box">방문신청<br>(A401 교수학습지원센터)</td>
+                  <td class="yellow-box">50명<br>(생활관 입사생<br>1,2학년 25명<br>3,4학년 25명)</td>
+                </tr>
+                <tr>
+                  <td>40</td>
+                  <td class="yellow-box">F</td>
+                  <td class="yellow-box">14</td>
+                  <td class="yellow-box">교수역량개발센터</td>
+                  <td class="yellow-box">학습플래너 작성을 통한 자기주도적<br>학습역량 강화 프로그램</td>
+                  <td class="yellow-box">2022.03.07 ~ 03.11</td>
+                  <td class="yellow-box">2022.03.07 ~ 06.10</td>
+                  <td class="yellow-box">방문신청<br>(A401 교수학습지원센터)</td>
+                  <td class="yellow-box">100명<br>(생활관 입사생)</td>
+                </tr>
+                <tr>
+                  <td>41</td>
+                  <td class="yellow-box">F</td>
+                  <td class="yellow-box">5</td>
+                  <td class="yellow-box">교수역량개발센터</td>
+                  <td class="yellow-box">수업구조화전략: 강의정리 보고서 </td>
+                  <td class="yellow-box">2022.03.07 ~ 03.11</td>
+                  <td class="yellow-box">2022.03.07 ~ 06.10</td>
+                  <td class="yellow-box">통합정보시스템</td>
+                  <td class="yellow-box">25</td>
+                </tr>
+                <tr>
+                  <td>42</td>
+                  <td class="yellow-box">F</td>
+                  <td class="yellow-box">2</td>
+                  <td class="yellow-box">교수역량개발센터</td>
+                  <td class="yellow-box">자기조절학습검사(SLT) 및<br>학습지원 프로그램</td>
+                  <td class="yellow-box">2022.03.07 ~ 06.03</td>
+                  <td class="yellow-box">2022.03.07 ~ 06.10</td>
+                  <td class="yellow-box">통합정보시스템</td>
+                  <td class="yellow-box">1000<br>(1, 3학년)</td>
+                </tr>
+                <tr>
+                  <td>43</td>
+                  <td class="yellow-box">F</td>
+                  <td class="yellow-box">30 , 20</td>
+                  <td class="yellow-box">교수역량개발센터</td>
+                  <td class="yellow-box">학습역량 강화를 위한<br>외부학습활동 프로그램<br>(한국사능력검정, 자격증)</td>
+                  <td class="yellow-box">2022.03</td>
+                  <td class="yellow-box">2022.03.07 ~ 06.10</td>
+                  <td class="yellow-box">통합정보시스템 →<br>센터 방문 또는 우편으로<br>지정양식 신청서 제출</td>
+                  <td class="yellow-box">100명</td>
+                </tr>
+                <tr>
+                  <td>44</td>
+                  <td class="yellow-box">O</td>
+                  <td class="yellow-box">50 , 30</td>
+                  <td class="yellow-box">교수역량개발센터</td>
+                  <td class="yellow-box">학습역량 강화를 위한<br>외부학습활동 프로그램<br>(외국어 학습)</td>
+                  <td class="yellow-box">2022.03</td>
+                  <td class="yellow-box">2022.03.07 ~ 06.10</td>
+                  <td class="yellow-box">통합정보시스템 →<br>센터 방문 또는 우편으로<br>지정양식 신청서 제출</td>
+                  <td class="yellow-box">100명</td>
+                </tr>
+                <tr>
+                  <td>45</td>
+                  <td class="yellow-box">F , O</td>
+                  <td class="yellow-box">20</td>
+                  <td class="yellow-box">혁신교육지원팀</td>
+                  <td class="yellow-box">인공지능(AI)활용 학생 맞춤형<br>교육 프로그램<br>(일반과목, 토익)</td>
+                  <td class="yellow-box">2022.03.02 ~ 03.11</td>
+                  <td class="yellow-box">2022.04.04 ~ 05.27</td>
+                  <td class="yellow-box">A401 혁신교육지원팀 ,<br>방문신청</td>
+                  <td class="yellow-box">과정별 100명</td>
+                </tr>
+                <tr>
+                  <td>46</td>
+                  <td class="yellow-box">O</td>
+                  <td class="yellow-box">15</td>
+                  <td class="yellow-box">교양학부</td>
+                  <td class="yellow-box">글로벌역량강화 기초영문법강좌</td>
+                  <td class="yellow-box">2022.03.02 ~ 03.13</td>
+                  <td class="yellow-box">2022.03.14 ~ 05.31</td>
+                  <td class="yellow-box">통합정보시스템</td>
+                  <td class="yellow-box">300명</td>
+                </tr>
+                <tr>
+                  <td>47</td>
+                  <td class="yellow-box">O</td>
+                  <td class="yellow-box">15</td>
+                  <td class="yellow-box">교양학부</td>
+                  <td class="yellow-box">글로벌역량강화 토익강좌1</td>
+                  <td class="yellow-box">2022.03.02 ~ 03.13</td>
+                  <td class="yellow-box">2022.03.14 ~ 05.31</td>
+                  <td class="yellow-box">통합정보시스템</td>
+                  <td class="yellow-box">300명</td>
+                </tr>
+                <tr>
+                  <td>48</td>
+                  <td class="yellow-box">O</td>
+                  <td class="yellow-box">20</td>
+                  <td class="yellow-box">교양학부</td>
+                  <td class="yellow-box">온라인 모의토익시험</td>
+                  <td class="yellow-box">2022.03.02 ~ 03.13</td>
+                  <td class="yellow-box">2022.03.14 ~ 05.31</td>
+                  <td class="yellow-box">통합정보시스템</td>
+                  <td class="yellow-box">300명</td>
+                </tr>
+                <tr>
+                  <td>49</td>
+                  <td class="yellow-box">O</td>
+                  <td class="yellow-box">21</td>
+                  <td class="yellow-box">융합디자인학과<br>043-830-8969</td>
+                  <td class="yellow-box">디자인공모전</td>
+                  <td class="yellow-box">2022.03.02 ~ 03.04</td>
+                  <td class="yellow-box">2022.03.15 ~ 04.26<br> 화 17:00-20:00</td>
+                  <td class="yellow-box">방문신청(MII 908)</td>
+                  <td class="yellow-box">15명</td>
+                </tr>
+                <tr>
+                  <td>50</td>
+                  <td class="yellow-box">O</td>
+                  <td class="yellow-box">30</td>
+                  <td class="yellow-box">관광경영학 융합전공<br>043-830-8887</td>
+                  <td class="yellow-box">바리스타 되보기</td>
+                  <td class="yellow-box">2022.03.02 ~ 03.13</td>
+                  <td class="yellow-box">2022.03.14. ~ 06.21<br>수 18:30~20:30</td>
+                  <td class="yellow-box">통합정보시스템</td>
+                  <td class="yellow-box">15명</td>
+                </tr>
+                <tr>
+                  <td>51</td>
+                  <td class="yellow-box">F</td>
+                  <td class="yellow-box">10</td>
+                  <td class="yellow-box">말산업학과<br>043-830-8811</td>
+                  <td class="yellow-box">말산업 자격증 준비반</td>
+                  <td class="yellow-box">2022.03.01 ~ 03.20</td>
+                  <td class="yellow-box">2022.03.21 ~ 05.30<br>월 13:00~14:00</td>
+                  <td class="yellow-box">통합정보시스템</td>
+                  <td class="yellow-box">40명</td>
+                </tr>
+                <tr>
+                  <td>52</td>
+                  <td class="yellow-box">F</td>
+                  <td class="yellow-box">10</td>
+                  <td class="yellow-box">한국어교육문화학과<br>043-8302-8691</td>
+                  <td class="yellow-box">KBS한국어능력시험 준비반 </td>
+                  <td class="yellow-box">2022.03.07 ~ 03.18</td>
+                  <td class="yellow-box">2022.03.21 ~ 04.18<br>월 16:00 ~ 18:00</td>
+                  <td class="yellow-box">통합정보시스템</td>
+                  <td class="yellow-box">20명</td>
+                </tr>
+                <tr>
+                  <td>53</td>
+                  <td class="yellow-box">S</td>
+                  <td class="yellow-box">30</td>
+                  <td class="yellow-box">의료뷰티케어학과<br>043-830-8843</td>
+                  <td class="yellow-box">젤네일아트</td>
+                  <td class="yellow-box">2021.03.07 ~ 03.15</td>
+                  <td class="yellow-box">2022.03.16 ~ 05.18<br>수 18:00~21:00</td>
+                  <td class="yellow-box">통합정보시스템</td>
+                  <td class="yellow-box">15명</td>
+                </tr>
+                <tr>
+                  <td>54</td>
+                  <td class="yellow-box">F</td>
+                  <td class="yellow-box">15</td>
+                  <td class="yellow-box">항공정비학과<br>043-830-8941</td>
+                  <td class="yellow-box">항공산업기사 실기 실습 대비</td>
+                  <td class="yellow-box">2022.03.03 ~ 03.18</td>
+                  <td class="yellow-box">2022.03.21 ~ 04.12<br>월, 화 19:00~21:00</td>
+                  <td class="yellow-box">방문신청(MI 601호)</td>
+                  <td class="yellow-box">10명</td>
+                </tr>
+                <tr>
+                  <td>55</td>
+                  <td class="yellow-box">O</td>
+                  <td class="yellow-box">30</td>
+                  <td class="yellow-box">임상병리학과<br>043-830-8965</td>
+                  <td class="yellow-box">해외 취업을 위한 영어 독해<br>(해외취업을 위한 임상화학<br>지원 프로그램 2)</td>
+                  <td class="yellow-box">2022.03.07 ~ 03.10</td>
+                  <td class="yellow-box">2022.03.11 ~ 05.13<br>금 18:00~21:00</td>
+                  <td class="yellow-box">방문신청(S 812)</td>
+                  <td class="yellow-box">20명</td>
+                </tr>
+                <tr>
+                  <td>56</td>
+                  <td class="yellow-box">F</td>
+                  <td class="yellow-box">30</td>
+                  <td class="yellow-box">임상병리학과<br>043-830-8965</td>
+                  <td class="yellow-box">공무원 취업을 위한<br>생물 지원 프로그램 2</td>
+                  <td class="yellow-box">2022.03.07 ~ 03.10</td>
+                  <td class="yellow-box">2022.03.12 ~ 05.14<br>토 15:00~18:00</td>
+                  <td class="yellow-box">방문신청(S 812)</td>
+                  <td class="yellow-box">20명</td>
+                </tr>
+                <tr>
+                  <td>57</td>
+                  <td class="yellow-box">O</td>
+                  <td class="yellow-box">30</td>
+                  <td class="yellow-box">의료뷰티케어학과<br>043-830-8846</td>
+                  <td class="yellow-box">피부(미용사)국가 자격증 과정</td>
+                  <td class="yellow-box">2022.03.01 ~ 03.10</td>
+                  <td class="yellow-box">2022.03.10 ~ 05.19<br>목 18:00~21:00</td>
+                  <td class="yellow-box">통합정보시스템</td>
+                  <td class="yellow-box">40명</td>
+                </tr>
+                <tr>
+                  <td>58</td>
+                  <td class="yellow-box">O</td>
+                  <td class="yellow-box">30</td>
+                  <td class="yellow-box">말산업학과<br>043-830-5220</td>
+                  <td class="yellow-box">힐링 골프 아카데미</td>
+                  <td class="yellow-box">2022.03.01 ~ 03.20</td>
+                  <td class="yellow-box">2022.03.21 ~ 05.30<br>월 19:00~22:00</td>
+                  <td class="yellow-box">통합정보시스템(10명)<br> 방문신청 MII 704(30명)</td>
+                  <td class="yellow-box">40명</td>
+                </tr>
+                <tr>
+                  <td>59</td>
+                  <td class="yellow-box">S</td>
+                  <td class="yellow-box">21</td>
+                  <td class="yellow-box">융합디자인학과<br>043-830-8969</td>
+                  <td class="yellow-box">디자인재능나눔프로젝트</td>
+                  <td class="yellow-box">2022.03.02 ~ 03.04</td>
+                  <td class="yellow-box">2022.03.10 ~ 04.21<br>목 14:00-17:00</td>
+                  <td class="yellow-box">통합정보시스템</td>
+                  <td class="yellow-box">15명</td>
+                </tr>
+                <tr>
+                  <td>60</td>
+                  <td class="yellow-box">O</td>
+                  <td class="yellow-box">6</td>
+                  <td class="yellow-box">생활관</td>
+                  <td class="yellow-box">지역의 역사와 문화 탐색프로그램</td>
+                  <td class="yellow-box">2022.03.15 ~ 03.25</td>
+                  <td class="yellow-box">2022.04.01.~ 04.30</td>
+                  <td class="yellow-box">통합정보시스템</td>
+                  <td class="yellow-box">00명</td>
+                </tr>
+                <tr>
+                  <td>61</td>
+                  <td class="yellow-box">S</td>
+                  <td class="yellow-box">3~15</td>
+                  <td class="yellow-box">사회봉사단</td>
+                  <td class="yellow-box">학과별 재능기부 봉사활동</td>
+                  <td class="yellow-box">없음</td>
+                  <td class="yellow-box">2022.03.01 ~ 06.21</td>
+                  <td class="yellow-box">학과에서 수시로 신청을 받음<br>(코로나19 단계에 따라<br>대면 활동 가능시 진행)</td>
+                  <td class="yellow-box">00명</td>
+                </tr>
+                <tr>
+                  <td>62</td>
+                  <td class="yellow-box">O</td>
+                  <td class="yellow-box">30</td>
+                  <td class="yellow-box">외국인학생지원팀</td>
+                  <td class="yellow-box">한국어 실력향상 프로그램</td>
+                  <td class="yellow-box">2022.03.02 ~ 03.09</td>
+                  <td class="yellow-box">2022.03.26 ~ 05.14<br>매주 토,일 20:00~22:00</td>
+                  <td class="yellow-box">온라인 신청</td>
+                  <td class="yellow-box">30명 </td>
+                </tr>
+                <tr>
+                  <td>63</td>
+                  <td class="yellow-box">O</td>
+                  <td class="yellow-box">10</td>
+                  <td class="yellow-box">외국인학생지원팀</td>
+                  <td class="yellow-box">버디프로그램</td>
+                  <td class="yellow-box">2022.03.07 ~ 03.18</td>
+                  <td class="yellow-box">2022.03.24 ~ 04.21<br>목요일 19:00~21:00</td>
+                  <td class="yellow-box">외국인학생지원팀 방문신청<br>또는 온라인</td>
+                  <td class="yellow-box">5개팀</td>
+                </tr>
+                <tr>
+                  <td>64</td>
+                  <td class="yellow-box">S</td>
+                  <td class="yellow-box">30</td>
+                  <td class="yellow-box">홍보팀</td>
+                  <td class="yellow-box">통합홍보 네트워크 구축을 위한<br>학과홍보단 활동</td>
+                  <td class="yellow-box">2022.03.21 ~ 03.30.</td>
+                  <td class="yellow-box">2022.04.01 ~ 06.20<br>수요일 18:00~20:00</td>
+                  <td class="yellow-box">운영자 직접 입력</td>
+                  <td class="yellow-box">60명</td>
+                </tr>
+                <tr>
+                  <td>65</td>
+                  <td class="yellow-box">F</td>
+                  <td class="yellow-box">6</td>
+                  <td class="yellow-box">박물관</td>
+                  <td class="yellow-box">&lt;박물관 문화 나들이&gt;</td>
+                  <td class="yellow-box">2022.03.02 ~ 03.25</td>
+                  <td class="yellow-box">2022.04.27 ~ 05.25</td>
+                  <td class="yellow-box">통합정보시스템</td>
+                  <td class="yellow-box">10명</td>
+                </tr>
+              </tbody>
+            </table>
 
-    <script src="/js/fos-cal.js"></script>
-
-     <!-- 문의하기 -->
-     <script>
-        $(document).scroll(function () {
-            let scrollLocation = document.documentElement.scrollTop; // 현재 스크롤바 위치
-            let windowHeight = window.innerHeight; // 스크린 창
-            let fullHeight = document.body.scrollHeight; //  margin 값은 포함 x
-
-            if (scrollLocation + windowHeight >= fullHeight - 60) {
-                $(".aside__menubar").css("marginBottom", "60px");
-            } else {
-                $(".aside__menubar").css("marginBottom", "0px");
-            }
-        })
-     </script>
-     <!-- Sub-MenuBar -->
-     <script>
-        $(document).ready(function () {
-
-            $(".menubar__content__list--one").mouseover(function () {
-                $(".sub-menubar").css("display", "block");
-                $(".sub-menubar").css("position", "fixed");
-                $(".main__section").css("display", "none");
-                $("main").css("display", "none");
-                $(".section").css("padding-top", "280px");
-
-                $(".sub-menubar__credit-box").css("display", "flex");
-                $(".sub-menubar__fos-box").css("display", "none");
-                $(".sub-menubar__sentest-box").css("display", "none");
-                $(".sub-menubar__self-box").css("display", "none");
-                $(".sub-menubar__tip-box").css("display", "none");
-                $(".sub-menubar__notice-box").css("display", "none");
-
-                $(".sub-menubar__fos-box--flex-fos").css("display", "none");
-                $(".sub-menubar__tip-box--flex-location").css("display", "none");
-                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
-                $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
-                
-            });
-
-            $(".menubar__content__list--two").mouseover(function () {
-                $(".sub-menubar").css("display", "block");
-                $(".sub-menubar").css("position", "fixed");
-                $(".main__section").css("display", "none");
-                $("main").css("display", "none");
-                $(".section").css("padding-top", "280px");
-
-                $(".sub-menubar__credit-box").css("display", "none");
-                $(".sub-menubar__fos-box").css("display", "flex");
-                $(".sub-menubar__sentest-box").css("display", "none");
-                $(".sub-menubar__self-box").css("display", "none");
-                $(".sub-menubar__tip-box").css("display", "none");
-                $(".sub-menubar__notice-box").css("display", "none");
-
-                $(".sub-menubar__tip-box--flex-location").css("display", "none");
-                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
-                $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
-            });
-
-            $(".menubar__content__list--three").mouseover(function () {
-                $(".sub-menubar").css("display", "block");
-                $(".sub-menubar").css("position", "fixed");
-                $(".main__section").css("display", "none");
-                $("main").css("display", "none");
-                $(".section").css("padding-top", "280px");
-
-                $(".sub-menubar__credit-box").css("display", "none");
-                $(".sub-menubar__fos-box").css("display", "none");
-                $(".sub-menubar__sentest-box").css("display", "flex");
-                $(".sub-menubar__self-box").css("display", "none");
-                $(".sub-menubar__tip-box").css("display", "none");
-                $(".sub-menubar__notice-box").css("display", "none");
-
-                $(".sub-menubar__fos-box--flex-fos").css("display", "none");
-                $(".sub-menubar__tip-box--flex-location").css("display", "none");
-                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
-                $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
-            });
-
-            $(".menubar__content__list--four").mouseover(function () {
-                $(".sub-menubar").css("display", "block");
-                $(".sub-menubar").css("position", "fixed");
-                $(".main__section").css("display", "none");
-                $("main").css("display", "none");
-                $(".section").css("padding-top", "280px");
-
-                $(".sub-menubar__credit-box").css("display", "none");
-                $(".sub-menubar__fos-box").css("display", "none");
-                $(".sub-menubar__sentest-box").css("display", "none");
-                $(".sub-menubar__self-box").css("display", "flex");
-                $(".sub-menubar__tip-box").css("display", "none");
-                $(".sub-menubar__notice-box").css("display", "none");
-
-                $(".sub-menubar__fos-box--flex-fos").css("display", "none");
-                $(".sub-menubar__tip-box--flex-location").css("display", "none");
-                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
-                $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
-            });
-
-            $(".menubar__content__list--five").mouseover(function () {
-                $(".sub-menubar").css("display", "block");
-                $(".sub-menubar").css("position", "fixed");
-                $(".main__section").css("display", "none");
-                $("main").css("display", "none");
-                $(".section").css("padding-top", "280px");
-
-                $(".sub-menubar__credit-box").css("display", "none");
-                $(".sub-menubar__fos-box").css("display", "none");
-                $(".sub-menubar__sentest-box").css("display", "none");
-                $(".sub-menubar__self-box").css("display", "none");
-                $(".sub-menubar__tip-box").css("display", "flex");
-                $(".sub-menubar__notice-box").css("display", "none");
-                
-                $(".sub-menubar__fos-box--flex-fos").css("display", "none");
-            });
-
-            $(".menubar__content__list--six").mouseover(function () {
-                $(".sub-menubar").css("display", "block");
-                $(".sub-menubar").css("position", "fixed");
-                $(".main__section").css("display", "none");
-                $("main").css("display", "none");
-                $(".section").css("padding-top", "280px");
-
-                $(".sub-menubar__credit-box").css("display", "none");
-                $(".sub-menubar__fos-box").css("display", "none");
-                $(".sub-menubar__sentest-box").css("display", "none");
-                $(".sub-menubar__self-box").css("display", "none");
-                $(".sub-menubar__tip-box").css("display", "none");
-                $(".sub-menubar__notice-box").css("display", "flex");
-
-                $(".sub-menubar__fos-box--flex-fos").css("display", "none");
-                $(".sub-menubar__tip-box--flex-location").css("display", "none");
-                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
-                $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
-            });
-
-            $(".sub-menubar").mouseleave(function () {
-                $(".sub-menubar").css("display", "none");
-                $(".main__section").css("display", "block");
-                $("main").css("display", "block");
-                $(".section").css("padding-top", "0px")
-            });
-
-            $(".sub-menubar__list-box--fos").mouseover(function () {
-                $(".sub-menubar__fos-box--flex-fos").css("display", "flex");
-            });
-
-            // $(".sub-menubar__list-box--fos").mouseleave(function () {
-            //     $(".sub-menubar__fos-box--flex-fos").css("display", "none");
-            // });
+            <div class="section__content--row-btn-wrap">
+              <a class="app-btn app-btn-animation-1" href="https://fos.jwu.ac.kr" target="_blank">더보기 +</a>
+            </div>
+          </div>
 
 
-            $(".sub-menubar__list-box--location").mouseover(function () {
-                $(".sub-menubar__tip-box--flex-location").css("display", "flex");
-                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
-                $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
-            });
+        </div>
+      </div>
 
-            $(".sub-menubar__tip-box--flex-location").mouseleave(function () {
-                $(".sub-menubar__tip-box--flex-location").css("display", "none");
-            });
 
-            $(".sub-menubar__list-box--bus").mouseover(function () {
-                $(".sub-menubar__tip-box--flex-location").css("display", "none");
-                $(".sub-menubar__tip-box--flex-bus").css("display", "flex");
-                $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
-            });
 
-            $(".sub-menubar__tip-box--flex-bus").mouseleave(function () {
-                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
-            });
+      <!-- Aside__menubar -->
+      <div class="aside__menubar">
+        <div class="aside__menubar-box--inquiry">
+          <a class="kakao-box" href="https://open.kakao.com/o/smLQd66d" target="_blank"><i
+              class="fa-solid fa-comment kakao"></i></a>
+          <a class="mail-box" href="mailto:mj9457@naver.com"><i class="fa-solid fa-envelope mail"></i></a>
+          <a class="top-box" href="#"><i class="fa-solid fa-arrow-up top-btn"></i></a>
+        </div>
+      </div>
+      <div style="clear: both;"></div>
+    </section>
 
-            $(".sub-menubar__list-box--scholarship").mouseover(function () {
-                $(".sub-menubar__tip-box--flex-location").css("display", "none");
-                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
-                $(".sub-menubar__tip-box--flex-scholarship").css("display", "flex");
-            });
+    <!-- Footer -->
+    <footer>
+      <div class="footer__title">Copyright © 2022 WON</div>
+      <a href="https://haksa.jwu.ac.kr/com/index.html">
+        <img class="footer__logo--image" src="/assets/image/jwu_logo1.png" alt="">
+      </a>
+    </footer>
+  </div>
 
-            $(".sub-menubar__tip-box--flex-scholarship").mouseleave(function () {
-                $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
-            });
+  <!-- Scripts -->
+  <script src="https://code.jquer y.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
 
-        });
-     </script>
- 
-     <!-- Weather API -->
-    <script>
-        $(document).ready(function () {
-            let weathersIcon = {
-                '01': 'fas fa-sun',
-                '02': 'fas fa-cloud-sun',
-                '03': 'fas fa-cloud',
-                '04': 'fas fa-cloud-meatball',
-                '09': 'fas fa-cloud-showers-heavy',
-                '10': 'fas fa-cloud-rain',
-                '11': 'fas fa-poo-storm',
-                '13': 'fas fa-snowflake',
-                '50': 'fas fa-smog'
-            }
+  <script src="/js/fos-cal.js"></script>
 
-            $.getJSON(
-                'https://api.openweathermap.org/data/2.5/weather?lat=36.8187&lon=127.7996&appid=54d8b56b9ce4d6cafa110738a09ec718&units=metric',
-                function (data) {
+  <!-- 문의하기 -->
+  <script>
+    $(document).scroll(function () {
+      let scrollLocation = document.documentElement.scrollTop; // 현재 스크롤바 위치
+      let windowHeight = window.innerHeight; // 스크린 창
+      let fullHeight = document.body.scrollHeight; //  margin 값은 포함 x
 
-                    var weatherTemp = Math.floor(data.main.temp) + ' º ';
-                    var weatherIcon = (data.weather[0].icon).substr(0, 2);
-                    var weatherCity = data.name;
+      if (scrollLocation + windowHeight >= fullHeight - 60) {
+        $(".aside__menubar").css("marginBottom", "60px");
+      } else {
+        $(".aside__menubar").css("marginBottom", "0px");
+      }
+    })
+  </script>
+  <!-- Sub-MenuBar -->
+  <script>
+    $(document).ready(function () {
 
-                    $('.menubar__weather--temp').append(weatherTemp);
-                    $('.menubar__weather--icon').append('<i class="' + weathersIcon[weatherIcon] + '"></i>');
-                    // $('.menubar__weather--city').append(weatherCity); /* 학교 날씨 */
-                }
-            )
-        })
-    </script>
+      $(".menubar__content__list--one").mouseover(function () {
+        $(".sub-menubar").css("display", "block");
+        $(".sub-menubar").css("position", "fixed");
+        $(".main__section").css("display", "none");
+        $("main").css("display", "none");
+        $(".section").css("padding-top", "280px");
 
-     <!-- top Btn -->
-     <script>
-        $(".top-box").click(function () {
-            $('html, body').animate({ scrollTop: 0 }, 800);
-            return false;
-        });
-     </script>
- 
-     <!-- fos script -->
-     <script>
-         function sortTable(n) {
-             var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-            table = document.getElementById("fos-list-table");
-            switching = true;
-            dir = "asc";
-             while (switching) {
-                 switching = false;
-                 rows = table.rows;
-                 for (i = 1; i < (rows.length - 1); i++) {
-                    shouldSwitch =  false;
-                    x = rows[i].getElementsByTagName("TD")[n];
-                    y = rows[i + 1] .getElementsByTagName("TD")[n];
-                    if (dir == "asc") {
-                        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-                            shouldSwitch = true;
-                            break;
-                         }
-                     } else if (dir  == "desc") {
-                        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-                            shouldSwitch = true;
-                            break;
-                         }
-                     }
-                 }
-                if (shouldSwitch) {
-                    rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-                    switching = true;
-                    switchcount++;
-                 } else {
-                     if (switchcount  == 0 && dir == "asc") {
-                        dir = "desc ";
-                        switching =  true;
-                    }
-                 }
-             }
+        $(".sub-menubar__credit-box").css("display", "flex");
+        $(".sub-menubar__fos-box").css("display", "none");
+        $(".sub-menubar__sentest-box").css("display", "none");
+        $(".sub-menubar__self-box").css("display", "none");
+        $(".sub-menubar__tip-box").css("display", "none");
+        $(".sub-menubar__notice-box").css("display", "none");
+
+        $(".sub-menubar__fos-box--flex-fos").css("display", "none");
+        $(".sub-menubar__sen-box--flex-sen").css("display", "none");
+        $(".sub-menubar__tip-box--flex-location").css("display", "none");
+        $(".sub-menubar__tip-box--flex-bus").css("display", "none");
+        $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
+
+      });
+
+      $(".menubar__content__list--two").mouseover(function () {
+        $(".sub-menubar").css("display", "block");
+        $(".sub-menubar").css("position", "fixed");
+        $(".main__section").css("display", "none");
+        $("main").css("display", "none");
+        $(".section").css("padding-top", "280px");
+
+        $(".sub-menubar__credit-box").css("display", "none");
+        $(".sub-menubar__fos-box").css("display", "flex");
+        $(".sub-menubar__sentest-box").css("display", "none");
+        $(".sub-menubar__self-box").css("display", "none");
+        $(".sub-menubar__tip-box").css("display", "none");
+        $(".sub-menubar__notice-box").css("display", "none");
+
+        $(".sub-menubar__sen-box--flex-sen").css("display", "none");
+        $(".sub-menubar__tip-box--flex-location").css("display", "none");
+        $(".sub-menubar__tip-box--flex-bus").css("display", "none");
+        $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
+      });
+
+      $(".menubar__content__list--three").mouseover(function () {
+        $(".sub-menubar").css("display", "block");
+        $(".sub-menubar").css("position", "fixed");
+        $(".main__section").css("display", "none");
+        $("main").css("display", "none");
+        $(".section").css("padding-top", "280px");
+
+        $(".sub-menubar__credit-box").css("display", "none");
+        $(".sub-menubar__fos-box").css("display", "none");
+        $(".sub-menubar__sentest-box").css("display", "flex");
+        $(".sub-menubar__self-box").css("display", "none");
+        $(".sub-menubar__tip-box").css("display", "none");
+        $(".sub-menubar__notice-box").css("display", "none");
+
+        $(".sub-menubar__fos-box--flex-fos").css("display", "none");
+        $(".sub-menubar__tip-box--flex-location").css("display", "none");
+        $(".sub-menubar__tip-box--flex-bus").css("display", "none");
+        $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
+      });
+
+      $(".menubar__content__list--four").mouseover(function () {
+        $(".sub-menubar").css("display", "block");
+        $(".sub-menubar").css("position", "fixed");
+        $(".main__section").css("display", "none");
+        $("main").css("display", "none");
+        $(".section").css("padding-top", "280px");
+
+        $(".sub-menubar__credit-box").css("display", "none");
+        $(".sub-menubar__fos-box").css("display", "none");
+        $(".sub-menubar__sentest-box").css("display", "none");
+        $(".sub-menubar__self-box").css("display", "flex");
+        $(".sub-menubar__tip-box").css("display", "none");
+        $(".sub-menubar__notice-box").css("display", "none");
+
+        $(".sub-menubar__fos-box--flex-fos").css("display", "none");
+        $(".sub-menubar__sen-box--flex-sen").css("display", "none");
+        $(".sub-menubar__tip-box--flex-location").css("display", "none");
+        $(".sub-menubar__tip-box--flex-bus").css("display", "none");
+        $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
+      });
+
+      $(".menubar__content__list--five").mouseover(function () {
+        $(".sub-menubar").css("display", "block");
+        $(".sub-menubar").css("position", "fixed");
+        $(".main__section").css("display", "none");
+        $("main").css("display", "none");
+        $(".section").css("padding-top", "280px");
+
+        $(".sub-menubar__credit-box").css("display", "none");
+        $(".sub-menubar__fos-box").css("display", "none");
+        $(".sub-menubar__sentest-box").css("display", "none");
+        $(".sub-menubar__self-box").css("display", "none");
+        $(".sub-menubar__tip-box").css("display", "flex");
+        $(".sub-menubar__notice-box").css("display", "none");
+
+        $(".sub-menubar__fos-box--flex-fos").css("display", "none");
+        $(".sub-menubar__sen-box--flex-sen").css("display", "none");
+      });
+
+      $(".menubar__content__list--six").mouseover(function () {
+        $(".sub-menubar").css("display", "block");
+        $(".sub-menubar").css("position", "fixed");
+        $(".main__section").css("display", "none");
+        $("main").css("display", "none");
+        $(".section").css("padding-top", "280px");
+
+        $(".sub-menubar__credit-box").css("display", "none");
+        $(".sub-menubar__fos-box").css("display", "none");
+        $(".sub-menubar__sentest-box").css("display", "none");
+        $(".sub-menubar__self-box").css("display", "none");
+        $(".sub-menubar__tip-box").css("display", "none");
+        $(".sub-menubar__notice-box").css("display", "flex");
+
+        $(".sub-menubar__fos-box--flex-fos").css("display", "none");
+        $(".sub-menubar__sen-box--flex-sen").css("display", "none");
+        $(".sub-menubar__tip-box--flex-location").css("display", "none");
+        $(".sub-menubar__tip-box--flex-bus").css("display", "none");
+        $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
+      });
+
+      $(".sub-menubar").mouseleave(function () {
+        $(".sub-menubar").css("display", "none");
+        $(".main__section").css("display", "block");
+        $("main").css("display", "block");
+        $(".section").css("padding-top", "0px")
+      });
+
+      /* sen-test */
+      $(".sub-menubar__list-box--sen").mouseover(function () {
+        $(".sub-menubar__sen-box--flex-sen").css("display", "flex");
+      });
+
+      $(".sub-menubar__sen-box--flex-sen").mouseleave(function () {
+        $(".sub-menubar__sen-box--flex-sen").css("display", "none");
+      });
+
+      /* fos */
+      $(".sub-menubar__list-box--fos").mouseover(function () {
+        $(".sub-menubar__fos-box--flex-fos").css("display", "flex");
+      });
+
+      $(".sub-menubar__fos-box--flex-fos").mouseleave(function () {
+        $(".sub-menubar__fos-box--flex-fos").css("display", "none");
+      });
+
+      /* tip */
+      $(".sub-menubar__list-box--location").mouseover(function () {
+        $(".sub-menubar__tip-box--flex-location").css("display", "flex");
+        $(".sub-menubar__tip-box--flex-bus").css("display", "none");
+        $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
+      });
+
+      $(".sub-menubar__tip-box--flex-location").mouseleave(function () {
+        $(".sub-menubar__tip-box--flex-location").css("display", "none");
+      });
+
+      $(".sub-menubar__list-box--bus").mouseover(function () {
+        $(".sub-menubar__tip-box--flex-location").css("display", "none");
+        $(".sub-menubar__tip-box--flex-bus").css("display", "flex");
+        $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
+      });
+
+      $(".sub-menubar__tip-box--flex-bus").mouseleave(function () {
+        $(".sub-menubar__tip-box--flex-bus").css("display", "none");
+      });
+
+      $(".sub-menubar__list-box--scholarship").mouseover(function () {
+        $(".sub-menubar__tip-box--flex-location").css("display", "none");
+        $(".sub-menubar__tip-box--flex-bus").css("display", "none");
+        $(".sub-menubar__tip-box--flex-scholarship").css("display", "flex");
+      });
+
+      $(".sub-menubar__tip-box--flex-scholarship").mouseleave(function () {
+        $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
+      });
+
+    });
+  </script>
+
+  <!-- Weather API -->
+  <script>
+    $(document).ready(function () {
+      let weathersIcon = {
+        '01': 'fas fa-sun',
+        '02': 'fas fa-cloud-sun',
+        '03': 'fas fa-cloud',
+        '04': 'fas fa-cloud-meatball',
+        '09': 'fas fa-cloud-showers-heavy',
+        '10': 'fas fa-cloud-rain',
+        '11': 'fas fa-poo-storm',
+        '13': 'fas fa-snowflake',
+        '50': 'fas fa-smog'
+      }
+
+      $.getJSON(
+        'https://api.openweathermap.org/data/2.5/weather?lat=36.8187&lon=127.7996&appid=54d8b56b9ce4d6cafa110738a09ec718&units=metric',
+        function (data) {
+
+          var weatherTemp = Math.floor(data.main.temp) + ' º ';
+          var weatherIcon = (data.weather[0].icon).substr(0, 2);
+          var weatherCity = data.name;
+
+          $('.menubar__weather--temp').append(weatherTemp);
+          $('.menubar__weather--icon').append('<i class="' + weathersIcon[weatherIcon] + '"></i>');
+          // $('.menubar__weather--city').append(weatherCity); /* 학교 날씨 */
         }
-    </script>
+      )
+    })
+  </script>
+
+  <!-- top Btn -->
+  <script>
+    $(".top-box").click(function () {
+      $('html, body').animate({ scrollTop: 0 }, 800);
+      return false;
+    });
+  </script>
+
+  <!-- fos cal ani -->
+  <script>
+    document.getElementById("btn-21").addEventListener("mouseover", function () {
+      document.getElementById("btn-21").classList += " fos-cals-ani1"
+    })
+
+    document.getElementById("btn-21").addEventListener("mouseleave", function () {
+      document.getElementById("btn-21").classList = "student-number-btn"
+    })
+
+    document.getElementById("btn-22").addEventListener("mouseover", function () {
+      document.getElementById("btn-22").classList += " fos-cals-ani1"
+    })
+
+    document.getElementById("btn-22").addEventListener("mouseleave", function () {
+      document.getElementById("btn-22").classList = "student-number-btn"
+    })
+  </script>
+
+  <!-- fos list table sort script -->
+  <script>
+    function sortTable(n) {
+      var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+      table = document.getElementById("fos-list-table");
+      switching = true;
+      dir = "asc";
+      while (switching) {
+        switching = false;
+        rows = table.rows;
+        for (i = 1; i < (rows.length - 1); i++) {
+          shouldSwitch = false;
+          x = rows[i].getElementsByTagName("TD")[n];
+          y = rows[i + 1].getElementsByTagName("TD")[n];
+          if (dir == "asc") {
+            if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+              shouldSwitch = true;
+              break;
+            }
+          } else if (dir == "desc") {
+            if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+              shouldSwitch = true;
+              break;
+            }
+          }
+        }
+        if (shouldSwitch) {
+          rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+          switching = true;
+          switchcount++;
+        } else {
+          if (switchcount == 0 && dir == "asc") {
+            dir = "desc ";
+            switching = true;
+          }
+        }
+      }
+    }
+  </script>
 </body>
 
 </html>

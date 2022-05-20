@@ -87,7 +87,7 @@
     padding-left: 99.5px;
 }
 
-.sub-menubar__list-box--three {
+.sub-menubar__list-box--three-title {
     padding-left: 198.5px;
 }
 
@@ -112,13 +112,12 @@
 }
 
 
-.sub-menubar__tip-box--flex-location, .sub-menubar__tip-box--flex-bus, .sub-menubar__tip-box--flex-scholarship, .sub-menubar__fos-box--flex-fos {
+.sub-menubar__fos-box--flex-fos, .sub-menubar__sen-box--flex-sen, .sub-menubar__tip-box--flex-location, .sub-menubar__tip-box--flex-bus, .sub-menubar__tip-box--flex-scholarship {
     display: none;
     justify-content: flex-start;
     flex-direction: column;
 }
-
-.sub-menubar__tip-box--flex-location a, .sub-menubar__tip-box--flex-bus a, .sub-menubar__tip-box--flex-scholarship a, .sub-menubar__fos-box--flex-fos a {
+.sub-menubar__fos-box--flex-fos a, .sub-menubar__sen-box--flex-sen a, .sub-menubar__tip-box--flex-location a, .sub-menubar__tip-box--flex-bus a, .sub-menubar__tip-box--flex-scholarship a {
     margin-bottom: 8px;
 }
 
