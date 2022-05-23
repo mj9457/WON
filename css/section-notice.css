@@ -1,0 +1,75 @@
+ .section_notice {
+    max-width: none;
+    width: 85%;
+}
+
+
+
+.blue-box {
+    height: 100%;
+    color: rgb(0, 52, 102); 
+    /* background-color: rgb(0, 52, 102); */
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    overflow: hidden;
+    padding: 5px 5px;
+    word-break: normal;
+    text-align: center;
+    font-family: "NotoSansKR";
+}
+
+.notice-cal-table tr:hover {
+    background-color: #b5b5b5;
+}
+
+.notice-cal-table tr:hover > td .blue-box {
+    color: black;
+    background-color: rgb(250, 227, 1);
+    border: 3px solid rgb(250, 227, 1);
+}
+
+.notice-cal-table th, .notice-cal-table td {
+    border-top: 1px solid #9e9e9e42;
+    vertical-align: middle;
+    width: 2.5%;
+    border-left: 1px solid #9e9e9e42 !important;
+    border-right: 1px solid #9e9e9e42 !important;
+}
+
+.notice-cal-table th {
+    font-size: 25px;
+    height: 40px;
+}
+
+.notice-cal-table {
+    border-collapse: collapse;
+}
+
+.notice-cal-table tbody {
+    border-radius: 5px;
+}
+
+.notice-cal-table tbody tr {
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.notice-cal-table tbody tr td:first-child {
+    border-left: none !important;
+    font-size: 15px;
+}
+
+.notice-cal-table tbody tr td:last-child {
+    border-right: none !important;
+}
+
+.table-title span {
+    height: 40px;
+    cursor: pointer;
+    margin: 0px 20px;
+    font-size: 25px;
+}

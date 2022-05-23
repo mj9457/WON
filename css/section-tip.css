@@ -64,7 +64,7 @@
   border-color:inherit;font-size:24px;text-align:center;vertical-align:top
 } */
 
-.shuttle-bus-time, .school-bus-table, .fos-table, .fos-list-table, .sen-test-time-table  {
+.shuttle-bus-time, .school-bus-table, .fos-table, .fos-list-table, .sen-test-time-table, .notice-cal-table  {
   width: 100%;
   border-collapse:collapse;
   border-spacing:0;
@@ -76,7 +76,7 @@
   margin-bottom: 20px !important;
 }
 
-.shuttle-bus-time td, .school-bus-table td, .fos-table td, .fos-list-table td, .sen-test-time-table td {
+.shuttle-bus-time td, .school-bus-table td, .fos-table td, .fos-list-table td, .sen-test-time-table td, .notice-cal-table td {
   border-color:black;
   border-style: none;
   /* border-width:1px; */
@@ -89,7 +89,7 @@
   text-align: center;
   font-family:"NotoSansKR";
 }
-.shuttle-bus-time th, .school-bus-table th, .fos-table th, .fos-list-table th, .sen-test-time-table th {
+.shuttle-bus-time th, .school-bus-table th, .fos-table th, .fos-list-table th, .sen-test-time-table th, .notice-cal-table th {
   color: white;
   background-color: rgb(0, 52, 102);
   border-style:solid;
@@ -110,24 +110,32 @@
   width: 15%;
 }
 
-.shuttle-bus-time tbody tr, .school-bus-table tbody tr, .fos-table tbody tr, .fos-list-table tbody tr, .sen-test-time-table tbody tr {
+.shuttle-bus-time tbody tr, .school-bus-table tbody tr, .fos-table tbody tr, .fos-list-table tbody tr, .sen-test-time-table tbody tr, .notice-cal-table tbody tr {
   border-radius: 5px;
 }
 
 /* Background-color of the odd rows */
-.shuttle-bus-time tr:nth-child(odd), .school-bus-table tr:nth-child(odd), .fos-table tr:nth-child(odd), .fos-list-table tr:nth-child(odd), .sen-test-time-table tr:nth-child(odd) {
+.shuttle-bus-time tr:nth-child(odd), .school-bus-table tr:nth-child(odd), .fos-table tr:nth-child(odd), .fos-list-table tr:nth-child(odd), .sen-test-time-table tr:nth-child(odd), .notice-cal-table tr:nth-child(odd) {
   background-color: #f6f6f6;
 }
 
 /* Background-color of the even rows */
-.shuttle-bus-time tr:nth-child(even), .school-bus-table tr:nth-child(even), .fos-table tr:nth-child(even), .fos-list-table tr:nth-child(even), .sen-test-time-table tr:nth-child(even)   {
+.shuttle-bus-time tr:nth-child(even), .school-bus-table tr:nth-child(even), .fos-table tr:nth-child(even), .fos-list-table tr:nth-child(even), .sen-test-time-table tr:nth-child(even), .notice-cal-table tr:nth-child(even)   {
   background-color: #f9f9f9;
 }
 
-.shuttle-bus-time tbody tr:hover, .school-bus-table tbody tr:hover, .fos-table tbody tr:hover, .fos-list-table tbody tr:hover , .sen-test-time-table tbody tr:hover {
+.shuttle-bus-time tbody tr:hover, .school-bus-table tbody tr:hover, .fos-table tbody tr:hover, .fos-list-table tbody tr:hover , .sen-test-time-table tbody tr:hover .notice-cal-table tbody tr:hover {
   background-color: #b5b5b5;
 }
 
+/* .yellow-box {
+  background-color: rgb(250, 227, 1);
+  font-weight: bold;
+  transition-delay: 0s;
+  transition-duration: 0.4s;
+  transition-property: all;
+  transition-timing-function:linear;
+} */
 
 .shuttle-bus-time .yellow-box:hover, .school-bus-table .yellow-box:hover, .fos-table .yellow-box:hover, .fos-list-table .yellow-box:hover, .sen-test-time-table .yellow-box:hover  {
   background-color: rgb(250, 227, 1);
