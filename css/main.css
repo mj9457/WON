@@ -8,7 +8,7 @@ main {
 .main__section {    
     font-family: "NotoSansKR";
     position: absolute;
-    z-index: 99;
+    z-index: 50;
     text-align: center;
     top: 260px;
     left: 50%;

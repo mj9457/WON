@@ -65,7 +65,8 @@
     height: 90px;
     background-color: rgb(161, 21, 48);
     z-index: 90;
-    padding-left: 62.5px;
+    /* padding-left: 62.5px; */
+    padding-left: 56.5px;
     margin-top: 40px;
     padding-top: 40px;
     box-shadow: 0 3px 5px -1px #0003, 0 6px 10px #00000024, 0 1px 18px #0000001f;
@@ -84,19 +85,23 @@
 }
 
 .sub-menubar__list-box--two-title {
-    padding-left: 99.5px;
+    /* padding-left: 99.5px; */
+    padding-left: 90.5px;
 }
 
 .sub-menubar__list-box--three-title {
-    padding-left: 198.5px;
+    /* padding-left: 198.5px; */
+    padding-left: 189.5px;
 }
 
 .sub-menubar__list-box--four-title {
-    padding-left:  305.5px;
+    /* padding-left:  305.5px; */
+    padding-left: 296.5px;
 }
 
 .sub-menubar__list-box--five-title {
-    padding-left:  411.5px;
+    /* padding-left:  411.5px; */
+    padding-left: 402.5px;
 }
 
 .sub-menubar__list-box--five-title * {

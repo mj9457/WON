@@ -24,7 +24,7 @@
                     <a href="index.html"><i class="fa-solid fa-house"></i></a>
                 </div>
                 <div class="menubar__content--list menubar__content__list--one ani">
-                    <a href="credit.html">학점계산기</a>
+                    <a href="credit.html">학점정보</a>
                 </div>
                 <div class="menubar__content--list menubar__content__list--two ani">
                     <a href="fos.html">비교과</a>
@@ -952,6 +952,77 @@
         });
     </script>
 
+    <!-- show map -->
+    <script>
+
+        //height 라는 변수에 t1 이라는 이름의 클래스명을 가진 위치값을 받아온다.
+        var height1 = $("#school-bus1").offset();
+        var height2 = $("#school-bus2").offset();
+        var height3 = $("#school-bus3").offset();
+        var height4 = $("#school-bus4").offset();
+        var height5 = $("#school-bus5").offset();
+        var height6 = $("#school-bus6").offset();
+        var height7 = $("#school-bus7").offset();
+        var height8 = $("#school-bus8").offset();
+        var height9 = $("#school-bus9").offset();
+
+        //animate의안에 들어가는 매개 변수는 1번째는 움직일 위치 2번째는 속도이다.
+        //heigh의 top 위치로 이동 시킨다.
+        $("#school-bus-td1").click(function () {
+            $("html, body").animate({
+                scrollTop: 1790
+            }, 400);
+        })
+
+        $("#school-bus-td2").click(function () {
+            $("html, body").animate({
+                scrollTop: 2340
+            }, 400);
+        })
+
+        $("#school-bus-td3").click(function () {
+            $("html, body").animate({
+                scrollTop: 2890
+            }, 400);
+        })
+
+        $("#school-bus-td4").click(function () {
+            $("html, body").animate({
+                scrollTop: 3340
+            }, 400);
+        })
+
+        $("#school-bus-td5").click(function () {
+            $("html, body").animate({
+                scrollTop: 3810
+            }, 400);
+        })
+
+        $("#school-bus-td6").click(function () {
+            $("html, body").animate({
+                scrollTop: 4340
+            }, 400);
+        })
+
+        $("#school-bus-td7").click(function () {
+            $("html, body").animate({
+                scrollTop: 4940
+            }, 400);
+        })
+
+        $("#school-bus-td8").click(function () {
+            $("html, body").animate({
+                scrollTop: 5440
+            }, 400);
+        })
+
+        $("#school-bus-td9").click(function () {
+            $("html, body").animate({
+                scrollTop: 5920
+            }, 400);
+        })
+    </script>
+
     <!-- 문의하기 -->
     <script>
         $(document).scroll(function () {
@@ -972,10 +1043,11 @@
         $(document).ready(function () {
 
             $(".menubar__content--logo").mouseover(function () {
-                $(".sub-menubar").css("display", "none");
-                $(".main__section").css("display", "block");
-                $("main").css("display", "block");
-                $(".section").css("padding-top", "0px")
+                $(".sub-menubar").fadeOut( 300 );
+                // $(".sub-menubar").css("display", "none");
+                // $(".main__section").css("display", "block");
+                // $("main").css("display", "block");
+                // $(".section").css("padding-top", "0px")
 
                 $(".sub-menubar__credit-box--flex-credit").css("display", "none");
                 $(".sub-menubar__fos-box--flex-fos").css("display", "none");
@@ -987,11 +1059,12 @@
             })
 
             $(".menubar__content__list--one").mouseover(function () {
+                $(".sub-menubar").fadeIn( 300 );
                 $(".sub-menubar").css("display", "block");
                 $(".sub-menubar").css("position", "fixed");
-                $(".main__section").css("display", "none");
-                $("main").css("display", "none");
-                $(".section").css("padding-top", "280px");
+                // $(".main__section").css("display", "none");
+                // $("main").css("display", "none");
+                // $(".section").css("padding-top", "200px");
 
                 $(".sub-menubar__credit-box").css("display", "flex");
                 $(".sub-menubar__fos-box").css("display", "none");
@@ -1009,11 +1082,12 @@
             });
 
             $(".menubar__content__list--two").mouseover(function () {
+                $(".sub-menubar").fadeIn( 300 );
                 $(".sub-menubar").css("display", "block");
                 $(".sub-menubar").css("position", "fixed");
-                $(".main__section").css("display", "none");
-                $("main").css("display", "none");
-                $(".section").css("padding-top", "280px");
+                // $(".main__section").css("display", "none");
+                // $("main").css("display", "none");
+                // $(".section").css("padding-top", "280px");
 
                 $(".sub-menubar__credit-box").css("display", "none");
                 $(".sub-menubar__fos-box").css("display", "flex");
@@ -1030,11 +1104,12 @@
             });
 
             $(".menubar__content__list--three").mouseover(function () {
+                $(".sub-menubar").fadeIn( 300 );
                 $(".sub-menubar").css("display", "block");
                 $(".sub-menubar").css("position", "fixed");
-                $(".main__section").css("display", "none");
-                $("main").css("display", "none");
-                $(".section").css("padding-top", "280px");
+                // $(".main__section").css("display", "none");
+                // $("main").css("display", "none");
+                // $(".section").css("padding-top", "200px");
 
                 $(".sub-menubar__credit-box").css("display", "none");
                 $(".sub-menubar__fos-box").css("display", "none");
@@ -1051,11 +1126,12 @@
             });
 
             $(".menubar__content__list--four").mouseover(function () {
+                $(".sub-menubar").fadeIn( 300 );
                 $(".sub-menubar").css("display", "block");
                 $(".sub-menubar").css("position", "fixed");
-                $(".main__section").css("display", "none");
-                $("main").css("display", "none");
-                $(".section").css("padding-top", "280px");
+                // $(".main__section").css("display", "none");
+                // $("main").css("display", "none");
+                // $(".section").css("padding-top", "200px");
 
                 $(".sub-menubar__credit-box").css("display", "none");
                 $(".sub-menubar__fos-box").css("display", "none");
@@ -1072,11 +1148,12 @@
             });
 
             $(".menubar__content__list--five").mouseover(function () {
+                $(".sub-menubar").fadeIn( 300 );
                 $(".sub-menubar").css("display", "block");
                 $(".sub-menubar").css("position", "fixed");
-                $(".main__section").css("display", "none");
-                $("main").css("display", "none");
-                $(".section").css("padding-top", "280px");
+                // $(".main__section").css("display", "none");
+                // $("main").css("display", "none");
+                // $(".section").css("padding-top", "200px");
 
                 $(".sub-menubar__credit-box").css("display", "none");
                 $(".sub-menubar__fos-box").css("display", "none");
@@ -1111,11 +1188,20 @@
             //     $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
             // });
 
-            $(".sub-menubar").mouseleave(function () {
-                $(".sub-menubar").css("display", "none");
-                $(".main__section").css("display", "block");
-                $("main").css("display", "block");
-                $(".section").css("padding-top", "0px")
+            $(".sub-menubar").mouseleave(function () {                
+                // $(".sub-menubar").css("display", "none");
+                $(".sub-menubar").fadeOut( 300 );
+                // $(".main__section").css("display", "block");
+                // $("main").css("display", "block");
+                // $(".section").css("padding-top", "0px")
+
+                $(".sub-menubar__credit-box--flex-credit").css("display", "none");
+                $(".sub-menubar__fos-box--flex-fos").css("display", "none");
+                $(".sub-menubar__sen-box--flex-sen").css("display", "none");
+                $(".sub-menubar__notice-box--flex-notice").css("display", "none");
+                $(".sub-menubar__tip-box--flex-location").css("display", "none");
+                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
+                $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
             });
 
 
@@ -1251,76 +1337,7 @@
         });
     </script>
 
-    <!-- show map -->
-    <script>
-
-        //height 라는 변수에 t1 이라는 이름의 클래스명을 가진 위치값을 받아온다.
-        var height1 = $("#school-bus1").offset();
-        var height2 = $("#school-bus2").offset();
-        var height3 = $("#school-bus3").offset();
-        var height4 = $("#school-bus4").offset();
-        var height5 = $("#school-bus5").offset();
-        var height6 = $("#school-bus6").offset();
-        var height7 = $("#school-bus7").offset();
-        var height8 = $("#school-bus8").offset();
-        var height9 = $("#school-bus9").offset();
-
-        //animate의안에 들어가는 매개 변수는 1번째는 움직일 위치 2번째는 속도이다.
-        //heigh의 top 위치로 이동 시킨다.
-        $("#school-bus-td1").click(function () {
-            $("html, body").animate({
-                scrollTop: 1790
-            }, 400);
-        })
-
-        $("#school-bus-td2").click(function () {
-            $("html, body").animate({
-                scrollTop: 2340
-            }, 400);
-        })
-
-        $("#school-bus-td3").click(function () {
-            $("html, body").animate({
-                scrollTop: 2890
-            }, 400);
-        })
-
-        $("#school-bus-td4").click(function () {
-            $("html, body").animate({
-                scrollTop: 3340
-            }, 400);
-        })
-
-        $("#school-bus-td5").click(function () {
-            $("html, body").animate({
-                scrollTop: 3810
-            }, 400);
-        })
-
-        $("#school-bus-td6").click(function () {
-            $("html, body").animate({
-                scrollTop: 4340
-            }, 400);
-        })
-
-        $("#school-bus-td7").click(function () {
-            $("html, body").animate({
-                scrollTop: 4940
-            }, 400);
-        })
-
-        $("#school-bus-td8").click(function () {
-            $("html, body").animate({
-                scrollTop: 5440
-            }, 400);
-        })
-
-        $("#school-bus-td9").click(function () {
-            $("html, body").animate({
-                scrollTop: 5920
-            }, 400);
-        })
-    </script>
+    
 </body>
 
 </html>

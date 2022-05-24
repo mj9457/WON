@@ -23,7 +23,7 @@
                     <a href="index.html"><i class="fa-solid fa-house"></i></a>
                 </div>
                 <div class="menubar__content--list menubar__content__list--one ani">
-                    <a href="credit.html">학점계산기</a>
+                    <a href="credit.html">학점정보</a>
                 </div>
                 <div class="menubar__content--list menubar__content__list--two ani">
                     <a href="fos.html">비교과</a>
@@ -591,11 +591,12 @@
     <script>
         $(document).ready(function () {
 
-            $(".menubar__content--logo").mouseover(function() {
-                $(".sub-menubar").css("display", "none");
-                $(".main__section").css("display", "block");
-                $("main").css("display", "block");
-                $(".section").css("padding-top", "0px")
+            $(".menubar__content--logo").mouseover(function () {
+                $(".sub-menubar").fadeOut( 300 );
+                // $(".sub-menubar").css("display", "none");
+                // $(".main__section").css("display", "block");
+                // $("main").css("display", "block");
+                // $(".section").css("padding-top", "0px")
 
                 $(".sub-menubar__credit-box--flex-credit").css("display", "none");
                 $(".sub-menubar__fos-box--flex-fos").css("display", "none");
@@ -607,11 +608,12 @@
             })
 
             $(".menubar__content__list--one").mouseover(function () {
+                $(".sub-menubar").fadeIn( 300 );
                 $(".sub-menubar").css("display", "block");
                 $(".sub-menubar").css("position", "fixed");
-                $(".main__section").css("display", "none");
-                $("main").css("display", "none");
-                $(".section").css("padding-top", "280px");
+                // $(".main__section").css("display", "none");
+                // $("main").css("display", "none");
+                // $(".section").css("padding-top", "200px");
 
                 $(".sub-menubar__credit-box").css("display", "flex");
                 $(".sub-menubar__fos-box").css("display", "none");
@@ -629,11 +631,12 @@
             });
 
             $(".menubar__content__list--two").mouseover(function () {
+                $(".sub-menubar").fadeIn( 300 );
                 $(".sub-menubar").css("display", "block");
                 $(".sub-menubar").css("position", "fixed");
-                $(".main__section").css("display", "none");
-                $("main").css("display", "none");
-                $(".section").css("padding-top", "280px");
+                // $(".main__section").css("display", "none");
+                // $("main").css("display", "none");
+                // $(".section").css("padding-top", "280px");
 
                 $(".sub-menubar__credit-box").css("display", "none");
                 $(".sub-menubar__fos-box").css("display", "flex");
@@ -650,11 +653,12 @@
             });
 
             $(".menubar__content__list--three").mouseover(function () {
+                $(".sub-menubar").fadeIn( 300 );
                 $(".sub-menubar").css("display", "block");
                 $(".sub-menubar").css("position", "fixed");
-                $(".main__section").css("display", "none");
-                $("main").css("display", "none");
-                $(".section").css("padding-top", "280px");
+                // $(".main__section").css("display", "none");
+                // $("main").css("display", "none");
+                // $(".section").css("padding-top", "200px");
 
                 $(".sub-menubar__credit-box").css("display", "none");
                 $(".sub-menubar__fos-box").css("display", "none");
@@ -671,11 +675,12 @@
             });
 
             $(".menubar__content__list--four").mouseover(function () {
+                $(".sub-menubar").fadeIn( 300 );
                 $(".sub-menubar").css("display", "block");
                 $(".sub-menubar").css("position", "fixed");
-                $(".main__section").css("display", "none");
-                $("main").css("display", "none");
-                $(".section").css("padding-top", "280px");
+                // $(".main__section").css("display", "none");
+                // $("main").css("display", "none");
+                // $(".section").css("padding-top", "200px");
 
                 $(".sub-menubar__credit-box").css("display", "none");
                 $(".sub-menubar__fos-box").css("display", "none");
@@ -692,11 +697,12 @@
             });
 
             $(".menubar__content__list--five").mouseover(function () {
+                $(".sub-menubar").fadeIn( 300 );
                 $(".sub-menubar").css("display", "block");
                 $(".sub-menubar").css("position", "fixed");
-                $(".main__section").css("display", "none");
-                $("main").css("display", "none");
-                $(".section").css("padding-top", "280px");
+                // $(".main__section").css("display", "none");
+                // $("main").css("display", "none");
+                // $(".section").css("padding-top", "200px");
 
                 $(".sub-menubar__credit-box").css("display", "none");
                 $(".sub-menubar__fos-box").css("display", "none");
@@ -708,7 +714,7 @@
                 $(".sub-menubar__fos-box--flex-fos").css("display", "none");
                 $(".sub-menubar__sen-box--flex-sen").css("display", "none");
                 $(".sub-menubar__notice-box--flex-notice").css("display", "none");
-                
+
             });
 
             // $(".menubar__content__list--six").mouseover(function () {
@@ -731,17 +737,26 @@
             //     $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
             // });
 
-            $(".sub-menubar").mouseleave(function () {
-                $(".sub-menubar").css("display", "none");
-                $(".main__section").css("display", "block");
-                $("main").css("display", "block");
-                $(".section").css("padding-top", "0px")
+            $(".sub-menubar").mouseleave(function () {                
+                // $(".sub-menubar").css("display", "none");
+                $(".sub-menubar").fadeOut( 300 );
+                // $(".main__section").css("display", "block");
+                // $("main").css("display", "block");
+                // $(".section").css("padding-top", "0px")
+
+                $(".sub-menubar__credit-box--flex-credit").css("display", "none");
+                $(".sub-menubar__fos-box--flex-fos").css("display", "none");
+                $(".sub-menubar__sen-box--flex-sen").css("display", "none");
+                $(".sub-menubar__notice-box--flex-notice").css("display", "none");
+                $(".sub-menubar__tip-box--flex-location").css("display", "none");
+                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
+                $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
             });
 
-            
 
-             /* credit */
-             $(".sub-menubar__list-box--credit").mouseover(function () {
+
+            /* credit */
+            $(".sub-menubar__list-box--credit").mouseover(function () {
                 $(".sub-menubar__credit-box--flex-credit").css("display", "flex");
             });
 
@@ -807,11 +822,11 @@
                 $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
             });
 
-            $(".title").mouseover(function() {
+            $(".title").mouseover(function () {
                 $(".title").addClass(" box-shadow1")
             })
 
-            $(".title").mouseleave(function() {
+            $(".title").mouseleave(function () {
                 $(".title").removeClass(" box-shadow1")
             })
 

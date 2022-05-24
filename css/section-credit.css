@@ -1,0 +1,10 @@
+.credit-btn {
+    width: 20%;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 1px -1px rgba(116, 108, 108, 0.2), 0 1px 1px #00000024, 0 1px 3px #0000001f;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 20px;
+}

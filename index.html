@@ -13,37 +13,37 @@
 <body>
     <div id="wrap">
         <!-- Header-->
-        <header class="menubar">
-            <div class="menubar__content">
-                <div class="menubar__content--logo ani">
-                    <a href="index.html"><i class="fa-solid fa-house"></i></a>
-                </div>
-                <div class="menubar__content--list menubar__content__list--one ani">
-                    <a href="credit.html">학점계산기</a>
-                </div>
-                <div class="menubar__content--list menubar__content__list--two ani">
-                    <a href="fos.html">비교과</a>
-                </div>
-                <div class="menubar__content--list menubar__content__list--three ani">
-                    <a href="sen-test.html">SEN-TEST</a>
-                </div>
-                <div class="menubar__content--list menubar__content__list--four ani">
-                    <a href="notice.html">학사공지</a>
-                </div>
-                <div class="menubar__content--list menubar__content__list--five ani">
-                    <a href="tip-bus.html">학교생활팁</a>
-                </div>
-                <!-- <div class="menubar__content--list menubar__content__list--six ani">
-
-                </div> -->
-            </div>
-
-            <div class="menubar__weather">
-                <div class="menubar__weather--loacation">학교 날씨 :</div>
-                <div class="menubar__weather--icon"></div>
-                <div class="menubar__weather--temp"></div>
-            </div>
-        </header>
+    <header class="menubar">
+        <div class="menubar__content">
+          <div class="menubar__content--logo ani">
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+          </div>
+          <div class="menubar__content--list menubar__content__list--one ani">
+            <a href="credit.html">학점정보</a>
+          </div>
+          <div class="menubar__content--list menubar__content__list--two ani">
+            <a href="fos.html">비교과</a>
+          </div>
+          <div class="menubar__content--list menubar__content__list--three ani">
+            <a href="sen-test.html">SEN-TEST</a>
+          </div>
+          <div class="menubar__content--list menubar__content__list--four ani">
+            <a href="notice.html">학사공지</a>
+          </div>
+          <div class="menubar__content--list menubar__content__list--five ani">
+            <a href="tip-bus.html">학교생활팁</a>
+          </div>
+          <!-- <div class="menubar__content--list menubar__content__list--six ani">
+  
+            </div> -->
+        </div>
+  
+        <div class="menubar__weather">
+          <div class="menubar__weather--loacation">학교 날씨 :</div>
+          <div class="menubar__weather--icon"></div>
+          <div class="menubar__weather--temp"></div>
+        </div>
+      </header>
 
         <!-- Sub Header -->
         <div class="sub-menubar">
@@ -226,14 +226,6 @@
                             </div>
                         </a>
 
-                        <a href="self.html">
-                            <div class="section__content--row--list">
-                                <p class="list-title">자가진단</p>
-                                <div class="list-divider"></div>
-                                <p class="list-content">졸업요건, 장학금 자가진단</p>
-                            </div>
-                        </a>
-
                         <a href="tip-bus.html">
                             <div class="section__content--row--list">
                                 <p class="list-title">학교생활팁</p>
@@ -250,6 +242,13 @@
                             </div>
                         </a>
 
+                        <a href="#html">
+                            <div class="section__content--row--list">
+                                <p class="list-title">프로젝트</p>
+                                <div class="list-divider"></div>
+                                <p class="list-content">추후 수정</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="section__content--row">
@@ -295,10 +294,11 @@
         $(document).ready(function () {
 
             $(".menubar__content--logo").mouseover(function () {
-                $(".sub-menubar").css("display", "none");
-                $(".main__section").css("display", "block");
-                $("main").css("display", "block");
-                $(".section").css("padding-top", "0px")
+                $(".sub-menubar").fadeOut( 300 );
+                // $(".sub-menubar").css("display", "none");
+                // $(".main__section").css("display", "block");
+                // $("main").css("display", "block");
+                // $(".section").css("padding-top", "0px")
 
                 $(".sub-menubar__credit-box--flex-credit").css("display", "none");
                 $(".sub-menubar__fos-box--flex-fos").css("display", "none");
@@ -310,11 +310,12 @@
             })
 
             $(".menubar__content__list--one").mouseover(function () {
+                $(".sub-menubar").fadeIn( 300 );
                 $(".sub-menubar").css("display", "block");
                 $(".sub-menubar").css("position", "fixed");
-                $(".main__section").css("display", "none");
-                $("main").css("display", "none");
-                $(".section").css("padding-top", "280px");
+                // $(".main__section").css("display", "none");
+                // $("main").css("display", "none");
+                // $(".section").css("padding-top", "200px");
 
                 $(".sub-menubar__credit-box").css("display", "flex");
                 $(".sub-menubar__fos-box").css("display", "none");
@@ -332,11 +333,12 @@
             });
 
             $(".menubar__content__list--two").mouseover(function () {
+                $(".sub-menubar").fadeIn( 300 );
                 $(".sub-menubar").css("display", "block");
                 $(".sub-menubar").css("position", "fixed");
-                $(".main__section").css("display", "none");
-                $("main").css("display", "none");
-                $(".section").css("padding-top", "280px");
+                // $(".main__section").css("display", "none");
+                // $("main").css("display", "none");
+                // $(".section").css("padding-top", "280px");
 
                 $(".sub-menubar__credit-box").css("display", "none");
                 $(".sub-menubar__fos-box").css("display", "flex");
@@ -353,11 +355,12 @@
             });
 
             $(".menubar__content__list--three").mouseover(function () {
+                $(".sub-menubar").fadeIn( 300 );
                 $(".sub-menubar").css("display", "block");
                 $(".sub-menubar").css("position", "fixed");
-                $(".main__section").css("display", "none");
-                $("main").css("display", "none");
-                $(".section").css("padding-top", "280px");
+                // $(".main__section").css("display", "none");
+                // $("main").css("display", "none");
+                // $(".section").css("padding-top", "200px");
 
                 $(".sub-menubar__credit-box").css("display", "none");
                 $(".sub-menubar__fos-box").css("display", "none");
@@ -374,11 +377,12 @@
             });
 
             $(".menubar__content__list--four").mouseover(function () {
+                $(".sub-menubar").fadeIn( 300 );
                 $(".sub-menubar").css("display", "block");
                 $(".sub-menubar").css("position", "fixed");
-                $(".main__section").css("display", "none");
-                $("main").css("display", "none");
-                $(".section").css("padding-top", "280px");
+                // $(".main__section").css("display", "none");
+                // $("main").css("display", "none");
+                // $(".section").css("padding-top", "200px");
 
                 $(".sub-menubar__credit-box").css("display", "none");
                 $(".sub-menubar__fos-box").css("display", "none");
@@ -395,11 +399,12 @@
             });
 
             $(".menubar__content__list--five").mouseover(function () {
+                $(".sub-menubar").fadeIn( 300 );
                 $(".sub-menubar").css("display", "block");
                 $(".sub-menubar").css("position", "fixed");
-                $(".main__section").css("display", "none");
-                $("main").css("display", "none");
-                $(".section").css("padding-top", "280px");
+                // $(".main__section").css("display", "none");
+                // $("main").css("display", "none");
+                // $(".section").css("padding-top", "200px");
 
                 $(".sub-menubar__credit-box").css("display", "none");
                 $(".sub-menubar__fos-box").css("display", "none");
@@ -434,11 +439,20 @@
             //     $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
             // });
 
-            $(".sub-menubar").mouseleave(function () {
-                $(".sub-menubar").css("display", "none");
-                $(".main__section").css("display", "block");
-                $("main").css("display", "block");
-                $(".section").css("padding-top", "0px")
+            $(".sub-menubar").mouseleave(function () {                
+                // $(".sub-menubar").css("display", "none");
+                $(".sub-menubar").fadeOut( 300 );
+                // $(".main__section").css("display", "block");
+                // $("main").css("display", "block");
+                // $(".section").css("padding-top", "0px")
+
+                $(".sub-menubar__credit-box--flex-credit").css("display", "none");
+                $(".sub-menubar__fos-box--flex-fos").css("display", "none");
+                $(".sub-menubar__sen-box--flex-sen").css("display", "none");
+                $(".sub-menubar__notice-box--flex-notice").css("display", "none");
+                $(".sub-menubar__tip-box--flex-location").css("display", "none");
+                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
+                $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
             });
 
 
