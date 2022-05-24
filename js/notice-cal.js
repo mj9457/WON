@@ -39,6 +39,11 @@ const nextBtn02 = document.getElementById("cal-next-btn-2");
 
 /* pre */
 
+preBtn03.addEventListener("click", function() {
+    alert("자세한 내용은 중원대학교 홈페이지 > 커뮤니티 > 일정에서 확인")
+    location.href="http://www.jwu.ac.kr/";
+})
+
 preBtn04.addEventListener("click", function() {
     cal2204.style.display = "none";
     cal2203.style.display = "table";
@@ -149,4 +154,8 @@ nextBtn12.addEventListener("click", function() {
 nextBtn01.addEventListener("click", function() {
     cal2301.style.display = "none";
     cal2302.style.display = "table";
+})
+
+nextBtn02.addEventListener("click", function() {
+    alert("추가된 일정이 없습니다")
 })

@@ -73,3 +73,61 @@
     margin: 0px 20px;
     font-size: 25px;
 }
+.table-wrap-box {
+    display: flex;
+    flex-direction:column;
+    width: 95%;
+}
+
+.title-wrap {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.table-wrap {
+    display: flex;
+}
+
+.section_notice-table {
+    width: 90%;
+}
+
+.phone-number-table-wrap-box {
+    margin-left: 50px;
+}
+
+.event-phone-number-table {
+    width: 60%;
+    height: 100%;
+}
+
+.event-phone-number-table td {    
+    vertical-align: middle;
+}
+
+#table-input {
+    float: right;
+    /* background-position: 10px 10px;
+    background-repeat: no-repeat; */
+    width: 15%;
+    font-size: 16px;
+    text-align: center;
+    padding: 8px 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-family: "NotoSansKR";
+}
+
+#table-input:hover, #table-input:focus {
+    border: 2px solid rgb(0, 52, 102);
+}
+
+#phone-number-table {
+    margin-left: 40px;
+    height: 100%;
+}
+
+#phone-number-table th {
+    width: 25%;
+}

@@ -33,14 +33,14 @@
                     <a href="sen-test.html">SEN-TEST</a>
                 </div>
                 <div class="menubar__content--list menubar__content__list--four ani">
-                    <a href="self.html">자가진단</a>
+                    <a href="notice.html">학사공지</a>
                 </div>
                 <div class="menubar__content--list menubar__content__list--five ani">
                     <a href="tip-bus.html">학교생활팁</a>
                 </div>
-                <div class="menubar__content--list menubar__content__list--six ani">
-                    <a href="notice.html">학사공지</a>
-                </div>
+                <!-- <div class="menubar__content--list menubar__content__list--six ani">
+
+                </div> -->
             </div>
 
             <div class="menubar__weather">
@@ -54,13 +54,25 @@
         <div class="sub-menubar">
 
             <div class="sub-menubar__credit-box">
-                <a href="credit.html">
-                    <div class="sub-menubar__list-box sub-menubar__list-box--one ani">학점계산기</div>
-                </a>
+                <div class="sub-menubar__list-box--one-title title">
+                    <a href="credit.html">
+                        <div class="sub-menubar__list-box sub-menubar__list-box--credit ani">학점정보</div>
+                    </a>
+                </div>
+
+                <div class="sub-menubar__credit-box--flex-credit">
+                    <a href="credit.html#credit-table">
+                        <div class="sub-menubar__list-box ani">졸업 기준 학점</div>
+                    </a>
+                    <a href="credit.html#credit-cal">
+                        <div class="sub-menubar__list-box ani wd-150px">학점 간편 계산기</div>
+                    </a>
+                </div>
+
             </div>
 
             <div class="sub-menubar__fos-box">
-                <div class="sub-menubar__list-box--two-title">
+                <div class="sub-menubar__list-box--two-title title">
                     <a href="fos.html">
                         <div class="sub-menubar__list-box sub-menubar__list-box--fos ani">비교과</div>
                     </a>
@@ -81,7 +93,7 @@
             </div>
 
             <div class="sub-menubar__sentest-box">
-                <div class="sub-menubar__list-box--three-title">
+                <div class="sub-menubar__list-box--three-title title">
                     <a href="sen-test.html">
                         <div class="sub-menubar__list-box sub-menubar__list-box--sen ani">SEN-TEST</div>
                     </a>
@@ -100,16 +112,26 @@
                 </div>
             </div>
 
+            <div class="sub-menubar__notice-box">
+                <div class="sub-menubar__list-box--four-title title">
+                    <a class="" href="notice.html">
+                        <div class="sub-menubar__list-box sub-menubar__list-box--notice ani">학사공지</div>
+                    </a>
+                </div>
 
-            <div class="sub-menubar__self-box">
-                <a href="self.html">
-                    <div class="sub-menubar__list-box sub-menubar__list-box--four ani">자가진단</div>
-                </a>
+
+                <div class="sub-menubar__notice-box--flex-notice">
+                    <a href="notice.html#notice-calendar">
+                        <div class="sub-menubar__list-box ani">학사 일정</div>
+                    </a>
+                    <a href="notice.html#notice-contact-list">
+                        <div class="sub-menubar__list-box ani">학교 연락망</div>
+                    </a>
+                </div>
             </div>
 
-
             <div class="sub-menubar__tip-box">
-                <div class="sub-menubar__list-box--five-title">
+                <div class="sub-menubar__list-box--five-title title">
                     <a href="tip-bus.html">
                         <div class="sub-menubar__list-box sub-menubar__list-box--bus ani">버스정보</div>
                     </a>
@@ -165,11 +187,7 @@
                 </div>
             </div>
 
-            <div class="sub-menubar__notice-box">
-                <a class="" href="notice.html">
-                    <div class="sub-menubar__list-box sub-menubar__list-box--six ani">학사공지</div>
-                </a>
-            </div>
+
 
         </div>
 
@@ -953,6 +971,21 @@
     <script>
         $(document).ready(function () {
 
+            $(".menubar__content--logo").mouseover(function () {
+                $(".sub-menubar").css("display", "none");
+                $(".main__section").css("display", "block");
+                $("main").css("display", "block");
+                $(".section").css("padding-top", "0px")
+
+                $(".sub-menubar__credit-box--flex-credit").css("display", "none");
+                $(".sub-menubar__fos-box--flex-fos").css("display", "none");
+                $(".sub-menubar__sen-box--flex-sen").css("display", "none");
+                $(".sub-menubar__notice-box--flex-notice").css("display", "none");
+                $(".sub-menubar__tip-box--flex-location").css("display", "none");
+                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
+                $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
+            })
+
             $(".menubar__content__list--one").mouseover(function () {
                 $(".sub-menubar").css("display", "block");
                 $(".sub-menubar").css("position", "fixed");
@@ -963,12 +996,12 @@
                 $(".sub-menubar__credit-box").css("display", "flex");
                 $(".sub-menubar__fos-box").css("display", "none");
                 $(".sub-menubar__sentest-box").css("display", "none");
-                $(".sub-menubar__self-box").css("display", "none");
                 $(".sub-menubar__tip-box").css("display", "none");
                 $(".sub-menubar__notice-box").css("display", "none");
 
                 $(".sub-menubar__fos-box--flex-fos").css("display", "none");
                 $(".sub-menubar__sen-box--flex-sen").css("display", "none");
+                $(".sub-menubar__notice-box--flex-notice").css("display", "none");
                 $(".sub-menubar__tip-box--flex-location").css("display", "none");
                 $(".sub-menubar__tip-box--flex-bus").css("display", "none");
                 $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
@@ -985,11 +1018,12 @@
                 $(".sub-menubar__credit-box").css("display", "none");
                 $(".sub-menubar__fos-box").css("display", "flex");
                 $(".sub-menubar__sentest-box").css("display", "none");
-                $(".sub-menubar__self-box").css("display", "none");
                 $(".sub-menubar__tip-box").css("display", "none");
                 $(".sub-menubar__notice-box").css("display", "none");
 
+                $(".sub-menubar__credit-box--flex-credit").css("display", "none");
                 $(".sub-menubar__sen-box--flex-sen").css("display", "none");
+                $(".sub-menubar__notice-box--flex-notice").css("display", "none");
                 $(".sub-menubar__tip-box--flex-location").css("display", "none");
                 $(".sub-menubar__tip-box--flex-bus").css("display", "none");
                 $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
@@ -1005,11 +1039,12 @@
                 $(".sub-menubar__credit-box").css("display", "none");
                 $(".sub-menubar__fos-box").css("display", "none");
                 $(".sub-menubar__sentest-box").css("display", "flex");
-                $(".sub-menubar__self-box").css("display", "none");
                 $(".sub-menubar__tip-box").css("display", "none");
                 $(".sub-menubar__notice-box").css("display", "none");
 
+                $(".sub-menubar__credit-box--flex-credit").css("display", "none");
                 $(".sub-menubar__fos-box--flex-fos").css("display", "none");
+                $(".sub-menubar__notice-box--flex-notice").css("display", "none");
                 $(".sub-menubar__tip-box--flex-location").css("display", "none");
                 $(".sub-menubar__tip-box--flex-bus").css("display", "none");
                 $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
@@ -1025,10 +1060,10 @@
                 $(".sub-menubar__credit-box").css("display", "none");
                 $(".sub-menubar__fos-box").css("display", "none");
                 $(".sub-menubar__sentest-box").css("display", "none");
-                $(".sub-menubar__self-box").css("display", "flex");
                 $(".sub-menubar__tip-box").css("display", "none");
-                $(".sub-menubar__notice-box").css("display", "none");
+                $(".sub-menubar__notice-box").css("display", "flex");
 
+                $(".sub-menubar__credit-box--flex-credit").css("display", "none");
                 $(".sub-menubar__fos-box--flex-fos").css("display", "none");
                 $(".sub-menubar__sen-box--flex-sen").css("display", "none");
                 $(".sub-menubar__tip-box--flex-location").css("display", "none");
@@ -1046,40 +1081,61 @@
                 $(".sub-menubar__credit-box").css("display", "none");
                 $(".sub-menubar__fos-box").css("display", "none");
                 $(".sub-menubar__sentest-box").css("display", "none");
-                $(".sub-menubar__self-box").css("display", "none");
                 $(".sub-menubar__tip-box").css("display", "flex");
                 $(".sub-menubar__notice-box").css("display", "none");
 
+                $(".sub-menubar__credit-box--flex-credit").css("display", "none");
                 $(".sub-menubar__fos-box--flex-fos").css("display", "none");
                 $(".sub-menubar__sen-box--flex-sen").css("display", "none");
+                $(".sub-menubar__notice-box--flex-notice").css("display", "none");
+
             });
 
-            $(".menubar__content__list--six").mouseover(function () {
-                $(".sub-menubar").css("display", "block");
-                $(".sub-menubar").css("position", "fixed");
-                $(".main__section").css("display", "none");
-                $("main").css("display", "none");
-                $(".section").css("padding-top", "280px");
+            // $(".menubar__content__list--six").mouseover(function () {
+            //     $(".sub-menubar").css("display", "block");
+            //     $(".sub-menubar").css("position", "fixed");
+            //     $(".main__section").css("display", "none");
+            //     $("main").css("display", "none");
+            //     $(".section").css("padding-top", "280px");
 
-                $(".sub-menubar__credit-box").css("display", "none");
-                $(".sub-menubar__fos-box").css("display", "none");
-                $(".sub-menubar__sentest-box").css("display", "none");
-                $(".sub-menubar__self-box").css("display", "none");
-                $(".sub-menubar__tip-box").css("display", "none");
-                $(".sub-menubar__notice-box").css("display", "flex");
+            //     $(".sub-menubar__credit-box").css("display", "none");
+            //     $(".sub-menubar__fos-box").css("display", "none");
+            //     $(".sub-menubar__sentest-box").css("display", "none");
+            //     $(".sub-menubar__tip-box").css("display", "none");
+            //     $(".sub-menubar__notice-box").css("display", "flex");
 
-                $(".sub-menubar__fos-box--flex-fos").css("display", "none");
-                $(".sub-menubar__sen-box--flex-sen").css("display", "none");
-                $(".sub-menubar__tip-box--flex-location").css("display", "none");
-                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
-                $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
-            });
+            //     $(".sub-menubar__fos-box--flex-fos").css("display", "none");
+            //     $(".sub-menubar__sen-box--flex-sen").css("display", "none");
+            //     $(".sub-menubar__tip-box--flex-location").css("display", "none");
+            //     $(".sub-menubar__tip-box--flex-bus").css("display", "none");
+            //     $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
+            // });
 
             $(".sub-menubar").mouseleave(function () {
                 $(".sub-menubar").css("display", "none");
                 $(".main__section").css("display", "block");
                 $("main").css("display", "block");
                 $(".section").css("padding-top", "0px")
+            });
+
+
+
+            /* credit */
+            $(".sub-menubar__list-box--credit").mouseover(function () {
+                $(".sub-menubar__credit-box--flex-credit").css("display", "flex");
+            });
+
+            $(".sub-menubar__credit-box--flex-credit").mouseleave(function () {
+                $(".sub-menubar__credit-box--flex-credit").css("display", "none");
+            });
+
+            /* notice */
+            $(".sub-menubar__list-box--notice").mouseover(function () {
+                $(".sub-menubar__notice-box--flex-notice").css("display", "flex");
+            });
+
+            $(".sub-menubar__notice-box--flex-notice").mouseleave(function () {
+                $(".sub-menubar__notice-box--flex-notice").css("display", "none");
             });
 
             /* sen-test */
@@ -1101,16 +1157,6 @@
             });
 
             /* tip */
-            $(".sub-menubar__list-box--location").mouseover(function () {
-                $(".sub-menubar__tip-box--flex-location").css("display", "flex");
-                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
-                $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
-            });
-
-            $(".sub-menubar__tip-box--flex-location").mouseleave(function () {
-                $(".sub-menubar__tip-box--flex-location").css("display", "none");
-            });
-
             $(".sub-menubar__list-box--bus").mouseover(function () {
                 $(".sub-menubar__tip-box--flex-location").css("display", "none");
                 $(".sub-menubar__tip-box--flex-bus").css("display", "flex");
@@ -1119,6 +1165,16 @@
 
             $(".sub-menubar__tip-box--flex-bus").mouseleave(function () {
                 $(".sub-menubar__tip-box--flex-bus").css("display", "none");
+            });
+
+            $(".sub-menubar__list-box--location").mouseover(function () {
+                $(".sub-menubar__tip-box--flex-location").css("display", "flex");
+                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
+                $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
+            });
+
+            $(".sub-menubar__tip-box--flex-location").mouseleave(function () {
+                $(".sub-menubar__tip-box--flex-location").css("display", "none");
             });
 
             $(".sub-menubar__list-box--scholarship").mouseover(function () {
@@ -1130,6 +1186,14 @@
             $(".sub-menubar__tip-box--flex-scholarship").mouseleave(function () {
                 $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
             });
+
+            $(".title").mouseover(function () {
+                $(".title").addClass(" box-shadow1")
+            })
+
+            $(".title").mouseleave(function () {
+                $(".title").removeClass(" box-shadow1")
+            })
 
         });
     </script>
