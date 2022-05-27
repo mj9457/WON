@@ -64,7 +64,7 @@
   border-color:inherit;font-size:24px;text-align:center;vertical-align:top
 } */
 
-.shuttle-bus-time, .school-bus-table, .fos-table, .fos-list-table, .sen-test-time-table, .notice-cal-table  {
+.shuttle-bus-time, .school-bus-table, .fos-table, .fos-list-table, .sen-test-time-table, .notice-cal-table, .credit-list-table  {
   width: 100%;
   border-collapse:collapse;
   border-spacing:0;
@@ -76,7 +76,7 @@
   margin-bottom: 20px !important;
 }
 
-.shuttle-bus-time td, .school-bus-table td, .fos-table td, .fos-list-table td, .sen-test-time-table td, .notice-cal-table td {
+.shuttle-bus-time td, .school-bus-table td, .fos-table td, .fos-list-table td, .sen-test-time-table td, .notice-cal-table td, .credit-list-table td {
   border-color:black;
   border-style: none;
   /* border-width:1px; */
@@ -89,7 +89,7 @@
   text-align: center;
   font-family:"NotoSansKR";
 }
-.shuttle-bus-time th, .school-bus-table th, .fos-table th, .fos-list-table th, .sen-test-time-table th, .notice-cal-table th {
+.shuttle-bus-time th, .school-bus-table th, .fos-table th, .fos-list-table th, .sen-test-time-table th, .notice-cal-table th, .credit-list-table th {
   color: white;
   background-color: rgb(0, 52, 102);
   border-style:solid;
@@ -116,7 +116,8 @@
 
 /* Background-color of the odd rows */
 .shuttle-bus-time tr:nth-child(odd), .school-bus-table tr:nth-child(odd), .fos-table tr:nth-child(odd), .fos-list-table tr:nth-child(odd), .sen-test-time-table tr:nth-child(odd), .notice-cal-table tr:nth-child(odd) {
-  background-color: #f6f6f6;
+  /* background-color: #f6f6f6; */
+  background-color: #efefef8c;
 }
 
 /* Background-color of the even rows */
@@ -137,7 +138,7 @@
   transition-timing-function:linear;
 } */
 
-.shuttle-bus-time .yellow-box:hover, .school-bus-table .yellow-box:hover, .fos-table .yellow-box:hover, .fos-list-table .yellow-box:hover, .sen-test-time-table .yellow-box:hover  {
+.shuttle-bus-time .yellow-box:hover, .school-bus-table .yellow-box:hover, .fos-table .yellow-box:hover, .fos-list-table .yellow-box:hover, .sen-test-time-table .yellow-box:hover, .credit-list-table tbody .yellow-box:hover  {
   background-color: rgb(250, 227, 1);
   font-weight: bold;
 /*   

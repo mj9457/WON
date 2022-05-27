@@ -1,5 +1,5 @@
 .credit-btn {
-    width: 20%;
+    width: 19%;
     padding: 20px;
     text-align: center;
     box-shadow: 0 2px 1px -1px rgba(116, 108, 108, 0.2), 0 1px 1px #00000024, 0 1px 3px #0000001f;
@@ -7,4 +7,54 @@
     cursor: pointer;
     font-weight: bold;
     margin-bottom: 20px;
+}
+
+.credit-list-wrap {
+    width: 50%;
+}
+
+.credit-list-table {
+    display: none;
+}
+
+.credit-btn:hover {
+    color: white !important;
+    background-color: rgb(0, 52, 102) !important;
+    transition: all 0.6s;
+}
+
+.credit-list-table colgroup :first-child {
+    border-left: none !important;
+}
+
+.credit-list-table colgroup col {
+    border-left: 0.8px solid #d2d2d2 !important;
+}
+
+.credit-list-table th, .credit-list-table td {
+    vertical-align: middle;
+}
+
+.credit-list-table tbody tr:nth-child(4n-2), .credit-list-table tbody tr:nth-child(4n-3)  {
+    background-color: white;
+}
+
+.credit-list-table tbody tr:nth-child(4n-2), .credit-list-table tbody tr:nth-child(4n)  {
+    border-top: 1px solid #d2d2d2;
+}
+
+/* .credit-list-table tbody tr:nth-child(4n-3):hover ~ .tr2 {
+    background-color: #b5b5b5;
+}  */
+
+.credit-list-table tbody tr:nth-child(4n-1), .credit-list-table tbody tr:nth-child(4n) {
+    background-color: #efefef8c;
+} 
+
+.display-table {
+    display: table;
+}
+
+.display-none {
+    display: none;
 }
