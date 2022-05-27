@@ -8,6 +8,8 @@
 
 /* body --> */
 
+@import url("popup.css");
+
 @import url("header.css"); /* header */
 @import url("main.css"); /* main */
 @import url("section.css"); /* section */
