@@ -20,8 +20,8 @@
 #popup {
     display: block;
     position: absolute;
-    top: 34%;
-    left: 15%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     background-color: #ffffff;
     box-shadow: 0 2px 1px -1px #0003, 0 1px 1px #00000024, 0 1px 3px #0000001f;
@@ -29,12 +29,8 @@
     z-index: 89;
     padding: 15px;
     box-sizing: border-box;
-
-     /* 임시 지정 */
     width: 300px;
-    height: 300px;
-
-     /* 초기에 약간 아래에 배치 */
+    height: 320px;
     transition: all 1s;
 }
 
