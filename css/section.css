@@ -200,6 +200,10 @@ section {
     width: 150px;
 }
 
+.wd-100 {
+    width: 100% !important;
+}
+
 .wd-90 {
     width: 90%;
 }
@@ -234,6 +238,10 @@ section {
 
 .m-b-20 {
     margin-bottom: 20px;
+}
+
+.m-b-40 {
+    margin-bottom: 40px !important;
 }
 
 .txt-c {

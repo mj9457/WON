@@ -58,3 +58,55 @@
 .display-none {
     display: none;
 }
+
+.input-flex-box .input-div-wrap {
+    width: 14%;
+    display: flex;
+    flex-direction: column
+}
+
+.input-flex-box .input-div-wrap * {
+    width: 100% !important;
+}
+
+.input-flex-box .input-div-wrap label {
+    margin-bottom: 20px;
+}
+
+#credit-result-btn {
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.credit-table-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.credit-result-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+}
+
+.credit-result-box {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.credit-result-box div {
+    width: 33%;
+}
+
+.credit-result-title {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "NotoSansKR";
+    text-align: center;
+}

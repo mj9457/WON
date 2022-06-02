@@ -24,7 +24,7 @@
         </div>
     </div>
 
-    
+
     <div id="wrap">
         <!-- Header-->
         <header class="menubar">
@@ -3848,7 +3848,8 @@
                         <div class="section__content--row-title">학교 연락망📌</div>
                         <div class="table-wrap-box">
                             <div class="title-wrap">
-                                <input type="text" id="table-input" onkeyup="myFunction()" placeholder="학과를 입력해주세요">
+                                <input type="text" id="table-input" class="table-input" onkeyup="myFunction()"
+                                    placeholder="학과를 입력해주세요">
                             </div>
                             <div class="table-wrap">
                                 <table class="shuttle-bus-time event-phone-number-table">
@@ -4210,329 +4211,20 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
+    <!-- notice-cal -->
     <script src="/js/notice-cal.js"></script>
 
-    <!-- table-search -->
-    <script>
-        function myFunction() {
-            var input, filter, table, tr, td, td2, i, txtValue;
-            input = document.getElementById("table-input");
-            filter = input.value.toUpperCase();
-            table = document.getElementById("phone-number-table");
-            tr = table.getElementsByTagName("tr");
-            for (i = 2; i < tr.length; i++) {
-                td = tr[i].getElementsByTagName("td")[1];
-                if (td || td2) {
-                    txtValue = td.textContent || td.innerText;
-                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                        tr[i].style.display = "";
-                    } else {
-                        tr[i].style.display = "none";
-                    }
-                }
-            }
-        }
-    </script>
-
-    <!-- 문의하기 -->
-    <script>
-        $(document).scroll(function () {
-            let scrollLocation = document.documentElement.scrollTop; // 현재 스크롤바 위치
-            let windowHeight = window.innerHeight; // 스크린 창
-            let fullHeight = document.body.scrollHeight; //  margin 값은 포함 x
-
-            if (scrollLocation + windowHeight >= fullHeight - 60) {
-                $(".aside__menubar").css("marginBottom", "60px");
-            } else {
-                $(".aside__menubar").css("marginBottom", "0px");
-            }
-        })
-    </script>
+    <!-- notice-table-search -->
+    <script src="/js/notice-table-search.js"></script>
 
     <!-- Sub-MenuBar -->
-    <script>
-        $(document).ready(function () {
-
-            $(".menubar__content--logo").mouseover(function () {
-                $(".sub-menubar").fadeOut(300);
-                // $(".sub-menubar").css("display", "none");
-                // $(".main__section").css("display", "block");
-                // $("main").css("display", "block");
-                // $(".section").css("padding-top", "0px")
-
-                $(".sub-menubar__credit-box--flex-credit").css("display", "none");
-                $(".sub-menubar__fos-box--flex-fos").css("display", "none");
-                $(".sub-menubar__sen-box--flex-sen").css("display", "none");
-                $(".sub-menubar__notice-box--flex-notice").css("display", "none");
-                $(".sub-menubar__tip-box--flex-location").css("display", "none");
-                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
-                $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
-            })
-
-            $(".menubar__content__list--one").mouseover(function () {
-                $(".sub-menubar").fadeIn(300);
-                $(".sub-menubar").css("display", "block");
-                $(".sub-menubar").css("position", "fixed");
-                // $(".main__section").css("display", "none");
-                // $("main").css("display", "none");
-                // $(".section").css("padding-top", "200px");
-
-                $(".sub-menubar__credit-box").css("display", "flex");
-                $(".sub-menubar__fos-box").css("display", "none");
-                $(".sub-menubar__sentest-box").css("display", "none");
-                $(".sub-menubar__tip-box").css("display", "none");
-                $(".sub-menubar__notice-box").css("display", "none");
-
-                $(".sub-menubar__fos-box--flex-fos").css("display", "none");
-                $(".sub-menubar__sen-box--flex-sen").css("display", "none");
-                $(".sub-menubar__notice-box--flex-notice").css("display", "none");
-                $(".sub-menubar__tip-box--flex-location").css("display", "none");
-                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
-                $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
-
-            });
-
-            $(".menubar__content__list--two").mouseover(function () {
-                $(".sub-menubar").fadeIn(300);
-                $(".sub-menubar").css("display", "block");
-                $(".sub-menubar").css("position", "fixed");
-                // $(".main__section").css("display", "none");
-                // $("main").css("display", "none");
-                // $(".section").css("padding-top", "280px");
-
-                $(".sub-menubar__credit-box").css("display", "none");
-                $(".sub-menubar__fos-box").css("display", "flex");
-                $(".sub-menubar__sentest-box").css("display", "none");
-                $(".sub-menubar__tip-box").css("display", "none");
-                $(".sub-menubar__notice-box").css("display", "none");
-
-                $(".sub-menubar__credit-box--flex-credit").css("display", "none");
-                $(".sub-menubar__sen-box--flex-sen").css("display", "none");
-                $(".sub-menubar__notice-box--flex-notice").css("display", "none");
-                $(".sub-menubar__tip-box--flex-location").css("display", "none");
-                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
-                $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
-            });
-
-            $(".menubar__content__list--three").mouseover(function () {
-                $(".sub-menubar").fadeIn(300);
-                $(".sub-menubar").css("display", "block");
-                $(".sub-menubar").css("position", "fixed");
-                // $(".main__section").css("display", "none");
-                // $("main").css("display", "none");
-                // $(".section").css("padding-top", "200px");
-
-                $(".sub-menubar__credit-box").css("display", "none");
-                $(".sub-menubar__fos-box").css("display", "none");
-                $(".sub-menubar__sentest-box").css("display", "flex");
-                $(".sub-menubar__tip-box").css("display", "none");
-                $(".sub-menubar__notice-box").css("display", "none");
-
-                $(".sub-menubar__credit-box--flex-credit").css("display", "none");
-                $(".sub-menubar__fos-box--flex-fos").css("display", "none");
-                $(".sub-menubar__notice-box--flex-notice").css("display", "none");
-                $(".sub-menubar__tip-box--flex-location").css("display", "none");
-                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
-                $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
-            });
-
-            $(".menubar__content__list--four").mouseover(function () {
-                $(".sub-menubar").fadeIn(300);
-                $(".sub-menubar").css("display", "block");
-                $(".sub-menubar").css("position", "fixed");
-                // $(".main__section").css("display", "none");
-                // $("main").css("display", "none");
-                // $(".section").css("padding-top", "200px");
-
-                $(".sub-menubar__credit-box").css("display", "none");
-                $(".sub-menubar__fos-box").css("display", "none");
-                $(".sub-menubar__sentest-box").css("display", "none");
-                $(".sub-menubar__tip-box").css("display", "none");
-                $(".sub-menubar__notice-box").css("display", "flex");
-
-                $(".sub-menubar__credit-box--flex-credit").css("display", "none");
-                $(".sub-menubar__fos-box--flex-fos").css("display", "none");
-                $(".sub-menubar__sen-box--flex-sen").css("display", "none");
-                $(".sub-menubar__tip-box--flex-location").css("display", "none");
-                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
-                $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
-            });
-
-            $(".menubar__content__list--five").mouseover(function () {
-                $(".sub-menubar").fadeIn(300);
-                $(".sub-menubar").css("display", "block");
-                $(".sub-menubar").css("position", "fixed");
-                // $(".main__section").css("display", "none");
-                // $("main").css("display", "none");
-                // $(".section").css("padding-top", "200px");
-
-                $(".sub-menubar__credit-box").css("display", "none");
-                $(".sub-menubar__fos-box").css("display", "none");
-                $(".sub-menubar__sentest-box").css("display", "none");
-                $(".sub-menubar__tip-box").css("display", "flex");
-                $(".sub-menubar__notice-box").css("display", "none");
-
-                $(".sub-menubar__credit-box--flex-credit").css("display", "none");
-                $(".sub-menubar__fos-box--flex-fos").css("display", "none");
-                $(".sub-menubar__sen-box--flex-sen").css("display", "none");
-                $(".sub-menubar__notice-box--flex-notice").css("display", "none");
-
-            });
-
-            // $(".menubar__content__list--six").mouseover(function () {
-            //     $(".sub-menubar").css("display", "block");
-            //     $(".sub-menubar").css("position", "fixed");
-            //     $(".main__section").css("display", "none");
-            //     $("main").css("display", "none");
-            //     $(".section").css("padding-top", "280px");
-
-            //     $(".sub-menubar__credit-box").css("display", "none");
-            //     $(".sub-menubar__fos-box").css("display", "none");
-            //     $(".sub-menubar__sentest-box").css("display", "none");
-            //     $(".sub-menubar__tip-box").css("display", "none");
-            //     $(".sub-menubar__notice-box").css("display", "flex");
-
-            //     $(".sub-menubar__fos-box--flex-fos").css("display", "none");
-            //     $(".sub-menubar__sen-box--flex-sen").css("display", "none");
-            //     $(".sub-menubar__tip-box--flex-location").css("display", "none");
-            //     $(".sub-menubar__tip-box--flex-bus").css("display", "none");
-            //     $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
-            // });
-
-            $(".sub-menubar").mouseleave(function () {
-                // $(".sub-menubar").css("display", "none");
-                $(".sub-menubar").fadeOut(300);
-                // $(".main__section").css("display", "block");
-                // $("main").css("display", "block");
-                // $(".section").css("padding-top", "0px")
-
-                $(".sub-menubar__credit-box--flex-credit").css("display", "none");
-                $(".sub-menubar__fos-box--flex-fos").css("display", "none");
-                $(".sub-menubar__sen-box--flex-sen").css("display", "none");
-                $(".sub-menubar__notice-box--flex-notice").css("display", "none");
-                $(".sub-menubar__tip-box--flex-location").css("display", "none");
-                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
-                $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
-            });
-
-
-
-            /* credit */
-            $(".sub-menubar__list-box--credit").mouseover(function () {
-                $(".sub-menubar__credit-box--flex-credit").css("display", "flex");
-            });
-
-            $(".sub-menubar__credit-box--flex-credit").mouseleave(function () {
-                $(".sub-menubar__credit-box--flex-credit").css("display", "none");
-            });
-
-            /* notice */
-            $(".sub-menubar__list-box--notice").mouseover(function () {
-                $(".sub-menubar__notice-box--flex-notice").css("display", "flex");
-            });
-
-            $(".sub-menubar__notice-box--flex-notice").mouseleave(function () {
-                $(".sub-menubar__notice-box--flex-notice").css("display", "none");
-            });
-
-            /* sen-test */
-            $(".sub-menubar__list-box--sen").mouseover(function () {
-                $(".sub-menubar__sen-box--flex-sen").css("display", "flex");
-            });
-
-            $(".sub-menubar__sen-box--flex-sen").mouseleave(function () {
-                $(".sub-menubar__sen-box--flex-sen").css("display", "none");
-            });
-
-            /* fos */
-            $(".sub-menubar__list-box--fos").mouseover(function () {
-                $(".sub-menubar__fos-box--flex-fos").css("display", "flex");
-            });
-
-            $(".sub-menubar__fos-box--flex-fos").mouseleave(function () {
-                $(".sub-menubar__fos-box--flex-fos").css("display", "none");
-            });
-
-            /* tip */
-            $(".sub-menubar__list-box--bus").mouseover(function () {
-                $(".sub-menubar__tip-box--flex-location").css("display", "none");
-                $(".sub-menubar__tip-box--flex-bus").css("display", "flex");
-                $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
-            });
-
-            $(".sub-menubar__tip-box--flex-bus").mouseleave(function () {
-                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
-            });
-
-            $(".sub-menubar__list-box--location").mouseover(function () {
-                $(".sub-menubar__tip-box--flex-location").css("display", "flex");
-                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
-                $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
-            });
-
-            $(".sub-menubar__tip-box--flex-location").mouseleave(function () {
-                $(".sub-menubar__tip-box--flex-location").css("display", "none");
-            });
-
-            $(".sub-menubar__list-box--scholarship").mouseover(function () {
-                $(".sub-menubar__tip-box--flex-location").css("display", "none");
-                $(".sub-menubar__tip-box--flex-bus").css("display", "none");
-                $(".sub-menubar__tip-box--flex-scholarship").css("display", "flex");
-            });
-
-            $(".sub-menubar__tip-box--flex-scholarship").mouseleave(function () {
-                $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
-            });
-
-            $(".title").mouseover(function () {
-                $(".title").addClass(" box-shadow1")
-            })
-
-            $(".title").mouseleave(function () {
-                $(".title").removeClass(" box-shadow1")
-            })
-
-        });
-    </script>
+    <script src="/js/sub-menubar.js"></script>
 
     <!-- Weather API -->
-    <script>
-        $(document).ready(function () {
-            let weathersIcon = {
-                '01': 'fas fa-sun',
-                '02': 'fas fa-cloud-sun',
-                '03': 'fas fa-cloud',
-                '04': 'fas fa-cloud-meatball',
-                '09': 'fas fa-cloud-showers-heavy',
-                '10': 'fas fa-cloud-rain',
-                '11': 'fas fa-poo-storm',
-                '13': 'fas fa-snowflake',
-                '50': 'fas fa-smog'
-            }
+    <script src="/js/api-weather.js"></script>
 
-            $.getJSON(
-                'https://api.openweathermap.org/data/2.5/weather?lat=36.8187&lon=127.7996&appid=54d8b56b9ce4d6cafa110738a09ec718&units=metric',
-                function (data) {
-
-                    var weatherTemp = Math.floor(data.main.temp) + ' º ';
-                    var weatherIcon = (data.weather[0].icon).substr(0, 2);
-                    var weatherCity = data.name;
-
-                    $('.menubar__weather--temp').append(weatherTemp);
-                    $('.menubar__weather--icon').append('<i class="' + weathersIcon[weatherIcon] + '"></i>');
-                    // $('.menubar__weather--city').append(weatherCity); /* 학교 날씨 */
-                }
-            )
-        })
-    </script>
-
-    <!-- top Btn -->
-    <script>
-        $(".top-box").click(function () {
-            $('html, body').animate({ scrollTop: 0 }, 800);
-            return false;
-        });
-    </script>
+    <!-- top Btn & 문의하기 -->
+    <script src="/js/top-btn.js"></script>
 </body>
 
 </html>

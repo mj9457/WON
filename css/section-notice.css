@@ -106,7 +106,7 @@
     vertical-align: middle;
 }
 
-#table-input {
+.table-input {
     float: right;
     /* background-position: 10px 10px;
     background-repeat: no-repeat; */
@@ -119,7 +119,7 @@
     font-family: "NotoSansKR";
 }
 
-#table-input:hover, #table-input:focus {
+.table-input:hover, .table-input:focus {
     border: 2px solid rgb(0, 52, 102);
 }
 
