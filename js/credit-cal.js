@@ -48,7 +48,7 @@ btn.addEventListener("click", function() {
     var m4 = parseInt(input5m2.value);
     var total2 = parseInt(input6t1.value);
 
-    if( total1 >= 0 && total1 <= 134 && total2 >= 0 ) { // 1차 만족 조건
+    if( total1 >= 0 && total1 <= 137 && total2 >= 0 ) { // 1차 만족 조건
 
         /* 교양 필수 조건 */
         if( e1 >= 10 &&  e1 <= 17 && e4 >= 0 && e4 <= 17 ){
@@ -228,8 +228,8 @@ btn.addEventListener("click", function() {
         /* 졸업조건 */
         if( // 불가
             e1r.style.color =="red" || e2r.style.color =="red" ||
-            e2r.style.color =="red" || m1r.style.color =="red" ||
-            m1r.style.color =="red" || t1r.style.color =="red") {
+            e3r.style.color =="red" || m1r.style.color =="red" ||
+            m2r.style.color =="red" || t1r.style.color =="red") {
             ok.style.display = "none";
             s.style.display = "none";
             nk.style.display ="block"

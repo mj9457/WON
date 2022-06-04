@@ -58,11 +58,10 @@ listBtn16.addEventListener("click", function () {
     input20.style.display = "none";
     input21.style.display = "none";
     input22.style.display = "none";
-    input23.style.display = "none";
+    // input23.style.display = "none";
 
     listBtn16.style.color = "white";
     listBtn16.style.background = "rgb(0, 52, 102)";
-
     listBtn17.style.color = "black";
     listBtn17.style.background = "none";
     listBtn18.style.color = "black";
@@ -108,7 +107,7 @@ listBtn17.addEventListener("click", function () {
     input20.style.display = "none";
     input21.style.display = "none";
     input22.style.display = "none";
-    input23.style.display = "none";
+    // input23.style.display = "none";
 
     listBtn17.style.color = "white";
     listBtn17.style.background = "rgb(0, 52, 102)";
@@ -155,7 +154,7 @@ listBtn18.addEventListener("click", function () {
     input20.style.display = "none";
     input21.style.display = "none";
     input22.style.display = "none";
-    input23.style.display = "none";
+    // input23.style.display = "none";
 
     listBtn18.style.color = "white";
     listBtn18.style.background = "rgb(0, 52, 102)";
@@ -202,7 +201,7 @@ listBtn19.addEventListener("click", function () {
     input20.style.display = "none";
     input21.style.display = "none";
     input22.style.display = "none";
-    input23.style.display = "none";
+    // input23.style.display = "none";
 
     listBtn19.style.color = "white";
     listBtn19.style.background = "rgb(0, 52, 102)";
@@ -249,7 +248,7 @@ listBtn20.addEventListener("click", function () {
     input20.style.display = "block";
     input21.style.display = "none";
     input22.style.display = "none";
-    input23.style.display = "none";
+    // input23.style.display = "none";
 
     listBtn20.style.color = "white";
     listBtn20.style.background = "rgb(0, 52, 102)";
@@ -296,7 +295,7 @@ listBtn21.addEventListener("click", function () {
     input20.style.display = "none";
     input21.style.display = "block";
     input22.style.display = "none";
-    input23.style.display = "none";
+    // input23.style.display = "none";
 
     listBtn21.style.color = "white";
     listBtn21.style.background = "rgb(0, 52, 102)";
@@ -343,7 +342,7 @@ listBtn22.addEventListener("click", function () {
     input20.style.display = "none";
     input21.style.display = "none";
     input22.style.display = "block";
-    input23.style.display = "none";
+    // input23.style.display = "none";
 
     listBtn22.style.color = "white";
     listBtn22.style.background = "rgb(0, 52, 102)";
@@ -450,3 +449,27 @@ listBtn23.addEventListener("click", function () {
     listBtn22.style.background = "none";
   }
 });
+
+/*  학과 클릭시 input에 값 저장?
+  <script>
+    function myFun() {
+      var table16 = document.getElementById("c-l-t-16"); // 16학번 테이블
+      var tr16 = table16.getElementsByTagName("tr")[3]; // 종교문화학과 tr
+      var tr16td1 = tr16.getElementsByTagName("td")[4].textContent; // 종교문화학과 교필 값 12
+
+      var e1 = document.getElementById("elective-1").value;
+      var e2 = document.getElementById("elective-2").value;
+      var e3 = document.getElementById("elective-3");
+      var m1 = document.getElementById("major-1");
+      var m2 = document.getElementById("major-2");
+      var t1 = document.getElementById("total-credit1");
+
+      console.log(tr16);
+      console.log(tr16td1);
+
+      e2.value= tr16td1;
+      console.log(e1);
+      console.log(e2);
+    }
+  </script>
+*/
