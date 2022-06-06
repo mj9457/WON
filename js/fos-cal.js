@@ -94,6 +94,11 @@ if ( f21 > 80 ) {
 
     // 총 이수 시간 ( 21학번 까지 제한된 조건으로 인한 총 이수 시간 판별 )
     var sumFOS21 = f21 + o21 + s21;
+    if ( sumFOS21 < 150 ) {
+        resultAllFOS21.style.color = "red";
+    } else {
+        resultAllFOS21.style.color = "blue";
+    }
     resultAllFOS21.innerHTML = sumFOS21;
 
     if ( sumFOS21 >= 150 && ( f21 >= 40 && o21 >= 40 && s21 >= 30) ) {
@@ -236,10 +241,16 @@ resultBtn22.addEventListener("click", function () {
     var s22 = parseInt(inputS22.value);
 
     // 총 이수 시간
-    var sumAllFOS22 = f22 + o22 + s22;
-    resultAllFOS22.innerHTML = sumAllFOS22;
+    var sumFOS22 = f22 + o22 + s22;
+
+    if ( sumFOS22 < 100 ) {
+        resultAllFOS22.style.color = "red";
+    } else {
+        resultAllFOS22.style.color = "blue";
+    }
+    resultAllFOS22.innerHTML = sumFOS22;
     
-    if ( sumAllFOS22 >= 100 && ( f22 >= 30 && o22 >= 25 && s22 >= 35) ) {
+    if ( sumFOS22 >= 100 && ( f22 >= 30 && o22 >= 25 && s22 >= 35) ) {
         resultAll22.innerHTML = "충족"
         resultAll22.style.color = "blue";
         resultOk22.style.display = "none";
