@@ -29,28 +29,6 @@
     background-color: #fafafa;
 }
 
-/* <-- body */
-
-@media (max-width: 800px) {
-    .min-background {
-        display: flex !important;
-        position: absolute;
-        z-index: 999999;
-        height: 100vh;
-        background-color: rgb(0, 52, 102);
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 32px;
-        top: 0;
-    }
-
-    #wrap {
-        display: none;
-    }
-}
-
 .min-background .pc-title {
     width: 90%;
     display: flex;

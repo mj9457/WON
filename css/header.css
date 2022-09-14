@@ -142,6 +142,64 @@
     box-shadow: 2px 0 1px -1px #e5e5e542;
 }
 
+.bg-red {
+    background-color: rgb(161, 21, 48);
+}
+
+/* 
+@media screen and (max-width:1023px) {
+    /* 타블렛 
+} */
+    
+/* 모바일 */
+
+.mobile-menubar {
+    display: none;
+    background-color: rgb(161, 21, 48);
+    z-index: 999999;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 3px 5px -1px #0003, 0 6px 10px #00000024, 0 1px 18px #0000001f;
+}
+
+.mobile-menubar * {
+    color: white;
+}
+
+.navbar-toggler {
+    border: 1.4px solid white !important;
+    color: white !important;
+}
+
+.navbar-nav a {
+    color: white !important;
+}
+.dropdown-menu.show {
+    background-color: rgb(0, 52, 102);
+}
+
+.dropdown-menu.show {
+    display: flex !important;
+    justify-content: space-around !important;
+}
+
+.dropdown-item:hover {
+    background-color: rgb(0, 52, 102) !important; 
+}
+
+
+@media screen and (max-width:767px) {
+
+    .menubar {
+        display: none;
+    }
+
+    .mobile-menubar {
+        display: block;
+    }
+    
+}
+
 /* animations */
 
 @keyframes fadein {

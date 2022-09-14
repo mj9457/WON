@@ -255,3 +255,14 @@ section {
 .txt-l {
     text-align: left;
 }
+
+/* 모바일 */
+@media screen and (max-width:767px) { 
+    .section__content {
+        width: 100%;
+    }
+
+    .section__content a {
+        width: 48%;
+    }
+}
