@@ -63,6 +63,20 @@ aside {
     animation-duration: 1s;
 }
 
+/* 모바일 */
+@media screen and (max-width: 767px) {
+    .aside__menubar {
+        right: 4px;
+    }
+    .aside__menubar-box--inquiry a {
+        width: 30px;
+        height: 30px;
+    }
+    .aside__menubar-box--inquiry i {
+        font-size: 20px;
+    }
+}
+
 @keyframes moveTop {
     0% {
         transform: translateY(0px);

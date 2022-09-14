@@ -42,7 +42,7 @@
                     <a href="sen-test.html">SEN-TEST</a>
                 </div>
                 <div class="menubar__content--list menubar__content__list--four ani">
-                    <a href="notice.html">학사공지</a>
+                    <a href="notice.html">학사안내</a>
                 </div>
                 <div class="menubar__content--list menubar__content__list--five ani">
                     <a href="tip-bus.html">학교생활팁</a>
@@ -124,7 +124,7 @@
             <div class="sub-menubar__notice-box">
                 <div class="sub-menubar__list-box--four-title title">
                     <a class="" href="notice.html">
-                        <div class="sub-menubar__list-box sub-menubar__list-box--notice ani">학사공지</div>
+                        <div class="sub-menubar__list-box sub-menubar__list-box--notice ani">학사안내</div>
                     </a>
                 </div>
 
@@ -200,10 +200,89 @@
 
         </div>
 
+        <!-- Mobile Header -->
+        <div class="mobile-menubar">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><i class="fa-solid fa-house"></i></a>
+                    <div class="menubar__weather">
+                        <div class="menubar__weather--loacation">학교 날씨 :</div>
+                        <div class="menubar__weather--icon"></div>
+                        <div class="menubar__weather--temp"></div>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <!-- <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">학점정보</a>
+                      </li> -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="credit.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    학점정보
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="credit.html#credit-table">졸업 기준 학점</a></li>
+                                    <li><a class="dropdown-item" href="credit.html#credit-cal">학점 간편 계산기</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="fos.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    비교과
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="fos.html#fos-table">이수 기준</a></li>
+                                    <li><a class="dropdown-item" href="fos.html#fos-cal">간편 계산기</a></li>
+                                    <li><a class="dropdown-item" href="fos.html#fos-list">비교과 목록</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="sen-test.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    SEN-TEST
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="sen-test.html#sen-notice">시험 공지</a></li>
+                                    <li><a class="dropdown-item" href="sen-test.html#sen-calendar">시험 일정</a></li>
+                                    <li><a class="dropdown-item" href="sen-test.html#sen-review">생생 후기</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="notice.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    학사안내
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="notice.html#notice-calendar">학사일정</a></li>
+                                    <li><a class="dropdown-item" href="notice.html#notice-contact-list">학교 연락망</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    학교생활팁
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="tip-bus.html">버스정보</a></li>
+                                    <li><a class="dropdown-item" href="tip-place.html">시설정보</a></li>
+                                    <li><a class="dropdown-item" href="tip-scholar.html">장학정보</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
         <!-- Main -->
         <main class="sub__main">
             <div class="main__section sub__section">
-                <h1 class="main__section--main-title sub__section--main-title">학사공지</h1>
+                <h1 class="main__section--main-title sub__section--main-title">학사안내</h1>
                 <h2 class="main__section--sub-title sub__section--sub-title"></h2>
             </div>
         </main>
@@ -214,7 +293,7 @@
             <!-- notice-cal 학사 일정-->
             <div id="notice-calendar" class="place-wrap-box">
                 <div class="section__content section_notice">
-                    <div class="section__content--row box-shadow">
+                    <div class="section__content--row box-shadow section-notice-wrap">
                         <div class="section__content--row-title">학사 일정📌</div>
                         <table id="notice-cal-3" class="notice-cal-table" style="display: none;">
                             <thead>
@@ -986,7 +1065,7 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <table id="notice-cal-6" class="notice-cal-table">
+                        <table id="notice-cal-6" class="notice-cal-table" style="display: none;">
                             <thead>
                                 <tr class="table-title">
                                     <th colspan="31">
@@ -1988,7 +2067,7 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <table id="notice-cal-9" class="notice-cal-table" style="display: none;">
+                        <table id="notice-cal-9" class="notice-cal-table">
                             <thead>
                                 <tr class="table-title">
                                     <th colspan="31">
@@ -3837,6 +3916,7 @@
                                 </tr>
                             </tbody>
                         </table>
+                        <img id="notice-img" src="/assets/image/notice.jpg" alt="학사일정" style="display: none;">
                     </div>
                 </div>
             </div>
@@ -3852,131 +3932,6 @@
                                     placeholder="학과를 입력해주세요">
                             </div>
                             <div class="table-wrap">
-                                <table class="shuttle-bus-time event-phone-number-table">
-                                    <colgroup>
-                                        <col style="width: 139.005682px">
-                                        <col style="width: 123.005682px">
-                                        <col style="width: 151.005682px">
-                                    </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th colspan="3">상황별 연락망</th>
-                                        </tr>
-                                        <tr>
-                                            <th>구분</th>
-                                            <th>성명</th>
-                                            <th>전화번호</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="yellow-box">대표 전화</td>
-                                            <td class="yellow-box">-</td>
-                                            <td class="yellow-box">043-830-8114</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="yellow-box">원스톱지원</td>
-                                            <td class="yellow-box">서영호</td>
-                                            <td class="yellow-box">043-830-8101</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="yellow-box">휴학</td>
-                                            <td class="yellow-box">-</td>
-                                            <td class="yellow-box">각 단과대학 연락 요망</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="yellow-box">복학</td>
-                                            <td class="yellow-box">-</td>
-                                            <td class="yellow-box">각 단과대학 연락 요망</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="yellow-box">졸업</td>
-                                            <td class="yellow-box">-</td>
-                                            <td class="yellow-box">각 단과대학 연락 요망</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="yellow-box">자퇴 </td>
-                                            <td class="yellow-box">-</td>
-                                            <td class="yellow-box">각 단과대학 연락 요망</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="yellow-box">비교과</td>
-                                            <td class="yellow-box">손정화</td>
-                                            <td class="yellow-box">043-830-8252</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="yellow-box">교양학부</td>
-                                            <td class="yellow-box">황희정</td>
-                                            <td class="yellow-box">043-830-8833</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="yellow-box">학사팀</td>
-                                            <td class="yellow-box">안해수</td>
-                                            <td class="yellow-box">043-830-8093</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="yellow-box">통합정보사이트</td>
-                                            <td class="yellow-box">변성민</td>
-                                            <td class="yellow-box">043-830-8217</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="yellow-box">수강신청</td>
-                                            <td class="yellow-box">안해수</td>
-                                            <td class="yellow-box">043-830-8093</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="yellow-box">교운부</td>
-                                            <td class="yellow-box">임보규</td>
-                                            <td class="yellow-box">043-830-8153</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="yellow-box">생활관</td>
-                                            <td class="yellow-box">김정규</td>
-                                            <td class="yellow-box">043-830-8241</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="yellow-box">학운위(남)</td>
-                                            <td class="yellow-box">-</td>
-                                            <td class="yellow-box">043-830-8247</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="yellow-box">학운위(여)</td>
-                                            <td class="yellow-box">-</td>
-                                            <td class="yellow-box">043-830-8257</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="yellow-box">장학금</td>
-                                            <td class="yellow-box">민수임</td>
-                                            <td class="yellow-box">043-830-8101</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="yellow-box">등록금</td>
-                                            <td class="yellow-box">김나영</td>
-                                            <td class="yellow-box">043-830-8274</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="yellow-box">스포츠센터</td>
-                                            <td class="yellow-box">최정건</td>
-                                            <td class="yellow-box">043-830-8729</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="yellow-box">카페테리아</td>
-                                            <td class="yellow-box">-</td>
-                                            <td class="yellow-box">043-830-8515</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="yellow-box">괴산택시</td>
-                                            <td class="yellow-box">-</td>
-                                            <td class="yellow-box">043-834-8585</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="yellow-box">학생예비군 </td>
-                                            <td class="yellow-box">김종훈</td>
-                                            <td class="yellow-box">043-830-8191</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
                                 <table id="phone-number-table" class="shuttle-bus-time">
                                     <tr>
                                         <th colspan="4">단과대학 연락망</th>
@@ -4180,6 +4135,131 @@
                                         <td class="yellow-box">043-830-8478</td>
                                     </tr>
                                 </table>
+                                <table id="phone-number-table2" class="shuttle-bus-time event-phone-number-table">
+                                    <colgroup>
+                                        <col style="width: 139.005682px">
+                                        <col style="width: 123.005682px">
+                                        <col style="width: 151.005682px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th colspan="3">상황별 연락망</th>
+                                        </tr>
+                                        <tr>
+                                            <th>구분</th>
+                                            <th>성명</th>
+                                            <th>전화번호</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="yellow-box">대표 전화</td>
+                                            <td class="yellow-box">-</td>
+                                            <td class="yellow-box">043-830-8114</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="yellow-box">원스톱지원</td>
+                                            <td class="yellow-box">서영호</td>
+                                            <td class="yellow-box">043-830-8101</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="yellow-box">휴학</td>
+                                            <td class="yellow-box">-</td>
+                                            <td class="yellow-box">각 단과대학 연락 요망</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="yellow-box">복학</td>
+                                            <td class="yellow-box">-</td>
+                                            <td class="yellow-box">각 단과대학 연락 요망</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="yellow-box">졸업</td>
+                                            <td class="yellow-box">-</td>
+                                            <td class="yellow-box">각 단과대학 연락 요망</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="yellow-box">자퇴 </td>
+                                            <td class="yellow-box">-</td>
+                                            <td class="yellow-box">각 단과대학 연락 요망</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="yellow-box">비교과</td>
+                                            <td class="yellow-box">손정화</td>
+                                            <td class="yellow-box">043-830-8252</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="yellow-box">교양학부</td>
+                                            <td class="yellow-box">황희정</td>
+                                            <td class="yellow-box">043-830-8833</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="yellow-box">학사팀</td>
+                                            <td class="yellow-box">안해수</td>
+                                            <td class="yellow-box">043-830-8093</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="yellow-box">통합정보사이트</td>
+                                            <td class="yellow-box">변성민</td>
+                                            <td class="yellow-box">043-830-8217</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="yellow-box">수강신청</td>
+                                            <td class="yellow-box">안해수</td>
+                                            <td class="yellow-box">043-830-8093</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="yellow-box">교운부</td>
+                                            <td class="yellow-box">임보규</td>
+                                            <td class="yellow-box">043-830-8153</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="yellow-box">생활관</td>
+                                            <td class="yellow-box">김정규</td>
+                                            <td class="yellow-box">043-830-8241</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="yellow-box">학운위(남)</td>
+                                            <td class="yellow-box">-</td>
+                                            <td class="yellow-box">043-830-8247</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="yellow-box">학운위(여)</td>
+                                            <td class="yellow-box">-</td>
+                                            <td class="yellow-box">043-830-8257</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="yellow-box">장학금</td>
+                                            <td class="yellow-box">민수임</td>
+                                            <td class="yellow-box">043-830-8101</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="yellow-box">등록금</td>
+                                            <td class="yellow-box">김나영</td>
+                                            <td class="yellow-box">043-830-8274</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="yellow-box">스포츠센터</td>
+                                            <td class="yellow-box">최정건</td>
+                                            <td class="yellow-box">043-830-8729</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="yellow-box">카페테리아</td>
+                                            <td class="yellow-box">-</td>
+                                            <td class="yellow-box">043-830-8515</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="yellow-box">괴산택시</td>
+                                            <td class="yellow-box">-</td>
+                                            <td class="yellow-box">043-834-8585</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="yellow-box">학생예비군 </td>
+                                            <td class="yellow-box">김종훈</td>
+                                            <td class="yellow-box">043-830-8191</td>
+                                        </tr>
+                                    </tbody>
+                                </table>                                
                             </div>
                         </div>
                     </div>
@@ -4211,6 +4291,37 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
+        <!-- sen-test table show&hide -->
+    <!-- bootstrap -->
+    <script>
+        var intFrameWidth = window.innerWidth;
+        var enable = 0;
+
+        if (intFrameWidth < 767) {
+            // bootstrap js와 css 로드
+            var cssUrl = "https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css";
+            var head = document.getElementsByTagName("head")[0];
+            var link = document.createElement("link");
+            link.id = "link-bootstrap"
+            link.rel = "stylesheet";
+            link.type = "text/css";
+            link.href = cssUrl;
+            document.head.appendChild(link);
+
+            document.getElementById("notice-cal-9").style.display = "none";
+            document.getElementById("notice-img").style.display = "block"; 
+        } else {
+            // bootstrap js와 css 삭제
+            const linkBootstrap = document.getElementById("link-bootstrap");
+
+            linkBootstrap.remove();
+
+            document.getElementById("notice-cal-9").style.display = "table"; 
+            document.getElementById("notice-img").style.display = "none"; 
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
     <!-- notice-cal -->
     <script src="/js/notice-cal.js"></script>
 
@@ -4225,6 +4336,7 @@
 
     <!-- top Btn & 문의하기 -->
     <script src="/js/top-btn.js"></script>
+
 </body>
 
 </html>

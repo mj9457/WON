@@ -11,6 +11,11 @@ let reviewImg9 = document.getElementById("review-9");
 let count = 0;
 
 /* Sean-review */
+var intFrameWidth = window.innerWidth;
+        var enable = 0;
+
+        if (intFrameWidth > 767) {
+
 reviewImg1.addEventListener("click", function () {
   count += 1;
   if (count % 2 != 0) {
@@ -27,6 +32,7 @@ reviewImg1.addEventListener("click", function () {
     reviewImg3.style.display = "block";
   }
 });
+
 
 reviewImg2.addEventListener("click", function () {
   count += 1;
@@ -165,3 +171,4 @@ reviewImg9.addEventListener("click", function () {
     reviewImg7.style.display = "block";
   }
 });
+};

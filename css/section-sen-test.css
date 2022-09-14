@@ -71,3 +71,22 @@
 .color-red {
     color: red;
 }
+
+/* 모바일 */
+@media screen and (max-width: 767px) { 
+    .fos-review-wrap {
+        flex-wrap: wrap;
+    }
+    .fos-review-box {
+        width: 100%;
+    }
+
+    .fos-review-wrap .review-img {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .fos-review-box .star-img {
+        width: 50%;
+    }
+}

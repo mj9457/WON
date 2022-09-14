@@ -41,7 +41,7 @@
           <a href="sen-test.html">SEN-TEST</a>
         </div>
         <div class="menubar__content--list menubar__content__list--four ani">
-          <a href="notice.html">학사공지</a>
+          <a href="notice.html">학사안내</a>
         </div>
         <div class="menubar__content--list menubar__content__list--five ani">
           <a href="tip-bus.html">학교생활팁</a>
@@ -123,7 +123,7 @@
       <div class="sub-menubar__notice-box">
         <div class="sub-menubar__list-box--four-title title">
           <a class="" href="notice.html">
-            <div class="sub-menubar__list-box sub-menubar__list-box--notice ani">학사공지</div>
+            <div class="sub-menubar__list-box sub-menubar__list-box--notice ani">학사안내</div>
           </a>
         </div>
 
@@ -197,6 +197,78 @@
 
 
 
+    </div>
+
+    <!-- Mobile Header -->
+    <div class="mobile-menubar">
+      <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-house"></i></a>
+            <div class="menubar__weather">
+              <div class="menubar__weather--loacation">학교 날씨 :</div>
+              <div class="menubar__weather--icon"></div>
+              <div class="menubar__weather--temp"></div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <!-- <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">학점정보</a>
+                </li> -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="credit.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      학점정보
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="credit.html#credit-table">졸업 기준 학점</a></li>
+                    <li><a class="dropdown-item" href="credit.html#credit-cal">학점 간편 계산기</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="fos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      비교과
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="fos.html#fos-table">이수 기준</a></li>
+                    <li><a class="dropdown-item" href="fos.html#fos-cal">간편 계산기</a></li>
+                    <li><a class="dropdown-item" href="fos.html#fos-list">비교과 목록</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="sen-test.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      SEN-TEST
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="sen-test.html#sen-notice">시험 공지</a></li>
+                    <li><a class="dropdown-item" href="sen-test.html#sen-calendar">시험 일정</a></li>
+                    <li><a class="dropdown-item" href="sen-test.html#sen-review">생생 후기</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="notice.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      학사안내
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="notice.html#notice-calendar">학사일정</a></li>
+                    <li><a class="dropdown-item" href="notice.html#notice-contact-list">학교 연락망</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      학교생활팁
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="tip-bus.html">버스정보</a></li>
+                    <li><a class="dropdown-item" href="tip-place.html">시설정보</a></li>
+                    <li><a class="dropdown-item" href="tip-scholar.html">장학정보</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
     </div>
 
     <!-- Main -->
@@ -1117,6 +1189,31 @@
   <script src="https://code.jquer y.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
 
+  <!-- bootstrap -->
+  <script>
+    var intFrameWidth = window.innerWidth;
+    var enable = 0;
+
+    if(intFrameWidth < 767 ) {
+        // bootstrap js와 css 로드
+        var cssUrl = "https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css";
+        var head = document.getElementsByTagName("head")[0];
+        var link = document.createElement("link");
+        link.id = "link-bootstrap"
+        link.rel = "stylesheet";
+        link.type = "text/css";
+        link.href = cssUrl;
+        document.head.appendChild(link);
+    } else {
+        // bootstrap js와 css 삭제
+        const linkBootstrap = document.getElementById("link-bootstrap");
+
+        linkBootstrap.remove();
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
   <!-- fos-cal -->
   <script src="/js/fos-cal.js"></script>
 
@@ -1126,6 +1223,21 @@
   <!-- fos list table sort script -->
   <script src="/js/fos-list-table-sort.js"></script>
 
+  <!-- fos list show&hide -->
+  <script>
+    var intFrameWidth = window.innerWidth;
+        var enable = 0;
+        console.log(intFrameWidth);
+
+        if(intFrameWidth < 767 ) {
+          document.getElementById("fos-list-table").style.display = "none";
+          document.querySelector(".section--sub-title-tip.txt-r.m-0").innerHTML = "※ 모바일은 더보기 버튼을 통해 확인 부탁드립니다."
+        } else {
+          document.getElementById("fos-list-table").style.display = "table";
+          document.querySelector(".section--sub-title-tip.txt-r.m-0").innerHTML = "※ 번호, 영역 클릭시 정렬됩니다."
+        }
+  </script>
+
   <!-- Sub-MenuBar -->
   <script src="/js/sub-menubar.js"></script>
 
@@ -1134,8 +1246,6 @@
 
   <!-- top Btn & 문의하기 -->
   <script src="/js/top-btn.js"></script>
-
-
 </body>
 
 </html>

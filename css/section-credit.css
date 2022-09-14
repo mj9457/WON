@@ -110,3 +110,35 @@
     font-family: "NotoSansKR";
     text-align: center;
 }
+
+/* 모바일 */
+@media screen and (max-width: 767px) {
+    .credit-list-wrap {
+        width: 95%;
+    }
+    .credit-btn {
+        width: 46%;
+    }
+
+    .cal-wrap {
+        width: 100% !important;
+    }
+    .input-div-wrap {
+        width: 45% !important;
+        margin-bottom: 10px;
+    }
+
+    .credit-result-box div:first-child {
+        width: 25%;
+        font-size: 16px;
+    }
+
+    .credit-result-box div {
+        font-size: 16px;
+    }
+
+    .credit-result-box div:last-child {
+        width: 60%;
+        font-size: 16px;
+    }
+}

@@ -104,7 +104,7 @@ btn.addEventListener("click", function() {
                 e2r.innerHTML = "오류";
                 e2r.style.color = "red";
     
-                e2rt.innerHTML = "20,38학점을 초과할 수 없습니다";
+                e2rt.innerHTML = "38학점 초과할 수 없습니다";
                 e2rt.style.color = "red";
         } else { // 오류
             e2r.innerHTML = "오류";

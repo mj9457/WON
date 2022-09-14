@@ -81,7 +81,7 @@
 
 .title-wrap {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -110,7 +110,7 @@
     float: right;
     /* background-position: 10px 10px;
     background-repeat: no-repeat; */
-    width: 15%;
+    width: 20%;
     font-size: 16px;
     text-align: center;
     padding: 8px 10px;
@@ -123,11 +123,48 @@
     border: 2px solid rgb(0, 52, 102);
 }
 
+#notice-img {
+    width: 100%;
+}
+
 #phone-number-table {
+    height: 100%;
+}
+
+#phone-number-table2 {
     margin-left: 40px;
     height: 100%;
 }
 
-#phone-number-table th {
+#phone-number-table2 th {
     width: 25%;
+}
+
+/* 모바일 */
+@media screen and (max-width: 767px) { 
+
+    .section_notice {
+        width: 95%;
+    }
+
+    .section-notice-wrap {
+        padding: 10px;
+    }
+
+    .table-input {
+        width: 100%;
+    }
+
+    .table-wrap {
+        flex-wrap: wrap;
+    }
+
+    .shuttle-bus-time {
+        width: 100%;
+    }
+
+    #phone-number-table2 {
+        margin-left: 0px;
+    }
+
 }
