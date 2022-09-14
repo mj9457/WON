@@ -13,6 +13,7 @@ $(document).ready(function () {
     $(".sub-menubar__tip-box--flex-location").css("display", "none");
     $(".sub-menubar__tip-box--flex-bus").css("display", "none");
     $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
+    $(".sub-menubar__cafeteria-box").css("display","none");
   });
 
   $(".menubar__content__list--one").mouseover(function () {
@@ -28,6 +29,7 @@ $(document).ready(function () {
     $(".sub-menubar__sentest-box").css("display", "none");
     $(".sub-menubar__tip-box").css("display", "none");
     $(".sub-menubar__notice-box").css("display", "none");
+    $(".sub-menubar__cafeteria-box").css("display","none");
 
     $(".sub-menubar__fos-box--flex-fos").css("display", "none");
     $(".sub-menubar__sen-box--flex-sen").css("display", "none");
@@ -50,6 +52,7 @@ $(document).ready(function () {
     $(".sub-menubar__sentest-box").css("display", "none");
     $(".sub-menubar__tip-box").css("display", "none");
     $(".sub-menubar__notice-box").css("display", "none");
+    $(".sub-menubar__cafeteria-box").css("display","none");
 
     $(".sub-menubar__credit-box--flex-credit").css("display", "none");
     $(".sub-menubar__sen-box--flex-sen").css("display", "none");
@@ -72,6 +75,7 @@ $(document).ready(function () {
     $(".sub-menubar__sentest-box").css("display", "flex");
     $(".sub-menubar__tip-box").css("display", "none");
     $(".sub-menubar__notice-box").css("display", "none");
+    $(".sub-menubar__cafeteria-box").css("display","none");
 
     $(".sub-menubar__credit-box--flex-credit").css("display", "none");
     $(".sub-menubar__fos-box--flex-fos").css("display", "none");
@@ -94,6 +98,7 @@ $(document).ready(function () {
     $(".sub-menubar__sentest-box").css("display", "none");
     $(".sub-menubar__tip-box").css("display", "none");
     $(".sub-menubar__notice-box").css("display", "flex");
+    $(".sub-menubar__cafeteria-box").css("display","none");
 
     $(".sub-menubar__credit-box--flex-credit").css("display", "none");
     $(".sub-menubar__fos-box--flex-fos").css("display", "none");
@@ -116,32 +121,33 @@ $(document).ready(function () {
     $(".sub-menubar__sentest-box").css("display", "none");
     $(".sub-menubar__tip-box").css("display", "flex");
     $(".sub-menubar__notice-box").css("display", "none");
+    $(".sub-menubar__cafeteria-box").css("display","none");
 
     $(".sub-menubar__credit-box--flex-credit").css("display", "none");
     $(".sub-menubar__fos-box--flex-fos").css("display", "none");
     $(".sub-menubar__sen-box--flex-sen").css("display", "none");
     $(".sub-menubar__notice-box--flex-notice").css("display", "none");
+    $(".sub-menubar__tip-box--flex-cafeteria").css("display","none");
   });
 
-  // $(".menubar__content__list--six").mouseover(function () {
-  //     $(".sub-menubar").css("display", "block");
-  //     $(".sub-menubar").css("position", "fixed");
-  //     $(".main__section").css("display", "none");
-  //     $("main").css("display", "none");
-  //     $(".section").css("padding-top", "280px");
+  $(".menubar__content__list--six").mouseover(function () {
+      $(".sub-menubar").fadeIn(300);
+      $(".sub-menubar").css("display", "block");
+      $(".sub-menubar").css("position", "fixed");
 
-  //     $(".sub-menubar__credit-box").css("display", "none");
-  //     $(".sub-menubar__fos-box").css("display", "none");
-  //     $(".sub-menubar__sentest-box").css("display", "none");
-  //     $(".sub-menubar__tip-box").css("display", "none");
-  //     $(".sub-menubar__notice-box").css("display", "flex");
+      $(".sub-menubar__credit-box").css("display", "none");
+      $(".sub-menubar__fos-box").css("display", "none");
+      $(".sub-menubar__sentest-box").css("display", "none");
+      $(".sub-menubar__tip-box").css("display", "none");
+      $(".sub-menubar__notice-box").css("display", "none");
+      $(".sub-menubar__cafeteria-box").css("display","flex");
 
-  //     $(".sub-menubar__fos-box--flex-fos").css("display", "none");
-  //     $(".sub-menubar__sen-box--flex-sen").css("display", "none");
-  //     $(".sub-menubar__tip-box--flex-location").css("display", "none");
-  //     $(".sub-menubar__tip-box--flex-bus").css("display", "none");
-  //     $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");
-  // });
+      $(".sub-menubar__fos-box--flex-fos").css("display", "none");
+      $(".sub-menubar__sen-box--flex-sen").css("display", "none");
+      $(".sub-menubar__tip-box--flex-location").css("display", "none");
+      $(".sub-menubar__tip-box--flex-bus").css("display", "none");
+      $(".sub-menubar__tip-box--flex-scholarship").css("display", "none");      
+  });
 
   $(".sub-menubar").mouseleave(function () {
     // $(".sub-menubar").css("display", "none");

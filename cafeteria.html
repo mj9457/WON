@@ -304,7 +304,7 @@
         <!-- Main -->
         <main class="sub__main">
             <div class="main__section sub__section">
-                <h1 class="main__section--main-title sub__section--main-title">버스 정보</h1>
+                <h1 class="main__section--main-title sub__section--main-title">학식안내</h1>
                 <h2 class="main__section--sub-title sub__section--sub-title"></h2>
             </div>
         </main>
@@ -312,301 +312,169 @@
         <!-- Section -->
         <section class="section">
 
-            <!-- 셔틀버스 -->
-            <div id="shuttle-bus" class="place-wrap-box">
+            <!-- 학교식당 -->
+            <div id="cafeteria-school" class="place-wrap-box">
                 <div class="section__content">
                     <div class="section__content--row box-shadow">
-                        <div class="section__content--row-title">셔틀버스📌</div>
+                        <div class="section__content--row-title">학교식당📌</div>
                         <table class="shuttle-bus-time">
                             <thead>
                                 <tr>
-                                    <th>회차</th>
-                                    <th>월</th>
-                                    <th>화</th>
-                                    <th>수</th>
-                                    <th>목</th>
-                                    <th>금</th>
-                                    <th>토</th>
+                                    <th colspan="3">운영시간</th>
+                                </tr>
+                                <tr>
+                                    <th style="width: 33%">아침</th>
+                                    <th style="width: 33%">점심</th>
+                                    <th style="width: 33%">저녁</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>1</td>
-                                    <td class="yellow-box">08:30</td>
-                                    <td class="yellow-box">08:30</td>
-                                    <td class="yellow-box">08:30</td>
-                                    <td class="yellow-box">08:30</td>
-                                    <td class="yellow-box">08:30</td>
-                                    <td class="yellow-box">08:30</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td class="yellow-box">09:30</td>
-                                    <td class="yellow-box">09:30</td>
-                                    <td class="yellow-box">09:30</td>
-                                    <td class="yellow-box">09:30</td>
-                                    <td class="yellow-box">09:30</td>
-                                    <td class="yellow-box">09:30</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td class="yellow-box">10:30</td>
-                                    <td class="yellow-box">10:30</td>
-                                    <td class="yellow-box">10:30</td>
-                                    <td class="yellow-box">10:30</td>
-                                    <td class="yellow-box">10:30</td>
-                                    <td class="yellow-box">10:30</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td class="yellow-box">11:30</td>
-                                    <td class="yellow-box">11:30</td>
-                                    <td class="yellow-box">11:30</td>
-                                    <td class="yellow-box">11:30</td>
-                                    <td class="yellow-box">11:30</td>
-                                    <td class="yellow-box">11:30</td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td class="yellow-box">13:30</td>
-                                    <td class="yellow-box">13:30</td>
-                                    <td class="yellow-box">13:30</td>
-                                    <td class="yellow-box">13:30</td>
-                                    <td class="yellow-box">13:30</td>
-                                    <td class="yellow-box">13:30</td>
-                                </tr>
-                                <tr>
-                                    <td>6</td>
-                                    <td class="yellow-box">15:30</td>
-                                    <td class="yellow-box">15:30</td>
-                                    <td class="yellow-box">15:30</td>
-                                    <td class="yellow-box">15:30</td>
-                                    <td class="yellow-box">15:30</td>
-                                    <td class="yellow-box">15:30</td>
-                                </tr>
-                                <tr>
-                                    <td>7</td>
-                                    <td class="yellow-box">17:30</td>
-                                    <td class="yellow-box">17:30</td>
-                                    <td class="yellow-box">17:30</td>
-                                    <td class="yellow-box">17:30</td>
-                                    <td class="yellow-box">17:30</td>
-                                    <td class="yellow-box">17:30</td>
-                                </tr>
-                                <tr>
-                                    <td>8</td>
-                                    <td class="yellow-box">18:10</td>
-                                    <td class="yellow-box">18:10</td>
-                                    <td class="yellow-box">18:10</td>
-                                    <td class="yellow-box">18:10</td>
-                                    <td class="yellow-box">18:10</td>
-                                    <td class="yellow-box">18:10</td>
+                                    <td class="yellow-box">07:00 ~ 08:00</td>
+                                    <td class="yellow-box">11:00 ~ 13:00</td>
+                                    <td class="yellow-box">17:00 ~ 18:40</td>
                                 </tr>
                             </tbody>
                         </table>
-                        <div class="map-box">
-                            <div class="map-title">노선도</div>
-                            <div class="map-title">로드뷰</div>
-                            <div id="schoolbus-image" class="bus_map"><img src="/assets/image/schoolbus.jpg"
-                                    alt="셔틀노선도"></div>
-                            <div id="map_00" class="bus_map" style="z-index: 0; display: none;"></div>
-                            <div id="map_00_view" class="bus_map" style="z-index: 0;"></div>
-                        </div>
-                        <div class="section--sub-title-tip txt-r">
-                            ※ 토요일은 정규학기 기간만 운행합니다.<br>
-                            ※ 휴일 및 공휴일은 운행하지 않습니다.<br>
-                            ※ 노선도 이미지 클릭시 확대됩니다.
-                        </div>
+                        <div><img src="/assets/image/meal/9-3meal.jpg" alt="9월3주 학식" width="100%"></div>
                     </div>
                 </div>
             </div>
 
-            <!-- 통학버스 -->
-            <div id="school-bus" class="place-wrap-box">
+            <!-- 컵밥 -->
+            <div id="cafeteria-cubrice" class="place-wrap-box">
                 <div class="section__content">
                     <div class="section__content--row box-shadow">
-                        <div class="section__content--row-title">통학버스📌</div>
-                        <table class="school-bus-table">
+                        <div class="section__content--row-title">컵밥 & 토스트📌</div>
+                        <table class="shuttle-bus-time">
                             <thead>
                                 <tr>
-                                    <th colspan="4">노선도</th>
-                                    <th colspan="2">금액</th>
-                                    <th>정류장 지도 보기</th>
+                                    <th colspan="7" style="background-color: rgb(161, 21, 48);">컵밥</th>
+                                </tr>
+                                <tr>
+                                    <th colspan="7">운영시간 ( 09:00 ~ 20:00 ) / 토요일 : 휴무</th>
+                                </tr>
+                                <tr>
+                                    <th style="width: 14%;">월</th>
+                                    <th style="width: 14%;">화</th>
+                                    <th style="width: 14%;">수</th>
+                                    <th style="width: 14%;">목</th>
+                                    <th style="width: 14%;">금</th>
+                                    <th style="width: 14%;">토</th>
+                                    <th>일</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="yellow-box" colspan="3">동서울행</td>
-                                    <td class="yellow-box">학교&lt; &gt;동서울 터미널</td>
-                                    <td class="yellow-box" colspan="2">11,000원</td>
-                                    <td class="yellow-box" id="school-bus-td1" style="cursor: pointer;">Click!</td>
+                                    <td class="yellow-box" style="font-size: 14px; vertical-align: middle;">스페셜</td>
+                                    <td class="yellow-box" style="font-size: 14px; vertical-align: middle;">치킨<br>카레
+                                    </td>
+                                    <td class="yellow-box" style="font-size: 14px; vertical-align: middle;">삼겹<br>김치
+                                    </td>
+                                    <td class="yellow-box" style="font-size: 14px; vertical-align: middle;">닭갈비</td>
+                                    <td class="yellow-box" style="font-size: 14px; vertical-align: middle;">치킨<br>마요
+                                    </td>
+                                    <td class="yellow-box"
+                                        style="font-size: 14px; vertical-align: middle; background-color: #dcdcdc;">
+                                    </td>
+                                    <td class="yellow-box" style="font-size: 14px; vertical-align: middle;">불닭/<br>제육
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td class="yellow-box" colspan="3">석계 태릉 구리행 (구리)</td>
-                                    <td class="yellow-box">학교&lt; &gt; 구리역 (GS백화점)</td>
-                                    <td class="yellow-box" colspan="2">11,000원</td>
-                                    <td class="yellow-box" id="school-bus-td2" style="cursor: pointer;">Click!</td>
-                                </tr>
-                                <tr>
-                                    <td class="yellow-box" colspan="3">석계 태릉 구리행 (태릉)</td>
-                                    <td class="yellow-box">구리역 &lt; &gt; 태릉입구역 (7번 출구)</td>
-                                    <td class="yellow-box" colspan="2">11,000원</td>
-                                    <td class="yellow-box" id="school-bus-td3" style="cursor: pointer;">Click!</td>
-                                </tr>
-                                <tr>
-                                    <td class="yellow-box" colspan="3">석계 태릉 구리행 (석계)</td>
-                                    <td class="yellow-box">태릉입구역 &lt; &gt; 석계역 (3번 출구)</td>
-                                    <td class="yellow-box" colspan="2">11,000원</td>
-                                    <td class="yellow-box" id="school-bus-td4" style="cursor: pointer;">Click!</td>
-                                </tr>
-                                <tr>
-                                    <td class="yellow-box" colspan="3">인천행</td>
-                                    <td class="yellow-box">학교 &lt; &gt; 인천터미널</td>
-                                    <td class="yellow-box" colspan="2">13,000원</td>
-                                    <td class="yellow-box" id="school-bus-td5" style="cursor: pointer;">Click!</td>
-                                </tr>
-                                <tr>
-                                    <td class="yellow-box" colspan="3">금정행</td>
-                                    <td class="yellow-box">학교 &lt; &gt; 금정역 (3번 출구)</td>
-                                    <td class="yellow-box" colspan="2">11,000원</td>
-                                    <td class="yellow-box" id="school-bus-td6" style="cursor: pointer;">Click!</td>
-                                </tr>
-                                <tr>
-                                    <td class="yellow-box" colspan="3">성남 용인행 (용인)</td>
-                                    <td class="yellow-box">학교 &lt; &gt; 용인터미널</td>
-                                    <td class="yellow-box" colspan="2">10,000원</td>
-                                    <td class="yellow-box" id="school-bus-td7" style="cursor: pointer;">Click!</td>
-                                </tr>
-                                <tr>
-                                    <td class="yellow-box" colspan="3">성남 용인행 (성남)</td>
-                                    <td class="yellow-box">용인터미널 &lt; &gt; 성남 (야탑역)</td>
-                                    <td class="yellow-box" colspan="2">11,000원</td>
-                                    <td class="yellow-box" id="school-bus-td8" style="cursor: pointer;">Click!</td>
-                                </tr>
-                                <tr>
-                                    <td class="yellow-box" colspan="3">수원행</td>
-                                    <td class="yellow-box">학교 &lt; &gt; 수원역 (시내버스 정류장)</td>
-                                    <td class="yellow-box" colspan="2">10,000원</td>
-                                    <td class="yellow-box" id="school-bus-td9" style="cursor: pointer;">Click!</td>
+                                    <td style="font-size: 14px; vertical-align: middle;"></td>
+                                    <td class="yellow-box" style="font-size: 14px; vertical-align: middle;">떡볶이</td>
+                                    <td style="font-size: 14px; vertical-align: middle;"></td>
+                                    <td class="yellow-box" style="font-size: 14px; vertical-align: middle;">소떡<br>소떡
+                                    </td>
+                                    <td class="yellow-box" style="font-size: 14px; vertical-align: middle;">떡볶이</td>
+                                    <td style="font-size: 14px; vertical-align: middle; background-color: #dcdcdc;">
+                                    </td>
+                                    <td class="yellow-box" style="font-size: 14px; vertical-align: middle;">소떡<br>소떡
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
-                        <div class="section__content--row-btn-wrap">
-                            <a class="app-btn app-btn-animation-1" href="https://bus.jwu.ac.kr/#/"
-                                target="_blank">예약하기</a>
-                        </div>
-                        <div class="section--sub-title-tip txt-r">
-                            ※ 정류장 지도 보기 클릭시 해당 지도로 이동합니다.<br>
-                            ※ 토요일은 정규학기 기간만 운행합니다.<br>
-                            ※ 휴일 및 공휴일은 운행하지 않습니다.
-                        </div>
+                        <table class="shuttle-bus-time">
+                            <thead>
+                                <tr>
+                                    <th colspan="7" style="background-color: rgb(161, 21, 48);">토스트</th>
+                                </tr>
+                                <tr>
+                                    <th colspan="7">운영시간 ( 09:00 ~ 19:30 ) / 토요일 : 휴무</th>
+                                </tr>
+                                <tr>
+                                    <th style="width: 14%;">월</th>
+                                    <th style="width: 14%;">화</th>
+                                    <th style="width: 14%;">수</th>
+                                    <th style="width: 14%;">목</th>
+                                    <th style="width: 14%;">금</th>
+                                    <th style="width: 14%;">토</th>
+                                    <th>일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="yellow-box" style="font-size: 14px; vertical-align: middle;">핫치킨</td>
+                                    <td class="yellow-box" style="font-size: 14px; vertical-align: middle;">갈릭<br>불고기
+                                    </td>
+                                    <td class="yellow-box" style="font-size: 14px; vertical-align: middle;">치킨</td>
+                                    <td class="yellow-box" style="font-size: 14px; vertical-align: middle;">해쉬<br>브라운
+                                    </td>
+                                    <td class="yellow-box" style="font-size: 14px; vertical-align: middle;">갈릭<br>불고기
+                                    </td>
+                                    <td class="yellow-box"
+                                        style="font-size: 14px; vertical-align: middle; background-color: #dcdcdc;">
+                                    </td>
+                                    <td class="yellow-box" style="font-size: 14px; vertical-align: middle;">치킨</td>
+                                </tr>
+                                <tr>
+                                    <td class="yellow-box" style="font-size: 14px; vertical-align: middle;">새우</td>
+                                    <td class="yellow-box" style="font-size: 14px; vertical-align: middle;">떡갈비</td>
+                                    <td class="yellow-box" style="font-size: 14px; vertical-align: middle;">스팸</td>
+                                    <td class="yellow-box" style="font-size: 14px; vertical-align: middle;">소시지</td>
+                                    <td class="yellow-box" style="font-size: 14px; vertical-align: middle;">핫치킨</td>
+                                    <td class="yellow-box"
+                                        style="font-size: 14px; vertical-align: middle; background-color: #dcdcdc;">
+                                    </td>
+                                    <td class="yellow-box" style="font-size: 14px; vertical-align: middle;">떡갈비</td>
+                                </tr>
+                                <tr>
+                                    <td class="yellow-box" style="font-size: 14px; vertical-align: middle;" colspan="7">
+                                        계란</td>
+                                </tr>
+                                <tr>
+                                    <td class="yellow-box" style="font-size: 14px; vertical-align: middle;" colspan="7">
+                                        햄치즈</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    <div id="school-bus1" class="section__content--row box-shadow">
-                        <div class="section__content--row-title">동서울행📌</div>
-                        <div class="section--sub-title txt-c">
-                            테크노마트 앞 택시부 위쪽<br>
-                            ※ 기존정거장 맞은편으로 이동
-                        </div>
-                        <div class="map-box">
-                            <div class="map-title">지도</div>
-                            <div class="map-title">로드뷰</div>
-                            <div id="map_01" class="bus_map"></div>
-                            <div id="map_01_view" class="road_view"></div>
-                        </div>
-                    </div>
+                </div>
+            </div>
 
-                    <div id="school-bus2" class="section__content--row box-shadow">
-                        <div class="section__content--row-title">석계/태능/구리행📌</div>
-                        <div class="section--sub-title txt-c">
-                            구리 롯데백화점 건너편 주차장입구
-                        </div>
-                        <div class="map-box">
-                            <div class="map-title">지도</div>
-                            <div class="map-title">로드뷰</div>
-                            <div id="map_02" class="bus_map"></div>
-                            <div id="map_02_view" class="bus_map"></div>
-                        </div>
-                        <div class="section--sub-title txt-c">
-                            태릉 태릉입구역 7번출구
-                        </div>
-                        <div class="map-box">
-                            <div class="map-title">지도</div>
-                            <div class="map-title">로드뷰</div>
-                            <div id="map_03" class="bus_map"></div>
-                            <div id="map_03_view" class="bus_map"></div>
-                        </div>
-                        <div class="section--sub-title txt-c">
-                            석계역 3번 출구 건너편 버스정거장 위쪽
-                        </div>
-                        <div class="map-box">
-                            <div class="map-title">지도</div>
-                            <div class="map-title">로드뷰</div>
-                            <div id="map_04" class="bus_map"></div>
-                            <div id="map_04_view" class="bus_map"></div>
-                        </div>
+            <!-- 카페테리아 -->
+            <div id="cafeteria" class="place-wrap-box">
+                <div class="section__content">
+                    <div class="section__content--row box-shadow">
+                        <div class="section__content--row-title">카페테리아📌</div>
+                        <table class="shuttle-bus-time">
+                            <thead>
+                                <tr>
+                                    <th style="background-color: rgb(161, 21, 48);">한식 & 중식</th>
+                                    <th style="background-color: rgb(161, 21, 48);">피자 & 치킨</th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">운영시간 ( 토요일 : 휴무 )</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="yellow-box">11:00~20:00</td>
+                                    <td class="yellow-box">11:00~20:30</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-
-                    <div id="school-bus3" class="section__content--row box-shadow">
-                        <div class="section__content--row-title">인천행📌</div>
-                        <div class="section--sub-title txt-c">
-                            신세계 백화점 맞은편 인천터미널역 1번출구
-                        </div>
-                        <div class="map-box">
-                            <div class="map-title">지도</div>
-                            <div class="map-title">로드뷰</div>
-                            <div id="map_05" class="bus_map"></div>
-                            <div id="map_05_view" class="road_view"></div>
-                        </div>
-                    </div>
-
-                    <div id="school-bus4" class="section__content--row box-shadow">
-                        <div class="section__content--row-title">금정행📌</div>
-                        <div class="section--sub-title txt-c">
-                            금정역 3번출구 앞
-                        </div>
-                        <div class="map-box">
-                            <div class="map-title">지도</div>
-                            <div class="map-title">로드뷰</div>
-                            <div id="map_06" class="bus_map"></div>
-                            <div id="map_06_view" class="road_view"></div>
-                        </div>
-                    </div>
-
-                    <div id="school-bus5" class="section__content--row box-shadow">
-                        <div class="section__content--row-title">성남 용인행📌</div>
-                        <div class="section--sub-title txt-c">
-                            용인 버스터미널 뒤쪽 다리 위 버스정거장
-                        </div>
-                        <div class="map-box">
-                            <div class="map-title">지도</div>
-                            <div class="map-title">로드뷰</div>
-                            <div id="map_08" class="bus_map"></div>
-                            <div id="map_08_view" class="road_view"></div>
-                        </div>
-                        <div class="section--sub-title txt-c">
-                            성남 성남터미널앞 공항버스 정거장
-                        </div>
-                        <div class="map-box">
-                            <div class="map-title">지도</div>
-                            <div class="map-title">로드뷰</div>
-                            <div id="map_07" class="bus_map"></div>
-                            <div id="map_07_view" class="road_view"></div>
-                        </div>
-                    </div>
-
-                    <div id="school-bus6" class="section__content--row box-shadow">
-                        <div class="section__content--row-title">수원행📌</div>
-                        <div class="section--sub-title txt-c">
-                            수원 매산지구대 좌측편(AK플라자반대편) 30m 육교입구
-                        </div>
-                        <div class="map-box">
-                            <div class="map-title">지도</div>
-                            <div class="map-title">로드뷰</div>
-                            <div id="map_09" class="bus_map"></div>
-                            <div id="map_09_view" class="road_view"></div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
 
@@ -634,31 +502,31 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
         </script>
-        
-        <!-- bootstrap -->
-        <script>
-            var intFrameWidth = window.innerWidth;
-            var enable = 0;
-    
-            if(intFrameWidth < 767 ) {
-                // bootstrap js와 css 로드
-                var cssUrl = "https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css";
-                var head = document.getElementsByTagName("head")[0];
-                var link = document.createElement("link");
-                link.id = "link-bootstrap"
-                link.rel = "stylesheet";
-                link.type = "text/css";
-                link.href = cssUrl;
-                document.head.appendChild(link);
-            } else {
-                // bootstrap js와 css 삭제
-                const linkBootstrap = document.getElementById("link-bootstrap");
-    
-                linkBootstrap.remove();
-            }
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-    
+
+    <!-- bootstrap -->
+    <script>
+        var intFrameWidth = window.innerWidth;
+        var enable = 0;
+
+        if (intFrameWidth < 767) {
+            // bootstrap js와 css 로드
+            var cssUrl = "https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css";
+            var head = document.getElementsByTagName("head")[0];
+            var link = document.createElement("link");
+            link.id = "link-bootstrap"
+            link.rel = "stylesheet";
+            link.type = "text/css";
+            link.href = cssUrl;
+            document.head.appendChild(link);
+        } else {
+            // bootstrap js와 css 삭제
+            const linkBootstrap = document.getElementById("link-bootstrap");
+
+            linkBootstrap.remove();
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
 
     <!--map script-->
     <script type="text/javascript"
@@ -1101,7 +969,7 @@
 
     <!-- img enlage -->
     <script src="/js/image-enlage.js"></script>
-    
+
 </body>
 
 </html>

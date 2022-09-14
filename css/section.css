@@ -259,10 +259,15 @@ section {
 /* 모바일 */
 @media screen and (max-width:767px) { 
     .section__content {
-        width: 100%;
+        width: 96%;
+        box-sizing: border-box;
     }
 
     .section__content a {
         width: 48%;
+    }
+    
+    .section__content a:nth-child(7) {
+        width: 96%;
     }
 }

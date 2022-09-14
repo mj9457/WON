@@ -104,11 +104,11 @@
     padding-left: 402.5px;
 }
 
-.sub-menubar__list-box--five-title * {
+.sub-menubar__list-box--five-title *, .sub-menubar__list-box--six-title * {
     margin-bottom: 8px;
 }
 
-.sub-menubar__list-box--six {
+.sub-menubar__list-box--six-title {
     padding-left:  516.5px;
 }
 
