@@ -89,4 +89,8 @@
     .fos-review-box .star-img {
         width: 50%;
     }
+
+    .fos-result-title {
+        font-size:26px;
+    }
 }

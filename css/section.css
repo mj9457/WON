@@ -270,4 +270,9 @@ section {
     .section__content a:nth-child(7) {
         width: 96%;
     }
+
+    .list-logo {
+        width: 50px;
+        height: 50px;
+    }
 }

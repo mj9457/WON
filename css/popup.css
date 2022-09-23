@@ -124,6 +124,13 @@
     animation-iteration-count: infinite;
 }
 
+@media screen and (max-width:767px) {
+    #popup {
+        top:60%;
+        width: 80%;
+    }
+}
+
 @keyframes moveUpDown {
     0% {
 

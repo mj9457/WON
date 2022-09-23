@@ -144,11 +144,19 @@
     }
     
     .fos-result-title, .fos-result-val, .input-flex-box label {
-        font-size: 17px;
+        font-size: 15px;
+    }
+
+    .fos-result-title:last-child {
+        font-size: 14px;
     }
 
     .section--sub-title-tip.txt-r {
-        font-size: 13px;
+        font-size: 12px;
     } 
+
+    .btn-wrap {
+        font-size: 14px;
+    }
 }
 
