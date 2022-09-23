@@ -1,6 +1,6 @@
 /* top btn */
 $(".top-box").click(function () {
-  $("html, body").animate({ scrollTop: 0 }, 800);
+  $("html, body").animate({ scrollTop: 0 }, 200);
   return false;
 });
 

@@ -82,6 +82,7 @@ resultBtn21.addEventListener("click", function () {
     var f21 = parseInt(inputF21.value);
     var o21 = parseInt(inputO21.value);
     var s21 = parseInt(inputS21.value);
+    
 // f영역 ,o영역 80시간 이내 조건
 if ( f21 > 80 ) {
     f21 = 80
@@ -108,60 +109,60 @@ if ( f21 > 80 ) {
         resultNk21.style.display = "none";
 
         if ( f21 < 40 && o21 < 40 && s21 < 30 ) {
-            resultF21.innerHTML = "시간 부족"
+            resultF21.innerHTML = "부족"
             resultF21.style.color = "red";
-            resultO21.innerHTML = "시간 부족"
+            resultO21.innerHTML = "부족"
             resultO21.style.color = "red";
-            resultS21.innerHTML = "시간 부족"
+            resultS21.innerHTML = "부족"
             resultS21.style.color = "red";
         } else if ( f21 < 40 && o21 < 40 ) {
-            resultF21.innerHTML = "시간 부족"
+            resultF21.innerHTML = "부족"
             resultF21.style.color = "red";
-            resultO21.innerHTML = "시간 부족"
+            resultO21.innerHTML = "부족"
             resultO21.style.color = "red";
-            resultS21.innerHTML = "시간 충족"
+            resultS21.innerHTML = "충족"
             resultS21.style.color = "blue";
         } else if ( f21 < 40 && s21 < 30 ) {
-            resultF21.innerHTML = "시간 부족"
+            resultF21.innerHTML = "부족"
             resultF21.style.color = "red";
-            resultO21.innerHTML = "시간 충족"
+            resultO21.innerHTML = "충족"
             resultO21.style.color = "blue";
-            resultS21.innerHTML = "시간 부족"
+            resultS21.innerHTML = "부족"
             resultS21.style.color = "red";
         } else if ( o21 < 40  && s21 < 30 ) {
-            resultF21.innerHTML = "시간 충족"
+            resultF21.innerHTML = "충족"
             resultF21.style.color = "blue";
-            resultO21.innerHTML = "시간 부족"
+            resultO21.innerHTML = "부족"
             resultO21.style.color = "red";
-            resultS21.innerHTML = "시간 부족"
+            resultS21.innerHTML = "부족"
             resultS21.style.color = "red";
         } else if ( f21 < 40 ) {
-            resultF21.innerHTML = "시간 부족"
+            resultF21.innerHTML = "부족"
             resultF21.style.color = "red";
-            resultO21.innerHTML = "시간 충족"
+            resultO21.innerHTML = "충족"
             resultO21.style.color = "blue";
-            resultS21.innerHTML = "시간 충족"
+            resultS21.innerHTML = "충족"
             resultS21.style.color = "blue";
         } else if ( o21 < 40 ) {
-            resultF21.innerHTML = "시간 충족"
+            resultF21.innerHTML = "충족"
             resultF21.style.color = "blue";
-            resultO21.innerHTML = "시간 부족"
+            resultO21.innerHTML = "부족"
             resultO21.style.color = "red";
-            resultS21.innerHTML = "시간 충족"
+            resultS21.innerHTML = "충족"
             resultS21.style.color = "blue";
         } else if ( s21 < 30 ) {
-            resultF21.innerHTML = "시간 충족"
+            resultF21.innerHTML = "충족"
             resultF21.style.color = "blue";
-            resultO21.innerHTML = "시간 충족"
+            resultO21.innerHTML = "충족"
             resultO21.style.color = "blue";
-            resultS21.innerHTML = "시간 부족"
+            resultS21.innerHTML = "부족"
             resultS21.style.color = "red";
         } else if ( f21 >= 40 && o21 >=40 && s21 >=30 ) {
-            resultF21.innerHTML = "시간 충족"
+            resultF21.innerHTML = "충족"
             resultF21.style.color = "blue";
-            resultO21.innerHTML = "시간 충족"
+            resultO21.innerHTML = "충족"
             resultO21.style.color = "blue";
-            resultS21.innerHTML = "시간 충족"
+            resultS21.innerHTML = "충족"
             resultS21.style.color = "blue";
         }
 
@@ -174,60 +175,60 @@ if ( f21 > 80 ) {
         resultNk21.style.display = "none";
 
         if ( f21 < 40 && o21 < 40 && s21 < 30 ) {
-            resultF21.innerHTML = "시간 부족"
+            resultF21.innerHTML = "부족"
             resultF21.style.color = "red";
-            resultO21.innerHTML = "시간 부족"
+            resultO21.innerHTML = "부족"
             resultO21.style.color = "red";
-            resultS21.innerHTML = "시간 부족"
+            resultS21.innerHTML = "부족"
             resultS21.style.color = "red";
         } else if ( f21 < 40 && o21 < 40 ) {
-            resultF21.innerHTML = "시간 부족"
+            resultF21.innerHTML = "부족"
             resultF21.style.color = "red";
-            resultO21.innerHTML = "시간 부족"
+            resultO21.innerHTML = "부족"
             resultO21.style.color = "red";
-            resultS21.innerHTML = "시간 충족"
+            resultS21.innerHTML = "충족"
             resultS21.style.color = "blue";
         } else if ( f21 < 40 && s21 < 30 ) {
-            resultF21.innerHTML = "시간 부족"
+            resultF21.innerHTML = "부족"
             resultF21.style.color = "red";
-            resultO21.innerHTML = "시간 충족"
+            resultO21.innerHTML = "충족"
             resultO21.style.color = "blue";
-            resultS21.innerHTML = "시간 부족"
+            resultS21.innerHTML = "부족"
             resultS21.style.color = "red";
         } else if ( o21 < 40  && s21 < 30 ) {
-            resultF21.innerHTML = "시간 충족"
+            resultF21.innerHTML = "충족"
             resultF21.style.color = "blue";
-            resultO21.innerHTML = "시간 부족"
+            resultO21.innerHTML = "부족"
             resultO21.style.color = "red";
-            resultS21.innerHTML = "시간 부족"
+            resultS21.innerHTML = "부족"
             resultS21.style.color = "red";
         } else if ( f21 < 40 ) {
-            resultF21.innerHTML = "시간 부족"
+            resultF21.innerHTML = "부족"
             resultF21.style.color = "red";
-            resultO21.innerHTML = "시간 충족"
+            resultO21.innerHTML = "충족"
             resultO21.style.color = "blue";
-            resultS21.innerHTML = "시간 충족"
+            resultS21.innerHTML = "충족"
             resultS21.style.color = "blue";
         } else if ( o21 < 40 ) {
-            resultF21.innerHTML = "시간 충족"
+            resultF21.innerHTML = "충족"
             resultF21.style.color = "blue";
-            resultO21.innerHTML = "시간 부족"
+            resultO21.innerHTML = "부족"
             resultO21.style.color = "red";
-            resultS21.innerHTML = "시간 충족"
+            resultS21.innerHTML = "충족"
             resultS21.style.color = "blue";
         } else if ( s21 < 30 ) {
-            resultF21.innerHTML = "시간 충족"
+            resultF21.innerHTML = "충족"
             resultF21.style.color = "blue";
-            resultO21.innerHTML = "시간 충족"
+            resultO21.innerHTML = "충족"
             resultO21.style.color = "blue";
-            resultS21.innerHTML = "시간 부족"
+            resultS21.innerHTML = "부족"
             resultS21.style.color = "red";
         } else if ( f21 >= 40 && o21 >=40 && s21 >=30 ) {
-            resultF21.innerHTML = "시간 충족"
+            resultF21.innerHTML = "충족"
             resultF21.style.color = "blue";
-            resultO21.innerHTML = "시간 충족"
+            resultO21.innerHTML = "충족"
             resultO21.style.color = "blue";
-            resultS21.innerHTML = "시간 충족"
+            resultS21.innerHTML = "충족"
             resultS21.style.color = "blue";
         }
     }
@@ -257,60 +258,60 @@ resultBtn22.addEventListener("click", function () {
         resultNk22.style.display = "none";
 
         if ( f22 < 30 && o22 < 25 && s22 < 35 ) {
-            resultF22.innerHTML = "시간 부족"
+            resultF22.innerHTML = "부족"
             resultF22.style.color = "red";
-            resultO22.innerHTML = "시간 부족"
+            resultO22.innerHTML = "부족"
             resultO22.style.color = "red";
-            resultS22.innerHTML = "시간 부족"
+            resultS22.innerHTML = "부족"
             resultS22.style.color = "red";
         } else if ( f22 < 30 && o22 < 25 ) {
-            resultF22.innerHTML = "시간 부족"
+            resultF22.innerHTML = "부족"
             resultF22.style.color = "red";
-            resultO22.innerHTML = "시간 부족"
+            resultO22.innerHTML = "부족"
             resultO22.style.color = "red";
-            resultS22.innerHTML = "시간 충족"
+            resultS22.innerHTML = "충족"
             resultS22.style.color = "blue";
         } else if ( f22 < 30 && s22 < 35 ) {
-            resultF22.innerHTML = "시간 부족"
+            resultF22.innerHTML = "부족"
             resultF22.style.color = "red";
-            resultO22.innerHTML = "시간 충족"
+            resultO22.innerHTML = "충족"
             resultO22.style.color = "blue";
-            resultS22.innerHTML = "시간 부족"
+            resultS22.innerHTML = "부족"
             resultS22.style.color = "red";
         } else if ( o22 < 25  && s22 < 35 ) {
-            resultF22.innerHTML = "시간 충족"
+            resultF22.innerHTML = "충족"
             resultF22.style.color = "blue";
-            resultO22.innerHTML = "시간 부족"
+            resultO22.innerHTML = "부족"
             resultO22.style.color = "red";
-            resultS22.innerHTML = "시간 부족"
+            resultS22.innerHTML = "부족"
             resultS22.style.color = "red";
         } else if ( f22 < 30 ) {
-            resultF22.innerHTML = "시간 부족"
+            resultF22.innerHTML = "부족"
             resultF22.style.color = "red";
-            resultO22.innerHTML = "시간 충족"
+            resultO22.innerHTML = "충족"
             resultO22.style.color = "blue";
-            resultS22.innerHTML = "시간 충족"
+            resultS22.innerHTML = "충족"
             resultS22.style.color = "blue";
         } else if ( o22 < 25 ) {
-            resultF22.innerHTML = "시간 충족"
+            resultF22.innerHTML = "충족"
             resultF22.style.color = "blue";
-            resultO22.innerHTML = "시간 부족"
+            resultO22.innerHTML = "부족"
             resultO22.style.color = "red";
-            resultS22.innerHTML = "시간 충족"
+            resultS22.innerHTML = "충족"
             resultS22.style.color = "blue";
         } else if ( s22 < 35 ) {
-            resultF22.innerHTML = "시간 충족"
+            resultF22.innerHTML = "충족"
             resultF22.style.color = "blue";
-            resultO22.innerHTML = "시간 충족"
+            resultO22.innerHTML = "충족"
             resultO22.style.color = "blue";
-            resultS22.innerHTML = "시간 부족"
+            resultS22.innerHTML = "부족"
             resultS22.style.color = "red";
         } else if ( f22 >= 30 && o22 >=25 && s22 >=35 ) {
-            resultF22.innerHTML = "시간 충족"
+            resultF22.innerHTML = "충족"
             resultF22.style.color = "blue";
-            resultO22.innerHTML = "시간 충족"
+            resultO22.innerHTML = "충족"
             resultO22.style.color = "blue";
-            resultS22.innerHTML = "시간 충족"
+            resultS22.innerHTML = "충족"
             resultS22.style.color = "blue";
         }
 
@@ -323,60 +324,60 @@ resultBtn22.addEventListener("click", function () {
         resultNk22.style.display = "none";
 
         if ( f22 < 30 && o22 < 25 && s22 < 35 ) {
-            resultF22.innerHTML = "시간 부족"
+            resultF22.innerHTML = "부족"
             resultF22.style.color = "red";
-            resultO22.innerHTML = "시간 부족"
+            resultO22.innerHTML = "부족"
             resultO22.style.color = "red";
-            resultS22.innerHTML = "시간 부족"
+            resultS22.innerHTML = "부족"
             resultS22.style.color = "red";
         } else if ( f22 < 30 && o22 < 25 ) {
-            resultF22.innerHTML = "시간 부족"
+            resultF22.innerHTML = "부족"
             resultF22.style.color = "red";
-            resultO22.innerHTML = "시간 부족"
+            resultO22.innerHTML = "부족"
             resultO22.style.color = "red";
-            resultS22.innerHTML = "시간 충족"
+            resultS22.innerHTML = "충족"
             resultS22.style.color = "blue";
         } else if ( f22 < 30 && s22 < 35 ) {
-            resultF22.innerHTML = "시간 부족"
+            resultF22.innerHTML = "부족"
             resultF22.style.color = "red";
-            resultO22.innerHTML = "시간 충족"
+            resultO22.innerHTML = "충족"
             resultO22.style.color = "blue";
-            resultS22.innerHTML = "시간 부족"
+            resultS22.innerHTML = "부족"
             resultS22.style.color = "red";
         } else if ( o22 < 25  && s22 < 35 ) {
-            resultF22.innerHTML = "시간 충족"
+            resultF22.innerHTML = "충족"
             resultF22.style.color = "blue";
-            resultO22.innerHTML = "시간 부족"
+            resultO22.innerHTML = "부족"
             resultO22.style.color = "red";
-            resultS22.innerHTML = "시간 부족"
+            resultS22.innerHTML = "부족"
             resultS22.style.color = "red";
         } else if ( f22 < 30 ) {
-            resultF22.innerHTML = "시간 부족"
+            resultF22.innerHTML = "부족"
             resultF22.style.color = "red";
-            resultO22.innerHTML = "시간 충족"
+            resultO22.innerHTML = "충족"
             resultO22.style.color = "blue";
-            resultS22.innerHTML = "시간 충족"
+            resultS22.innerHTML = "충족"
             resultS22.style.color = "blue";
         } else if ( o22 < 25 ) {
-            resultF22.innerHTML = "시간 충족"
+            resultF22.innerHTML = "충족"
             resultF22.style.color = "blue";
-            resultO22.innerHTML = "시간 부족"
+            resultO22.innerHTML = "부족"
             resultO22.style.color = "red";
-            resultS22.innerHTML = "시간 충족"
+            resultS22.innerHTML = "충족"
             resultS22.style.color = "blue";
         } else if ( s22 < 35 ) {
-            resultF22.innerHTML = "시간 충족"
+            resultF22.innerHTML = "충족"
             resultF22.style.color = "blue";
-            resultO22.innerHTML = "시간 충족"
+            resultO22.innerHTML = "충족"
             resultO22.style.color = "blue";
-            resultS22.innerHTML = "시간 부족"
+            resultS22.innerHTML = "부족"
             resultS22.style.color = "red";
         } else if ( f22 >= 30 && o22 >=25 && s22 >=35 ) {
-            resultF22.innerHTML = "시간 충족"
+            resultF22.innerHTML = "충족"
             resultF22.style.color = "blue";
-            resultO22.innerHTML = "시간 충족"
+            resultO22.innerHTML = "충족"
             resultO22.style.color = "blue";
-            resultS22.innerHTML = "시간 충족"
+            resultS22.innerHTML = "충족"
             resultS22.style.color = "blue";
         }
     }
