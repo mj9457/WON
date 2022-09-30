@@ -24,6 +24,7 @@
 .ani:hover {
     animation-name: fadein;
     animation-duration: 0.4s;
+    cursor: pointer;
 }
 
 .menubar__content {
