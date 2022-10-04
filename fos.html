@@ -451,7 +451,7 @@
             <div class="section--sub-title-tip txt-r m-0">
               ※ 번호, 영역 클릭시 정렬됩니다.
             </div>
-            <table id="fos-list-table" class="fos-list-table">
+            <table id="fos-list-table" class="fos-list-table" style="display: none;">
               <thead>
                 <tr>
                   <th style="width: 5%; cursor: pointer;" onclick="sortTable(0)" class="ani1">번호</th>
@@ -1256,16 +1256,17 @@
 
   <!-- fos list show&hide -->
   <script>
-    var intFrameWidth = window.innerWidth;
-        var enable = 0;
+    // var intFrameWidth = window.innerWidth;
+    //     var enable = 0;
 
-        if(intFrameWidth < 767 ) {
+        // if(intFrameWidth < 767 ) {
           document.getElementById("fos-list-table").style.display = "none";
           document.querySelector(".section--sub-title-tip.txt-r.m-0").innerHTML = "※ 모바일은 더보기 버튼을 통해 확인 부탁드립니다."
-        } else {
-          document.getElementById("fos-list-table").style.display = "table";
-          document.querySelector(".section--sub-title-tip.txt-r.m-0").innerHTML = "※ 번호, 영역 클릭시 정렬됩니다."
-        }
+        // }
+        // else {
+        //   document.getElementById("fos-list-table").style.display = "table";
+        //   document.querySelector(".section--sub-title-tip.txt-r.m-0").innerHTML = "※ 번호, 영역 클릭시 정렬됩니다."
+        // }
   </script>
 
   <!-- Sub-MenuBar -->
