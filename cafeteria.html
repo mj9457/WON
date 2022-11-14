@@ -542,6 +542,18 @@
     <!-- img enlage -->
     <script src="/js/image-enlage.js"></script>
 
+    <!-- validate moblie -->
+    <script>
+        const isMobile = () => {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        };
+
+        if(isMobile === true) {
+            document.querySelector(".kakao-box").remove & document.querySelector(".mail-box").remove
+        }
+
+    </script>
+
 </body>
 
 </html>
