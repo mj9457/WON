@@ -380,30 +380,33 @@
     <!-- top Btn & 문의하기 -->
     <script src="/js/top-btn.js"></script>
 
-            <!-- bootstrap -->
-            <script>
-                var intFrameWidth = window.innerWidth;
-                var enable = 0;
-        
-                if(intFrameWidth < 767 ) {
-                    // bootstrap js와 css 로드
-                    var cssUrl = "https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css";
-                    var head = document.getElementsByTagName("head")[0];
-                    var link = document.createElement("link");
-                    link.id = "link-bootstrap"
-                    link.rel = "stylesheet";
-                    link.type = "text/css";
-                    link.href = cssUrl;
-                    document.head.appendChild(link);
-                } else {
-                    // bootstrap js와 css 삭제
-                    const linkBootstrap = document.getElementById("link-bootstrap");
-        
-                    linkBootstrap.remove();
-                }
-            </script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-        
+    <!-- bootstrap -->
+    <script>
+        var intFrameWidth = window.innerWidth;
+        var enable = 0;
+
+        if(intFrameWidth < 767 ) {
+            // bootstrap js와 css 로드
+            var cssUrl = "https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css";
+            var head = document.getElementsByTagName("head")[0];
+            var link = document.createElement("link");
+            link.id = "link-bootstrap"
+            link.rel = "stylesheet";
+            link.type = "text/css";
+            link.href = cssUrl;
+            document.head.appendChild(link);
+        } else {
+            // bootstrap js와 css 삭제
+            const linkBootstrap = document.getElementById("link-bootstrap");
+
+            linkBootstrap.remove();
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+ 
+    <!-- validate moblie -->
+    <script src="/js/validate-moblie.js"></script>
+
 </body>
 
 </html>
