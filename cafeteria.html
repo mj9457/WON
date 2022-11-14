@@ -545,10 +545,15 @@
     <!-- validate moblie -->
     <script>
         const isMobile = () => {
-            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                return true;
+            }
+            return false;
         };
+        
+        console.log(isMobile());
 
-        if(isMobile === true) {
+        if(isMobile() === true) {
             document.querySelector(".kakao-box").remove & document.querySelector(".mail-box").remove
         }
 
